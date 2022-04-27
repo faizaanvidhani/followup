@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4fbfa5-0976-4944-b78e-8748221e9b93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/tsconfig.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +61,7 @@
       <workItem from="1651078589224" duration="5000" />
       <workItem from="1651078635101" duration="227000" />
       <workItem from="1651078893052" duration="380000" />
+      <workItem from="1651079608174" duration="5450000" />
     </task>
     <servers />
   </component>
