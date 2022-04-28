@@ -1,20 +1,27 @@
 import React from 'react';
+import { CgProfile } from "react-icons/cg";
+import {IconContext} from "react-icons";
+import './ProviderPatientGrid.css';
+import './ProviderInfo.css';
 
 type PatientGridProps = {
     name: string,
     title: string,
     clinicName: string,
-    patients: []
+    patients: any[]
 }
 
-function generatePatients(patients: []) {
+function generatePatients(patients: any[]) {
     const numPatients: number = patients.length;
     const patientElements: JSX.Element[] = [];
 
     for (let i = 0; i < numPatients; i++) {
         patientElements.push(
-            <div className="patient-grid-icon">
-                <img src="../../../icons/icons8-clinic-80.png" id="patient-icon"/>
+            <div className="patient-grid-icon-div">
+                {/*<img src="../../../icons/profile-icon.png" id="patient-icon"/>*/}
+                <IconContext.Provider value={{size: '50px'}}>
+                    <CgProfile/>
+                </IconContext.Provider>
                 Last, First
             </div>
         )
@@ -26,23 +33,25 @@ function generatePatients(patients: []) {
 function PatientGrid(props: PatientGridProps) {
     return (
         <div>
-            <h1 className="provider-name">
-                {props.name}, {props.title}
-            </h1>
-            <br/>
-            <h3 className="provider-clinic-name">
-                {props.clinicName}
-            </h3>
-            <br/>
+            <div className="provider-info">
+                <h1 className="provider-name">
+                    {props.name}, {props.title}
+                </h1>
+                <h3 className="provider-clinic">
+                    {props.clinicName}
+                </h3>
+            </div>
             <hr/>
 
-            <h2>
-                Patients
-            </h2>
+            <span className="patient-grid-div">
+                <h2 id="patients-header">
+                    Patients
+                </h2>
 
-            <input id="patient-filter"
-                   type="text"
-                   placeholder="Search here"/>
+                <input id="patient-filter"
+                       type="text"
+                       placeholder="Search here"/>
+            </span>
 
             <div className="patient-grid-icons">
                 {generatePatients(props.patients)}

@@ -4,7 +4,9 @@ import './App.css';
 import { signInWithGoogle, signOut } from "./Firebase";
 import './components/login.css';
 import ProviderHomePage from "./components/provider/ProviderHomePage";
+import ProviderPatientGrid from "./components/provider/ProviderPatientGrid";
 
+const data: any[] = []
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,9 @@ function App() {
         <div>
             <ProviderHomePage name="Jane Doe" title="M.D." clinicName="Hospital"></ProviderHomePage>
         </div>
+        {/*<div>*/}
+        {/*    <ProviderPatientGrid name="Jane Doe" title="M.D." clinicName="Hospital" patients={data}></ProviderPatientGrid>*/}
+        {/*</div>*/}
     </div>
   );
 }
