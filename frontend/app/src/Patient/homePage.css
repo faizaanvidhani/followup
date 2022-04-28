@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.navbar-header{
+    background-color: white;
+}
+
+.linkOption {
+    display:inline;
+    float: left;
+    padding: 20px;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PatientHome from "./Patient/PatientHome";
 import { signInWithGoogle, signOut } from "./Firebase";
 import './components/login.css';
 
@@ -13,6 +14,10 @@ function App() {
         <br/>
         <div>
             <button className="login" onClick={signOut}>Sign Out</button>
+        </div>
+        <br/>
+        <div>
+            <PatientHome></PatientHome>
         </div>
     </div>
   );
