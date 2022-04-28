@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { signInWithGoogle, signOut } from "./Firebase";
 import './components/login.css';
+import ProviderHomePage from "./components/provider/ProviderHomePage";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <br/>
         <div>
             <button className="login" onClick={signOut}>Sign Out</button>
+        </div>
+        <div>
+            <ProviderHomePage name="Jane Doe" title="M.D." clinicName="Hospital"></ProviderHomePage>
         </div>
     </div>
   );
