@@ -1,4 +1,4 @@
-package edu.brown.cs.student.databaseproxy;
+package edu.brown.cs.student.main.databaseproxy;
 
 /**
  * Class for an InvalidPermissionException, a specific exception for when a command

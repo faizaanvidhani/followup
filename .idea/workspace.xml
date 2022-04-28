@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4fbfa5-0976-4944-b78e-8748221e9b93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main/databaseproxy/DatabaseCommander.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main/databaseproxy/DatabaseCommander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main/databaseproxy/DatabaseProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main/databaseproxy/DatabaseProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main/databaseproxy/InvalidPermissionsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main/databaseproxy/InvalidPermissionsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/repl/Commandable.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/repl/Commandable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,16 +35,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/main" />
       <recent name="$PROJECT_DIR$/frontend/app" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/frontend" />
