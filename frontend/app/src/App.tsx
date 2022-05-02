@@ -17,7 +17,7 @@ function App() {
         </div>
         <br/>
         <div>
-            <PatientHome></PatientHome>
+            <PatientHome name={'Jane Doe'} dob={'04/05/2001'} tel={'504-405-9585'}></PatientHome>
         </div>
     </div>
   );
