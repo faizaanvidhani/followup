@@ -17,12 +17,12 @@ function App() {
         <div>
             <button className="login" onClick={signOut}>Sign Out</button>
         </div>
-        <div>
-            <ProviderHomePage name="Jane Doe" title="M.D." clinicName="Hospital"></ProviderHomePage>
-        </div>
         {/*<div>*/}
-        {/*    <ProviderPatientGrid name="Jane Doe" title="M.D." clinicName="Hospital" patients={data}></ProviderPatientGrid>*/}
+        {/*    <ProviderHomePage name="Jane Doe" title="M.D." clinicName="Hospital"></ProviderHomePage>*/}
         {/*</div>*/}
+        <div>
+            <ProviderPatientGrid name="tJane Doe" title="M.D." clinicName="Hospital" patients={data}></ProviderPatientGrid>
+        </div>
     </div>
   );
 }

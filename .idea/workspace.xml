@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cebdde15-38c9-4098-a0d0-574dceb09b7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +38,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/app/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
