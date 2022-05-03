@@ -16,9 +16,6 @@ function App() {
             <button className="login" onClick={signOut}>Sign Out</button>
         </div>
         <br/>
-        <div>
-            <PatientHome name={'Jane Doe'} dob={'04/05/2001'} tel={'504-405-9585'}></PatientHome>
-        </div>
     </div>
   );
 }
