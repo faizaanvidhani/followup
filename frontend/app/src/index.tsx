@@ -4,25 +4,33 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './components/login.css';
-
 import PatientHome from "./Patient/PatientHome";
-import Navigation from "./components/Navigation";
+import MainNavigation from "./components/MainNavigation";
+import ProfileInfo from './Patient/ProfileInfo';
+import SymptomLog from './Patient/SymptomLog';
+import AddSymptom from './Patient/AddSymptom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+
 root.render(
     <Router>
-        <Navigation />
+        <MainNavigation />
         <Routes>
-            <Route path="/Home" element={<PatientHome name="Suraj Zaveri" dob="04/05/2001" tel="504-405-9585" />} />
+            <Route path="/home" element={<PatientHome name="Suraj Zaveri" dob="04/05/2001" tel="504-405-9585" />} />
+            <Route path="/mission" />
+            <Route path="/contact" />
+            <Route path="/about" />
         </Routes>
+
+        <Routes>
+            <Route path="/profileInfo" element={<ProfileInfo />} />
+            <Route path="/symptomLog" element={<SymptomLog />} />
+            <Route path="/addSymptom" element={<AddSymptom />} />
+        </Routes>
+
+      
     </Router>,
 
 );
