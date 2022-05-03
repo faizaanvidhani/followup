@@ -1,0 +1,37 @@
+.header {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.subheader {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+    font-weight: normal;
+}
+
+.navbar {
+    width: 50%;
+    margin: 0 auto;
+    background-color: greenyellow;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+
+.linkOption {
+    display:inline;
+    float: left;
+    padding: 20px;
+    background-color: darkgray;
+    font-size: 16px;
+    font-weight: bold;
+
+}
