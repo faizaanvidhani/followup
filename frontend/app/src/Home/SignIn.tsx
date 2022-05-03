@@ -2,7 +2,7 @@ import google from './icons/google.svg';
 import facebook from './icons/facebook.svg';
 import apple from './icons/apple.svg';
 import './SignIn.css';
-import { signInWithGoogle, signOut } from "./Firebase";
+import { signInWithGoogle, signOut } from "../Firebase";
 
 function SignIn() {
     return (
