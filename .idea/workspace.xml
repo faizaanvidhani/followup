@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e4fbfa5-0976-4944-b78e-8748221e9b93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/login.css" afterDir="false" />
+    <list default="true" id="cebdde15-38c9-4098-a0d0-574dceb09b7f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/SignIn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/SignIn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/icons/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/icons/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/icons/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/images/home.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +55,14 @@
       <recent name="$PROJECT_DIR$/frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/app/src/" />
       <recent name="$PROJECT_DIR$/frontend" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0e4fbfa5-0976-4944-b78e-8748221e9b93" name="Changes" comment="" />
+      <changelist id="cebdde15-38c9-4098-a0d0-574dceb09b7f" name="Changes" comment="" />
       <created>1651073490699</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -62,6 +73,8 @@
       <workItem from="1651078635101" duration="227000" />
       <workItem from="1651078893052" duration="380000" />
       <workItem from="1651079608174" duration="5450000" />
+      <workItem from="1651598239360" duration="9338000" />
+      <workItem from="1651610165608" duration="4243000" />
     </task>
     <servers />
   </component>

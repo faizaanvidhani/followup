@@ -1,19 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { signInWithGoogle, signOut } from "./Firebase";
-import './components/login.css';
+import SignIn from './SignIn';
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
-        <div>
-            <button className="login" onClick={signInWithGoogle}>Sign In With Google</button>
-        </div>
-        <br/>
-        <div>
-            <button className="login" onClick={signOut}>Sign Out</button>
-        </div>
+        <Home />
+        {/*<SignIn />*/}
     </div>
   );
 }
