@@ -10,33 +10,18 @@ import ProviderIntakePage from './components/provider/ProviderIntakePage';
 import Tabs from './components/provider/Tabs';
 import PortalHeader from './components/PortalHeader';
 import NewAccountPage from './components/NewAccountPage';
+import ProviderInfoPage from './components/provider/ProviderInfoPage';
 
 const data: any[] = []
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
         {/*<Tabs></Tabs>*/}
         {/*<ProviderHomePage name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital"/>*/}
-        {/*<ProviderPatientGrid name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital" patients={data}></ProviderPatientGrid>*/}
-        {/*<NewAccountPage></NewAccountPage>*/}
-        <ProviderIntakePage></ProviderIntakePage>
-
-=======
-        <div>
-            <button className="login" onClick={signInWithGoogle}>Sign In With Google</button>
-        </div>
-        <br/>
-        <div>
-            <button className="login" onClick={signOut}>Sign Out</button>
-        </div>
-        {/*<div>*/}
-        {/*    <ProviderHomePage name="Jane Doe" title="M.D." clinicName="Hospital"></ProviderHomePage>*/}
-        {/*</div>*/}
-        <div>
-            <ProviderPatientGrid name="tJane Doe" title="M.D." clinicName="Hospital" patients={data}></ProviderPatientGrid>
-        </div>
->>>>>>> eb195e895f1b55bb22796f1ebd5ca1e604608709
+        {/*<ProviderPatientGrid name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital" patients={data}/>*/}
+        {/*<NewAccountPage/>*/}
+        {/*<ProviderIntakePage/>*/}
+        <ProviderInfoPage fname="Jane" lname="Doe" institution="Rhode Island Hospital" phoneNumber="123-456-7890" email="janedoe@gmail.com"/>
     </div>
   );
 }

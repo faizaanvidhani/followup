@@ -3,10 +3,7 @@ import PortalHeader from '../PortalHeader';
 import './ProviderIntakePage.css'
 
 function ProviderIntakePage() {
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
+    
     return (
         <form className="provider-intake-form">
             <PortalHeader wantLogOut={false}/>
