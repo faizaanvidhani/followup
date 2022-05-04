@@ -1,10 +1,15 @@
-import React from 'react';
-import { FaClinicMedical } from "react-icons/fa";
-import { FcSurvey } from "react-icons/fc";
-import { CgProfile } from "react-icons/cg";
-import {IconContext} from "react-icons";
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import './ProviderHomePage.css';
-import './ProviderInfo.css'
+import clinic from '../../icons/clinic-icon.svg';
+import profile from '../../icons/profile-icon.svg';
+import ProviderHeader from './ProviderHeader';
+import PortalHeader from '../PortalHeader';
+
+
+// const [name, setName] = useState("");
+// const [title, setTitle] = useState("");
+// const [clinicName, setClinicName] = useState("");
 
 type ProviderHomeProps = {
     name: string,
@@ -13,56 +18,28 @@ type ProviderHomeProps = {
 }
 
 function ProviderHome(props: ProviderHomeProps) {
+
+    // let navigate = useNavigate();
+    // const routeToPatientView = () =>{
+    //     let path = "/patients";
+    //     navigate(path);
+    // }
+
     return (
 
         <div className="provider-home">
-
-            <div className="provider-info">
-                <h1 className="provider-name">
-                    {props.name}, {props.title}
-                </h1>
-                <h3 className="provider-clinic">
-                    {props.clinicName}
-                </h3>
-            </div>
-
-            <hr/>
-            <br/>
-            <br/>
-            <br/>
-
+            <PortalHeader wantLogOut={true}/>
+            <ProviderHeader name={props.name} title={props.title} clinicName={props.clinicName}/>
             <div className="provider-home-icons">
-                <div className="icon-div">
-                    {/*<img src="../../../icons/clinic-icon.png" id="patient-icon"/>*/}
-                    <IconContext.Provider value={{color: 'light-blue', size: '60px'}}>
-                        <div>
-                            <FaClinicMedical/>
-                        </div>
-                    </IconContext.Provider>
+                <div className="icon-div" id="clinic-icon-div">
+                    <img src={clinic} alt="clinic icon"/>
                     <b className="icon-text">
                         Patients
                     </b>
                 </div>
 
-                <div className="icon-div">
-                    {/*<img src="../../../icons/survey-icon.png" id="survey-icon"/>*/}
-                    <IconContext.Provider value={{color: 'light-blue', size: '60px'}}>
-                        <div>
-                            <FcSurvey/>
-                        </div>
-                    </IconContext.Provider>
-                    <b className="icon-text">
-                        Patient Questionnaires
-                    </b>
-                </div>
-
-                <div className="icon-div">
-                    {/*<img src="../../../icons/profile-icon.png" id="profile-icon"/>*/}
-                    <IconContext.Provider value={{color: 'light-blue', size: '60px'}}>
-                        <div>
-                            <CgProfile/>
-                        </div>
-                    </IconContext.Provider>
+                <div className="icon-div" id="profile-icon-div">
+                    <img src={profile} alt="profile icon"/>
                     <b className="icon-text">
                         Profile Info
                     </b>

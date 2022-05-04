@@ -2,7 +2,8 @@ import React from 'react';
 import { CgProfile } from "react-icons/cg";
 import {IconContext} from "react-icons";
 import './ProviderPatientGrid.css';
-import './ProviderInfo.css';
+import ProviderHeader from './ProviderHeader';
+import PortalHeader from '../PortalHeader';
 
 type PatientGridProps = {
     name: string,
@@ -33,16 +34,8 @@ function generatePatients(patients: any[]) {
 function PatientGrid(props: PatientGridProps) {
     return (
         <div>
-            <div className="provider-info">
-                <h1 className="provider-name">
-                    {props.name}, {props.title}
-                </h1>
-                <h3 className="provider-clinic">
-                    {props.clinicName}
-                </h3>
-            </div>
-            <hr/>
-
+            <PortalHeader wantLogOut={true}/>
+            <ProviderHeader name={props.name} title={props.title} clinicName={props.clinicName}></ProviderHeader>
             <span className="patient-grid-div">
                 <h2 id="patients-header">
                     Patients
@@ -50,13 +43,12 @@ function PatientGrid(props: PatientGridProps) {
 
                 <input id="patient-filter"
                        type="text"
-                       placeholder="Search here"/>
+                       placeholder="Search for patients"/>
             </span>
 
             <div className="patient-grid-icons">
                 {generatePatients(props.patients)}
             </div>
-
         </div>
     )
 }

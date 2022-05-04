@@ -1,24 +1,49 @@
+hr {
+    width: 80%;
+}
+
 .provider-info {
     display: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 .provider-name {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 35px;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 14.4px;
+    font-weight: 550;
+    font-size: 38px;
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 5%;
+    white-space: nowrap;
 }
 
 .provider-clinic {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 25px;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 11.2px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 5%;
+    white-space: nowrap;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 0.25px solid black;
+    border-radius: 50%;
+    overflow: hidden;
 }
