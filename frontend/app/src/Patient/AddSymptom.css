@@ -8,3 +8,24 @@
      background: #C8E2FF;
      border-radius: 8px;
  }
+
+ .form-group {
+    margin-left:  34%;
+    margin-top: 1%;
+    font-size: 32px;
+    display: inline-block;
+ }
+
+ .form-control {
+     font-size: 24px;
+ }
+
+ .date-time {
+     display: inline-block;
+
+ }
+
+ .button-group {
+        display: inline-block;
+        margin-left: 10%;
+ }
