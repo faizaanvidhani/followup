@@ -22,7 +22,7 @@ root.render(
     <Router>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/home" element={<PatientHome name="Jane Doe" dob="01/01/1999" tel="123-456-7890" />} />
+            <Route path="/home" element={<PatientHome />} />
             <Route path="/mission" element={<Mission />} /> 
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />

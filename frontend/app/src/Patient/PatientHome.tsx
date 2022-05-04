@@ -7,28 +7,20 @@ import { GiMedicines } from "react-icons/gi";
 import { MdOutlinePostAdd } from "react-icons/md";
 import { FaClinicMedical } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import Header from "./Header";
 
-type PatientHomeProps = {
-    name: string,
-    dob: string,
-    tel: string
-}
-
-function PatientHome(props: PatientHomeProps) {
-    const [name, setName] = useState<string>(props.name);
-    const [dob, setDOB] = useState<string>(props.dob);
-    const [tel, setTel] = useState<string>(props.tel);
+function PatientHome() {
 
     return (
-
+ 
         <div className="patient">
-            <h1 className='header'>{name}</h1>
-            <h3 className='subheader'>DOB: {dob} | Tel: {tel}</h3>
+            <Header name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
+            <div className="backgroundBox">
             <nav className='navbar'>
                 <div className='navbar-header'>
                     <li className='linkOption'>
                         <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '60px' }}>
+                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
                                 <CgProfile />
                             </IconContext.Provider>
                         </div>
@@ -38,7 +30,7 @@ function PatientHome(props: PatientHomeProps) {
                     </li>
                     <li className='linkOption'>
                         <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '60px' }}>
+                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
                                 <BsFileMedical />
                             </IconContext.Provider>
                         </div>
@@ -48,7 +40,7 @@ function PatientHome(props: PatientHomeProps) {
                     </li>
                     <li className='linkOption'>
                         <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '60px' }}>
+                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
                                 <MdOutlinePostAdd />
                             </IconContext.Provider>
                         </div>
@@ -59,7 +51,7 @@ function PatientHome(props: PatientHomeProps) {
                     
                     <li className='linkOption'>
                         <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '60px' }}>
+                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
                                 <FaClinicMedical />
                             </IconContext.Provider>
                         </div>
@@ -67,7 +59,7 @@ function PatientHome(props: PatientHomeProps) {
                     </li>
                     <li className='linkOption'>
                         <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '60px' }}>
+                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
                                 <GiMedicines />
                             </IconContext.Provider>
                         </div>
@@ -75,6 +67,8 @@ function PatientHome(props: PatientHomeProps) {
                     </li>
                 </div>
             </nav>
+            </div>
+            
         </div>
     );
 }
