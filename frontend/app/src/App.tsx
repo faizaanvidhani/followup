@@ -15,12 +15,28 @@ const data: any[] = []
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
         {/*<Tabs></Tabs>*/}
         {/*<ProviderHomePage name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital"/>*/}
         {/*<ProviderPatientGrid name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital" patients={data}></ProviderPatientGrid>*/}
         {/*<NewAccountPage></NewAccountPage>*/}
         <ProviderIntakePage></ProviderIntakePage>
 
+=======
+        <div>
+            <button className="login" onClick={signInWithGoogle}>Sign In With Google</button>
+        </div>
+        <br/>
+        <div>
+            <button className="login" onClick={signOut}>Sign Out</button>
+        </div>
+        {/*<div>*/}
+        {/*    <ProviderHomePage name="Jane Doe" title="M.D." clinicName="Hospital"></ProviderHomePage>*/}
+        {/*</div>*/}
+        <div>
+            <ProviderPatientGrid name="tJane Doe" title="M.D." clinicName="Hospital" patients={data}></ProviderPatientGrid>
+        </div>
+>>>>>>> eb195e895f1b55bb22796f1ebd5ca1e604608709
     </div>
   );
 }
