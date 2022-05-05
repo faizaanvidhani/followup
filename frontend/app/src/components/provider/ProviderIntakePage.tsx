@@ -11,7 +11,6 @@ function ProviderIntakePage() {
                 Profile Information
             </h3>
             <div className="profile-input">
-
                 <div className="name-inputs">
                     <div className="first-name-input">
                         <label className="input-box-label" htmlFor="fname" id="fname-label">First name</label>
@@ -23,6 +22,13 @@ function ProviderIntakePage() {
                         <label className="input-box-label" htmlFor="lname">Last name</label>
                         <br/>
                         <input className="provider-input-box" type="text" id="lname" name="lname"/>
+                        <br/>
+                    </div>
+
+                    <div className="title-input">
+                        <label className="input-box-label" htmlFor="title">Title</label>
+                        <br/>
+                        <input className="provider-input-box" type="text" id="title" name="title"/>
                         <br/>
                     </div>
                 </div>

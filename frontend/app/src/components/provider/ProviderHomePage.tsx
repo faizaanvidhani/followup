@@ -24,7 +24,6 @@ function ProviderHome(props: ProviderHomeProps) {
     //     let path = "/patients";
     //     navigate(path);
     // }
-
     return (
 
         <div className="provider-home">

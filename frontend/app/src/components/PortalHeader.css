@@ -1,8 +1,10 @@
 .portal-header {
     display: flex;
+    height: 75px;
     width: 100%;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #2B6AB1;
 }
 

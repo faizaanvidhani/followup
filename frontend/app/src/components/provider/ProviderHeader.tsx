@@ -1,6 +1,6 @@
 import React from 'react';
 import woman from '../../icons/janedoe.jpeg';
-import './ProviderInfo.css';
+import './ProviderHeader.css';
 
 type ProviderHeaderProps = {
     name: string,

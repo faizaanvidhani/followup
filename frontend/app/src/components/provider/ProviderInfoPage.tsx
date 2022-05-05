@@ -14,43 +14,45 @@ function ProviderInfoPage(props: ProviderInfoProps) {
     return (
         <div className="provider-info-page">
             <PortalHeader wantLogOut={true}/>
-            <h3>
-                Profile Information
-            </h3>
-            <div className="profile-input">
+            <div className="profile-section">
+                <h3>
+                    Profile Information
+                </h3>
+                <div className="profile-info">
 
-                <div className="name-inputs">
-                    <div className="first-name-input">
-                        <label className="label" htmlFor="fname" id="fname-label">First name</label>
+                    <div className="name-inputs">
+                        <div className="first-name-input">
+                            <label className="label" htmlFor="fname" id="fname-label">First name</label>
+                            <br/>
+                            <p className="field">
+                                {props.fname}
+                            </p>
+                            <br/>
+                        </div>
+                        <div className="last-name-input">
+                            <label className="label" htmlFor="lname">Last name</label>
+                            <br/>
+                            <p className="field">
+                                {props.lname}
+                            </p>
+
+                            <br/>
+                        </div>
+                    </div>
+
+                    <div className="break"></div>
+
+                    <div className="clinic-input">
+                        <label className="label" htmlFor="clinic-name" id="clinic-name-label">Institution</label>
                         <br/>
                         <p className="field">
-                            {props.fname}
+                            {props.institution}
                         </p>
                         <br/>
                     </div>
-                    <div className="last-name-input">
-                        <label className="label" htmlFor="lname">Last name</label>
-                        <br/>
-                        <p className="field">
-                            {props.lname}
-                        </p>
-
-                        <br/>
-                    </div>
                 </div>
-
-                <div className="break"></div>
-
-                <div className="clinic-input">
-                    <label className="label" htmlFor="clinic-name" id="clinic-name-label">Institution</label>
-                    <br/>
-                    <p className="field">
-                        {props.institution}
-                    </p>
-                    <br/>
-                </div>
-
             </div>
+
 
             <br/>
             <hr/>

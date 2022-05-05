@@ -20,5 +20,7 @@
 
 .icon-text {
     margin-top: 7px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
 }
