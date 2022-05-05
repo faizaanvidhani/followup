@@ -1,5 +1,5 @@
 .backgroundBox {
-   position: absolute;
+    position: absolute;
     width: 1300px;
     height: 600px;
     left: 50%;
@@ -20,46 +20,22 @@
     border-radius: 8px;
 }
 
-.signInTitle {
+.contactTitle {
     position: absolute;
-    width: 321px;
+    width: 450px;
     height: 82px;
-    left: 167px;
-    top: 220px;
+    left: 100px;
+    top: 60px;
 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
     font-size: 84px;
     color: #000000;
-}
-
-.welcome {
-    position: relative;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    left: 20px;
-}
-
-.loginSeparator {
-    border-top: 1px solid #cbd2d6;
-    position: relative;
-    height: 15px;
     text-align: center;
-    top: 80px;
 }
 
-.textInSeparator {
-    background-color: #fff;
-    padding: 0 0.5em;
-    position: relative;
-    color: #6c7378;
-    top: -0.7em;
-}
-
-.email {
+.contactInputField {
     position: relative;
     left: 23px;
     margin-bottom: 20px;
@@ -74,12 +50,22 @@
     font-size: 16px;
 }
 
-.password {
+.contactSubHeading {
+    position: relative;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    left: 26px;
+    margin-bottom: 10px;
+}
+
+.moreDetailsBody {
     position: relative;
     left: 23px;
     margin-bottom: 20px;
     width: 400px;
-    height: 30px;
+    height: 120px;
     border-radius: 5px;
     border-color: #000000;
 
@@ -89,13 +75,13 @@
     font-size: 16px;
 }
 
-.login {
+.submit {
     position: relative;
     width: 140px;
     height: 50px;
     left: 50%;
     transform: translate(-50%);
-    top: 40px;
+    top: 20px;
 
     font-family: 'Lato';
     font-style: normal;
@@ -105,25 +91,4 @@
     background: #FFE279;
     border-radius: 8px;
     border-color: #FFE279;
-}
-
-.icons {
-    position: relative;
-    left: 100px;
-    top: 100px;
-}
-
-.google {
-    height: 60px;
-    margin: 20px;
-}
-
-.fb {
-    height: 60px;
-    margin: 20px;
-}
-
-.apple {
-    height: 60px;
-    margin: 20px;
 }

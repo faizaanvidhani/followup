@@ -5,20 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cebdde15-38c9-4098-a0d0-574dceb09b7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/SignIn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/SignIn.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/icons/apple.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/icons/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/icons/google.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/images/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/Contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/MainHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/MainHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/Mission.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Firebase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Mission.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Mission.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +79,8 @@
       <workItem from="1651079608174" duration="5450000" />
       <workItem from="1651598239360" duration="9338000" />
       <workItem from="1651610165608" duration="4243000" />
+      <workItem from="1651620980199" duration="17769000" />
+      <workItem from="1651770563983" duration="6153000" />
     </task>
     <servers />
   </component>
