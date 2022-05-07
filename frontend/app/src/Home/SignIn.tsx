@@ -25,7 +25,7 @@ function SignIn() {
                         <span className="textInSeparator">or</span>
                     </div>
                     <div className="icons">
-                        <img className="google" src={google} alt="google" onClick={LogIn}/>
+                        {/*<img className="google" src={google} alt="google" onClick={LogIn}/>*/}
                         <img className="fb" src={facebook} alt="fb"/>
                         <img className="apple" src={apple} alt="apple"/>
                     </div>

@@ -13,6 +13,8 @@ import Mission from './Home/Mission';
 import About from './Home/About';
 import Contact from './Home/Contact';
 import SignIn from './Home/SignIn';
+import SignUp from './Home/SignUp';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -27,6 +29,7 @@ root.render(
             <Route path="/mission" element={<Mission />} /> 
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
         </Routes>
 

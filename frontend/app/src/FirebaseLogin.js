@@ -10,6 +10,8 @@ import { getAuth,
 // import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 // Web app's Firebase configuration
+
+// OLD
 const firebaseConfig = {
     apiKey: "AIzaSyDrE8FpU-o4OXk_yA4Ud9SJEVyM1lwVD0w",
     authDomain: "followup-fcdd6.firebaseapp.com",

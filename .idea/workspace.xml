@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cebdde15-38c9-4098-a0d0-574dceb09b7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/Contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/MainHeader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/MainHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/Mission.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/AuthContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/Firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/Firebase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Mission.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Mission.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +53,7 @@
       <recent name="$PROJECT_DIR$/frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/app/src/FirebaseAuth" />
       <recent name="$PROJECT_DIR$/frontend/app/src/" />
       <recent name="$PROJECT_DIR$/frontend" />
     </key>
@@ -81,6 +76,8 @@
       <workItem from="1651610165608" duration="4243000" />
       <workItem from="1651620980199" duration="17769000" />
       <workItem from="1651770563983" duration="6153000" />
+      <workItem from="1651864674606" duration="4341000" />
+      <workItem from="1651944447103" duration="5532000" />
     </task>
     <servers />
   </component>

@@ -10,7 +10,7 @@ function Home() {
             <img className="homeImage" src={home} alt="home"/>
             <h1 className="homeDescription">Streamlined Movement Symptom-Tracking</h1>
             <button className="portal">
-                <NavLink className="nav-link" to="/signin">
+                <NavLink className="nav-link" to="/signup">
                     Enter Portal
                 </NavLink>
             </button>

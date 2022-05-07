@@ -8,6 +8,7 @@ import { getAuth,
     onAuthStateChanged,
     signOut} from "firebase/auth";
 
+// OLD
 // Web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDrE8FpU-o4OXk_yA4Ud9SJEVyM1lwVD0w",
@@ -25,7 +26,7 @@ const auth = getAuth()
 const provider = new GoogleAuthProvider();
 
 function LogIn() {
-    // const [id, setId] = useState<string>("");
+    const [id, setId] = useState<string>("");
     // const [name, setName] = useState<string>("");
     // const [email, setEmail] = useState<string>("");
 
