@@ -1,0 +1,27 @@
+.followup {
+    position: absolute;
+    width: 421px;
+    height: 127px;
+    left: 50px;
+    top: -20px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    color: #000000;
+}
+
+.subpages {
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+.heading {
+    display:inline-block;
+    margin: 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+}

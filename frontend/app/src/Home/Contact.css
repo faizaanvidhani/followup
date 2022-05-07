@@ -1,0 +1,94 @@
+.backgroundBox {
+    position: absolute;
+    width: 1300px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    background: #C8E2FF;
+    border-radius: 8px;
+}
+
+.foregroundBox {
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    right: 100px;
+    top: 60px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.contactTitle {
+    position: absolute;
+    width: 450px;
+    height: 82px;
+    left: 100px;
+    top: 60px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 84px;
+    color: #000000;
+    text-align: center;
+}
+
+.contactInputField {
+    position: relative;
+    left: 23px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #000000;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contactSubHeading {
+    position: relative;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    left: 26px;
+    margin-bottom: 10px;
+}
+
+.moreDetailsBody {
+    position: relative;
+    left: 23px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 120px;
+    border-radius: 5px;
+    border-color: #000000;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.submit {
+    position: relative;
+    width: 140px;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    background: #FFE279;
+    border-radius: 8px;
+    border-color: #FFE279;
+}

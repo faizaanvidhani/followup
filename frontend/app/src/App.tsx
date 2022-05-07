@@ -1,4 +1,5 @@
 import React from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 import { signInWithGoogle, signOut } from "./Firebase";
@@ -12,9 +13,13 @@ import PortalHeader from './components/PortalHeader';
 import NewAccountPage from './components/NewAccountPage';
 import ProviderInfoPage from './components/provider/ProviderInfoPage';
 
+
+
+
 const data: any[] = []
 function App() {
   return (
+
     <div className="App">
         <Tabs></Tabs>
         {/*<ProviderHomePage name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital"/>*/}
@@ -22,6 +27,8 @@ function App() {
         {/*<ProviderInfoPage fname="Jane" lname="Doe" institution="Rhode Island Hospital" phoneNumber="123-456-7890" email="janedoe@gmail.com"/>*/}
         {/*<NewAccountPage/>*/}
         {/*<ProviderIntakePage/>*/}
+
+
     </div>
   );
 }
