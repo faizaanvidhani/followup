@@ -12,9 +12,6 @@ import PortalHeader from './components/PortalHeader';
 import NewAccountPage from './components/NewAccountPage';
 import ProviderInfoPage from './components/provider/ProviderInfoPage';
 
-
-
-
 const data: any[] = []
 function App() {
   return (

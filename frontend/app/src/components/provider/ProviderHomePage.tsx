@@ -5,7 +5,7 @@ import clinic from '../../icons/clinic-icon.svg';
 import profile from '../../icons/profile-icon.svg';
 import ProviderHeader from './ProviderHeader';
 import PortalHeader from '../PortalHeader';
-
+import { NavLink } from "react-router-dom";
 
 // const [name, setName] = useState("");
 // const [title, setTitle] = useState("");
@@ -33,14 +33,18 @@ function ProviderHome(props: ProviderHomeProps) {
                 <div className="icon-div" id="clinic-icon-div">
                     <img src={clinic} alt="clinic icon"/>
                     <b className="icon-text">
-                        Patients
+                        <NavLink className="navbar-brand" to="/providerPatientGrid">
+                            Patients
+                        </NavLink>
                     </b>
                 </div>
 
                 <div className="icon-div" id="profile-icon-div">
                     <img src={profile} alt="profile icon"/>
                     <b className="icon-text">
-                        Profile Info
+                        <NavLink className="navbar-brand" to="/providerInfoPage">
+                            Profile Info
+                        </NavLink>
                     </b>
                 </div>
             </div>

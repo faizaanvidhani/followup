@@ -15,6 +15,14 @@ import Contact from './Home/Contact';
 import SignIn from './Home/SignIn';
 import SignUp from './Home/SignUp';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ProviderPatientView from './components/provider/ProviderPatientView';
+import ProviderHomePage from './components/provider/ProviderHomePage';
+import ProviderIntakePage from './components/provider/ProviderIntakePage';
+import ProviderInfoPage from './components/provider/ProviderInfoPage';
+import ProviderPatientGrid from './components/provider/ProviderPatientGrid';
+import Tabs from './components/provider/Tabs';
+import PortalHeader from './components/PortalHeader';
+import NewAccountPage from './components/NewAccountPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -25,7 +33,6 @@ root.render(
     <Router>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/home" element={<PatientHome />} />
             <Route path="/mission" element={<Mission />} /> 
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
@@ -34,9 +41,17 @@ root.render(
         </Routes>
 
         <Routes>
+            <Route path="/patientHome" element={<PatientHome />} />
             <Route path="/profileInfo" element={<ProfileInfo />} />
             <Route path="/symptomLog" element={<SymptomLog />} />
             <Route path="/addSymptom" element={<AddSymptom />} />
+        </Routes>
+
+        <Routes>
+            <Route path="/providerHome" element={<ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' />} />
+            <Route path="/providerPatientGrid" element={<ProviderPatientGrid name="Jane Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
+            <Route path="/providerIntakePage" element={<ProviderIntakePage />} />
+            <Route path="/providerInfoPage" element={<ProviderInfoPage fname='Jane' lname='Doe' institution='RI Hospital' phoneNumber='012-345-6789' email='jane@gmail.com' />} />
         </Routes>
 
       

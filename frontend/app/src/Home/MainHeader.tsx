@@ -7,7 +7,7 @@ function MainHeader() {
             <h1 className="followup">FollowUp</h1>
             <div className="subpages">
                 <h1 className="heading">
-                    <NavLink className="nav-link" to="/home">
+                    <NavLink className="nav-link" to="/">
                         Home
                     </NavLink>
                 </h1>
