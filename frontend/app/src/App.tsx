@@ -16,8 +16,8 @@ const data: any[] = []
 function App() {
   return (
     <div className="App">
-        {/*<Tabs></Tabs>*/}
-        <ProviderHomePage name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital"/>
+        <Tabs></Tabs>
+        {/*<ProviderHomePage name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital"/>*/}
         {/*<ProviderPatientGrid name="Jane Doe" title="M.D." clinicName="Rhode Island Hospital" patients={data}/>*/}
         {/*<ProviderInfoPage fname="Jane" lname="Doe" institution="Rhode Island Hospital" phoneNumber="123-456-7890" email="janedoe@gmail.com"/>*/}
         {/*<NewAccountPage/>*/}

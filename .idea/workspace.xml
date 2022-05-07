@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a2f6478-70f1-4747-994c-652523516b50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/PatientHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/PatientHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

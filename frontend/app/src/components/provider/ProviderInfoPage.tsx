@@ -13,7 +13,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
 
     return (
         <div className="provider-info-page">
-            <PortalHeader wantLogOut={true}/>
+            <PortalHeader wantLogOut={true} centered={false}/>
             <div className="profile-section">
                 <h3>
                     Profile Information

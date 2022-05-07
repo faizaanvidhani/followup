@@ -6,7 +6,7 @@ function NewAccountPage() {
     return (
         <body>
             <div className="background">
-                <PortalHeader wantLogOut={false}/>
+                <PortalHeader wantLogOut={false} centered={true}/>
                 <div className="container">
                     <h2>
                         Create a New Account

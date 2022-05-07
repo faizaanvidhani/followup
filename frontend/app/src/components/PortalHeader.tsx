@@ -4,6 +4,7 @@ import logOut from '../icons/logout.svg';
 
 type headerProps = {
     wantLogOut: boolean
+    centered: boolean
 }
 
 function showLogOut(wantLogOut: boolean) {
@@ -22,8 +23,9 @@ function showLogOut(wantLogOut: boolean) {
 }
 function PortalHeader(props: headerProps) {
     return (
-        <div className="portal-header">
-            <p className="logo">
+
+        <div className = "header">
+            <p className= {props.centered ? "centered-logo": "left-logo"}>
                 FollowUp
             </p>
             {showLogOut(props.wantLogOut)}

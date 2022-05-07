@@ -6,7 +6,7 @@ function ProviderIntakePage() {
     
     return (
         <form className="provider-intake-form">
-            <PortalHeader wantLogOut={false}/>
+            <PortalHeader wantLogOut={false} centered={false}/>
             <h3>
                 Profile Information
             </h3>

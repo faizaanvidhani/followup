@@ -1,4 +1,4 @@
-.portal-header {
+.header {
     display: flex;
     height: 75px;
     width: 100%;
@@ -8,7 +8,7 @@
     background-color: #2B6AB1;
 }
 
-.logo {
+.left-logo {
     color: white;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -16,7 +16,18 @@
     font-size: 35px;
     margin-top: 2%;
     margin-bottom: 2%;
-    margin-left: 30px;
+    margin-left: 2%;
+}
+
+.centered-logo {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 45%;
 }
 
 .log-out-div {

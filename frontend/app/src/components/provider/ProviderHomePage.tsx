@@ -27,7 +27,7 @@ function ProviderHome(props: ProviderHomeProps) {
     return (
 
         <div className="provider-home">
-            <PortalHeader wantLogOut={true}/>
+            <PortalHeader wantLogOut={true} centered={false}/>
             <ProviderHeader name={props.name} title={props.title} clinicName={props.clinicName}/>
             <div className="provider-home-icons">
                 <div className="icon-div" id="clinic-icon-div">

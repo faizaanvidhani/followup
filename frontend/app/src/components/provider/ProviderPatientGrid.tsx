@@ -34,7 +34,7 @@ function generatePatients(patients: any[]) {
 function PatientGrid(props: PatientGridProps) {
     return (
         <div>
-            <PortalHeader wantLogOut={true}/>
+            <PortalHeader wantLogOut={true} centered={false}/>
             <ProviderHeader name={props.name} title={props.title} clinicName={props.clinicName}></ProviderHeader>
             <span className="patient-grid-div">
                 <h2 id="patients-header">
