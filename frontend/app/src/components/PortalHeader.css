@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B6AB1;
+}
+
+.left-logo {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.centered-logo {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 45%;
+}
+
+.log-out-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: auto;
+
+}
+
+.log-out-icon {
+    width: 40%;
+    height: 40%;
+    margin-right: 30px;
+    margin-left: 5px;
+}

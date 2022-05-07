@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="3a2f6478-70f1-4747-994c-652523516b50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/PatientHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/PatientHeader.tsx" afterDir="false" />
+
     <list default="true" id="cebdde15-38c9-4098-a0d0-574dceb09b7f" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/AuthContext.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/Firebase.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignUp.js" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.tsx" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/index.tsx" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,26 +41,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="28O2o15KLeq4HfebAdRz3HAz0tQ" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/app" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
+
+  <component name="TaskManager">
+
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/app" />
@@ -79,10 +85,8 @@
       <workItem from="1651864674606" duration="4341000" />
       <workItem from="1651944447103" duration="5532000" />
     </task>
+
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

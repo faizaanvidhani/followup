@@ -1,0 +1,26 @@
+.provider-home-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clinic-icon-div {
+    margin-right: 40px;
+}
+
+#profile-icon-div {
+    margin-left: 40px;
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-text {
+    margin-top: 7px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
