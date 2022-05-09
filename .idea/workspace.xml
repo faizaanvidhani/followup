@@ -27,16 +27,32 @@
       <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.tsx" afterDir="false" />
 
       <change beforePath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/LogIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/PrivateRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/SignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/Home/About.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/FirebaseLogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/About.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/MainHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/MainHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/LogIn.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/index.tsx" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,7 +99,9 @@
       <workItem from="1651620980199" duration="17769000" />
       <workItem from="1651770563983" duration="6153000" />
       <workItem from="1651864674606" duration="4341000" />
-      <workItem from="1651944447103" duration="5532000" />
+      <workItem from="1651944447103" duration="21453000" />
+      <workItem from="1651989559660" duration="299000" />
+      <workItem from="1652121169935" duration="8750000" />
     </task>
 
     <servers />

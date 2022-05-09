@@ -12,8 +12,11 @@ import Home from './Home/Home';
 import Mission from './Home/Mission';
 import About from './Home/About';
 import Contact from './Home/Contact';
-import SignIn from './Home/SignIn';
-import SignUp from './Home/SignUp';
+// import SignUp from "./FirebaseAuth/SignUp"
+// import LogIn from "./FirebaseAuth/LogIn"
+import SignIn from "./Home/SignIn"
+import PrivateRoute from './FirebaseAuth/PrivateRoute'
+import { AuthProvider } from './FirebaseAuth/AuthContext'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ProviderPatientView from './components/provider/ProviderPatientView';
 import ProviderHomePage from './components/provider/ProviderHomePage';
@@ -36,8 +39,18 @@ root.render(
             <Route path="/mission" element={<Mission />} /> 
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/signin" element={<SignIn />} />
+            <Route path="/login" element={<SignIn />} />
+            {/*<Route path="/login" element={<LogIn />} />*/}
+            {/*<Route path="/signup" element={<SignUp />} />*/}
+
+            {/*DEMO PURPOSES: private routing*/}
+            <Route path="/dashboard" element={<PatientHome />} />
+
+            {/*<Route path="/dashboard" element={*/}
+            {/*    <PrivateRoute>*/}
+            {/*        <PatientHome />*/}
+            {/*    </PrivateRoute>*/}
+            {/*} />*/}
         </Routes>
 
         <Routes>
