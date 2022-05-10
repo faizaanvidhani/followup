@@ -31,7 +31,7 @@ function ProviderHome(props: ProviderHomeProps) {
             <ProviderHeader name={props.name} title={props.title} clinicName={props.clinicName}/>
             <div className="provider-home-icons">
                 <div className="icon-div" id="clinic-icon-div">
-                    <img src={clinic} alt="clinic icon"/>
+                    <img src={clinic} className="provider-home-icon" alt="clinic icon"/>
                     <b className="icon-text">
                         <NavLink className="navbar-brand" to="/providerPatientGrid">
                             Patients
@@ -40,7 +40,7 @@ function ProviderHome(props: ProviderHomeProps) {
                 </div>
 
                 <div className="icon-div" id="profile-icon-div">
-                    <img src={profile} alt="profile icon"/>
+                    <img src={profile} className="provider-home-icon" alt="profile icon"/>
                     <b className="icon-text">
                         <NavLink className="navbar-brand" to="/providerInfoPage">
                             Profile Info

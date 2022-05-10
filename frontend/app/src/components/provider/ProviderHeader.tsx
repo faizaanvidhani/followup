@@ -27,7 +27,7 @@ function ProviderHeader(props: ProviderHeaderProps) {
                 </div>
             </div>
 
-            <hr/>
+            <hr id="provider-header-line"/>
             <br/>
             <br/>
             <br/>

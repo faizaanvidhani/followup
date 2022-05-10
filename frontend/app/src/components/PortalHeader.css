@@ -2,7 +2,6 @@
     display: flex;
     height: 75px;
     width: 100%;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #2B6AB1;
@@ -49,4 +48,8 @@
     height: 40%;
     margin-right: 30px;
     margin-left: 5px;
+}
+
+.log-out-text {
+    margin-top: 10%;
 }

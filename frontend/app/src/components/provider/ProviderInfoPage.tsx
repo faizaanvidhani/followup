@@ -22,7 +22,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
 
                     <div className="name-inputs">
                         <div className="first-name-input">
-                            <label className="label" htmlFor="fname" id="fname-label">First name</label>
+                            <label className="info-label" htmlFor="fname" id="fname-label">First name</label>
                             <br/>
                             <p className="field">
                                 {props.fname}
@@ -30,7 +30,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                             <br/>
                         </div>
                         <div className="last-name-input">
-                            <label className="label" htmlFor="lname">Last name</label>
+                            <label className="info-label" htmlFor="lname">Last name</label>
                             <br/>
                             <p className="field">
                                 {props.lname}
@@ -43,7 +43,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                     <div className="break"></div>
 
                     <div className="clinic-input">
-                        <label className="label" htmlFor="clinic-name" id="clinic-name-label">Institution</label>
+                        <label className="info-label" htmlFor="clinic-name" id="clinic-name-label">Institution</label>
                         <br/>
                         <p className="field">
                             {props.institution}
@@ -55,7 +55,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
 
 
             <br/>
-            <hr/>
+            <hr id="info-page-line"/>
 
             <h3>
                 Contact Information
@@ -63,7 +63,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
 
             <div className="contact-info-section">
                 <div className="phone-div">
-                    <label className="label" htmlFor="phone-number" id="phonenumber-label">Phone Number</label>
+                    <label className="info-label" htmlFor="phone-number" id="phonenumber-label">Phone Number</label>
                     <br/>
                     <p className="field">
                         {props.phoneNumber}
@@ -73,7 +73,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                 </div>
                 
                 <div className="email-div">
-                    <label className="label" htmlFor="email" id="email-label">Email</label>
+                    <label className="info-label" htmlFor="email" id="email-label">Email</label>
                     <br/>
                     <p className="field">
                         {props.email}

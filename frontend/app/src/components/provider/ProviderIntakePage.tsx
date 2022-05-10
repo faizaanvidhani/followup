@@ -15,20 +15,20 @@ function ProviderIntakePage() {
                     <div className="first-name-input">
                         <label className="input-box-label" htmlFor="fname" id="fname-label">First name</label>
                         <br/>
-                        <input className="provider-input-box" type="text" id="fname" name="fname"/>
+                        <input className="provider-input-box" type="text" id="fname" name="fname" required={true}/>
                         <br/>
                     </div>
                     <div className="last-name-input">
                         <label className="input-box-label" htmlFor="lname">Last name</label>
                         <br/>
-                        <input className="provider-input-box" type="text" id="lname" name="lname"/>
+                        <input className="provider-input-box" type="text" id="lname" name="lname" required={true}/>
                         <br/>
                     </div>
 
                     <div className="title-input">
                         <label className="input-box-label" htmlFor="title">Title</label>
                         <br/>
-                        <input className="provider-input-box" type="text" id="title" name="title"/>
+                        <input className="provider-input-box" type="text" id="title" name="title" required={true}/>
                         <br/>
                     </div>
                 </div>
@@ -38,14 +38,14 @@ function ProviderIntakePage() {
                 <div className="clinic-input">
                     <label className="input-box-label" htmlFor="clinic-name" id="clinic-name-label">Institution</label>
                     <br/>
-                    <input className="provider-input-box" type="text" id="clinic-name" name="clinic-name"/>
+                    <input className="provider-input-box" type="text" id="clinic-name" name="clinic-name" required={true}/>
                     <br/>
                 </div>
 
             </div>
 
             <br/>
-            <hr/>
+            <hr id="intake-page-line"/>
 
             <h3>
                 Contact Information
@@ -54,12 +54,12 @@ function ProviderIntakePage() {
             <div className="contact-info-section">
                 <label className="input-box-label" htmlFor="phone-number" id="phonenumber-label">Phone Number</label>
                 <br/>
-                <input className="provider-input-box" type="text" id="phone-number" name="phone-number"/>
+                <input className="provider-input-box" type="text" id="phone-number" name="phone-number" required={true}/>
                 <br/>
 
                 <label className="input-box-label" htmlFor="email" id="email-label">Email</label>
                 <br/>
-                <input className="provider-input-box" type="text" id="email" name="email"/>
+                <input className="provider-input-box" type="text" id="email" name="email" required={true}/>
                 <br/>
             </div>
 

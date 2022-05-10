@@ -13,7 +13,7 @@ function Home() {
                 <NavLink className="nav-link" to="/login">
                     Enter Portal
                 </NavLink>
-                <NavLink className="nav-link" to="/providerHome">
+                <NavLink className="nav-link" to="/providerIntakePage">
                     Provider
                 </NavLink>
                 <NavLink className="nav-link" to="/patientHome">

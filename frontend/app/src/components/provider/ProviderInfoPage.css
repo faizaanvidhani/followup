@@ -4,9 +4,10 @@ h3 {
     margin-bottom: 3%;
 }
 
-hr {
+#info-page-line {
     width: 80%;
     margin-bottom: 3%;
+    margin-left: 10%;
 }
 .provider-info-page {
     font-family: 'Lato', sans-serif;
@@ -64,4 +65,8 @@ label {
 
 .field {
     color: rgba(82, 82, 82, 0.75);
+}
+
+.info-label {
+    margin-bottom: 10px;
 }
