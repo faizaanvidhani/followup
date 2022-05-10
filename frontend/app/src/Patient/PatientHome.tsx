@@ -57,14 +57,6 @@ function PatientHome() {
                         </div>
                         Provider Info
                     </li>
-                    <li className='linkOption'>
-                        <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                <GiMedicines />
-                            </IconContext.Provider>
-                        </div>
-                        Treatment Plan
-                    </li>
                 </div>
             </nav>
             </div>

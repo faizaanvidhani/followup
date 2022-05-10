@@ -8,6 +8,7 @@ import PatientHome from "./Patient/PatientHome";
 import ProfileInfo from './Patient/ProfileInfo';
 import SymptomLog from './Patient/SymptomLog';
 import AddSymptom from './Patient/AddSymptom';
+import ProviderInfo from './Patient/ProviderInfo';
 import Home from './Home/Home';
 import Mission from './Home/Mission';
 import About from './Home/About';
@@ -26,6 +27,7 @@ import ProviderPatientGrid from './components/provider/ProviderPatientGrid';
 import Tabs from './components/provider/Tabs';
 import PortalHeader from './components/PortalHeader';
 import NewAccountPage from './components/NewAccountPage';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -58,6 +60,7 @@ root.render(
             <Route path="/profileInfo" element={<ProfileInfo />} />
             <Route path="/symptomLog" element={<SymptomLog />} />
             <Route path="/addSymptom" element={<AddSymptom />} />
+            <Route path="/providerInfo" element={<ProviderInfo />} />
         </Routes>
 
         <Routes>

@@ -1,6 +1,5 @@
 import { Card, Container } from 'react-bootstrap';
 import MainHeader from './MainHeader';
-import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import './Mission.css'
 import './About.css'
 
