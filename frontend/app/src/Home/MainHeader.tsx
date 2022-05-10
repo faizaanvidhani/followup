@@ -8,22 +8,22 @@ function MainHeader() {
             <div className="subpages">
                 <h1 className="heading">
                     <NavLink className="nav-link" to="/">
-                        Home
+                        HOME
                     </NavLink>
                 </h1>
                 <h1 className="heading">
                     <NavLink className="nav-link" to="/mission">
-                        Mission
+                        MISSION
                     </NavLink>
                 </h1>
                 <h1 className="heading">
                     <NavLink className="nav-link" to="/contact">
-                        Contact
+                        CONTACT
                     </NavLink>
                 </h1>
                 <h1 className="heading">
                     <NavLink className="nav-link" to="/about">
-                        About
+                        ABOUT
                     </NavLink>
                 </h1>
             </div>

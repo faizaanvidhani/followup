@@ -64,7 +64,7 @@ function SignIn() {
     return (
         <div>
             <MainHeader />
-            <div className="backgroundBox">
+            <div className="backgroundSignInBox">
                 <h1 className="signInTitle">Sign In</h1>
                 <div className="foregroundBox">
                     <div className="welcome">

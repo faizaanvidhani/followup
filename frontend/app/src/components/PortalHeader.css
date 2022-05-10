@@ -4,7 +4,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #2B6AB1;
+    background-color: #247EE3;
 }
 
 .left-logo {
@@ -29,31 +29,27 @@
     margin-left: 45%;
 }
 
-.log-out-div {
+.log-out-button {
     display: flex;
     align-items: center;
     text-align: center;
     color: white;
     white-space: nowrap;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    margin-left: auto;
     border-radius: 8px;
     background-color: transparent;
     border: none;
-}
-.log-out-div:hover {
-    color: #000000;
-    background-color: #FFD231;
+    height: 50px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: 20px;
+
 }
 
 .log-out-icon {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     margin-right: 30px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .log-out-text {

@@ -6,9 +6,9 @@ function Mission() {
     return (
         <div>
             <MainHeader />
-            <div className="backgroundBox">
-                <h1 className="missionTitle">Our Mission</h1>
-                <div className="foregroundBox">
+            <div className="backgroundMissionBox">
+                <h1 className="missionTitle">Mission Statement</h1>
+                <div className="foregroundMissionBox">
                     <div>
                         <p className="missionStatement">
                             There is no standard quantifiable measure to measure the severity of symptoms in Parkinson's

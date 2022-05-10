@@ -1,13 +1,19 @@
 import MainHeader from './MainHeader';
 import './Contact.css';
+import { useNavigate } from 'react-router-dom';
 
 function Contact() {
+    const navigate = useNavigate();
+
+    function handleSubmit() {
+        navigate("/contactformupdate")
+    }
     return (
         <div>
             <MainHeader />
-            <div className="backgroundBox">
+            <div className="backgroundContactBox">
                 <p className="contactTitle">Questions? Concerns? Let us know.</p>
-                <div className="foregroundBox">
+                <div className="foregroundContactBox">
                     <div>
                         <h1 className="contactSubHeading">Send us a message.</h1>
                     </div>
@@ -19,7 +25,7 @@ function Contact() {
                         <input className="contactInputField" type="text" placeholder="Subject"/>
                         <textarea className="moreDetailsBody" placeholder="Message"></textarea>
                     </div>
-                    <input className="submit" type="submit" value="Submit"/>
+                    <input className="submit" type="submit" onClick={handleSubmit} value="Submit"/>
                 </div>
             </div>
         </div>

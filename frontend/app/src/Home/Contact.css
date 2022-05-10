@@ -1,20 +1,31 @@
-.backgroundBox {
+.backgroundContactBox {
     position: absolute;
-    width: 1300px;
-    height: 600px;
+    width: 1350px;
+    height: 650px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -42%);
     background: #C8E2FF;
     border-radius: 8px;
 }
 
-.foregroundBox {
+.foregroundContactBox {
     position: absolute;
     width: 500px;
     height: 450px;
     right: 100px;
-    top: 60px;
+    top: 100px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.foregroundContactSubmissionNotificationBox {
+    position: absolute;
+    width: 500px;
+    height: 175px;
+    right: 100px;
+    top: 200px;
     padding: 20px;
     background: #FFFFFF;
     border-radius: 8px;
@@ -22,17 +33,17 @@
 
 .contactTitle {
     position: absolute;
-    width: 450px;
+    width: 500px;
     height: 82px;
     left: 100px;
-    top: 60px;
+    top: 120px;
+    text-align: center;
 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
     font-size: 84px;
     color: #000000;
-    text-align: center;
 }
 
 .contactInputField {
@@ -91,4 +102,12 @@
     background: #FFE279;
     border-radius: 8px;
     border-color: #FFE279;
+}
+
+.contactStatement {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000;
 }

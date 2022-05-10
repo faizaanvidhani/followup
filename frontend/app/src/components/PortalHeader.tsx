@@ -14,7 +14,7 @@ type headerProps = {
 function showLogOut(wantLogOut: boolean) {
     if (wantLogOut) {
         return (
-            <Button className="log-out-div" >
+            <Button className="log-out-button" >
                 <p className="log-out-text">Log Out</p>
                 <img src={logOut} className="log-out-icon"/>
             </Button>
@@ -35,7 +35,6 @@ function PortalHeader(props: headerProps) {
     }
 
     return (
-
         <div className = "header">
             <p className= {props.centered ? "centered-logo": "left-logo"}>
                 FollowUp

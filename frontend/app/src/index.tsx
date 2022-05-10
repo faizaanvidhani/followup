@@ -28,6 +28,7 @@ import Tabs from './components/provider/Tabs';
 import PortalHeader from './components/PortalHeader';
 import NewAccountPage from './components/NewAccountPage';
 import BootstrapIntakePage from './components/provider/BootstrapIntakePage';
+import ContactSubmissionNotification from './Home/ContactSubmissionNotification';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -40,6 +41,7 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/mission" element={<Mission />} /> 
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contactformupdate" element={<ContactSubmissionNotification />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<SignIn />} />
             <Route path="/accountt" element={<SignIn />} />
