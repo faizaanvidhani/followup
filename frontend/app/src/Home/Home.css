@@ -37,3 +37,6 @@
     font-size: 34px;
     text-align: center;
 }
+.portal:hover {
+    background-color: #4CE132;
+}
