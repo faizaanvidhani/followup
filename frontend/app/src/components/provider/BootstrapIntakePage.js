@@ -23,14 +23,28 @@ export default function IntakePage() {
                     <Card.Body>
                         <h2 className="text-center mb-4">Log In</h2>
                         <Form onSubmit={handleSubmit}>
-                            <Form.Group id="email" className="mb-2">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" required />
-                            </Form.Group>
-                            <Form.Group id="password" className="mb-2">
-                                <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" required />
-                            </Form.Group>
+                            <div className="profile-info">
+                                <Form.Group id="firstname" className="mb-2">
+                                    <Form.Label>First name</Form.Label>
+                                    <Form.Control type="text" required />
+                                </Form.Group>
+                                <Form.Group id="lastname" className="mb-2">
+                                    <Form.Label>Last name</Form.Label>
+                                    <Form.Control type="text" required />
+                                </Form.Group>
+                                <Form.Group id="institution" className="mb-2">
+                                    <Form.Label>Institution</Form.Label>
+                                    <Form.Control type="text" required />
+                                </Form.Group>
+                            </div>
+
+                            <div className="contact-info">
+                                <Form.Group id="phone-number" className="mb-2">
+                                    <Form.Label>Phone number</Form.Label>
+                                    <Form.Control type="text" required />
+                                </Form.Group>
+                            </div>
+
                             <Button disabled={loading} className="w-100 mt-2" type="submit">Log In</Button>
                         </Form>
                     </Card.Body>

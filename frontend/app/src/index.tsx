@@ -29,6 +29,7 @@ import PortalHeader from './components/PortalHeader';
 import NewAccountPage from './components/NewAccountPage';
 import BootstrapIntakePage from './components/provider/BootstrapIntakePage';
 import ContactSubmissionNotification from './Home/ContactSubmissionNotification';
+import Bootstrap2 from './components/provider/Bootstrap2';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -69,9 +70,7 @@ root.render(
         <Routes>
             <Route path="/providerHome" element={<ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' />} />
             <Route path="/providerPatientGrid" element={<ProviderPatientGrid name="Jane Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
-            {/*<Route path="/providerIntakePage" element={<ProviderIntakePage />} />*/}
-            <Route path="/providerIntakePage" element={<BootstrapIntakePage />} />
-
+            <Route path="/providerIntakePage" element={<ProviderIntakePage />} />
             <Route path="/providerInfoPage" element={<ProviderInfoPage fname='Jane' lname='Doe' institution='RI Hospital' phoneNumber='012-345-6789' email='jane@gmail.com' />} />
         </Routes>
 
