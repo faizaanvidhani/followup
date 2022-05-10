@@ -1,14 +1,15 @@
 import './AddSymptom.css';
-import Header from "./Header";
+import PatientHeader from "./PatientHeader";
 import { useState, useEffect } from 'react';
+import PortalHeader from '../PortalHeader';
 
 function AddSymptom() {
 
     return (
         <div className="add-symptom">
-            <Header name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
-        
-            <div className="backgroundBox">
+            <PortalHeader wantLogOut={true} centered={false}/>
+            <PatientHeader name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
+
             <form>
                 <div className="form-group">
                     <br></br>
@@ -67,9 +68,8 @@ function AddSymptom() {
                 </div>
 
             </form>
-            </div>              
+            </div>          
                     
-        </div>
     );
 }
 

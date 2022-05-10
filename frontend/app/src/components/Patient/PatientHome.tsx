@@ -7,15 +7,17 @@ import { GiMedicines } from "react-icons/gi";
 import { MdOutlinePostAdd } from "react-icons/md";
 import { FaClinicMedical } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import Header from "./Header";
+import PatientHeader from "./PatientHeader";
+import PortalHeader from '../PortalHeader';
 
 function PatientHome() {
 
     return (
  
         <div className="patient">
-            <Header name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
-            <div className="backgroundBox">
+            <PortalHeader wantLogOut={true} centered={false}/>
+            <PatientHeader name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
+            <div>
             <nav className='navbar'>
                 <div className='navbar-header'>
                     <li className='linkOption'>

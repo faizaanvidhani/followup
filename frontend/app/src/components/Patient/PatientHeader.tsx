@@ -1,7 +1,8 @@
 import {useState} from 'react';
 import { IconContext } from "react-icons";
 import { CgProfile } from "react-icons/cg";
-import './Header.css';
+import './PatientHeader.css';
+import woman from '../../icons/janedoe.jpeg';
 
 type HeaderProps = {
     name: string;
@@ -9,7 +10,7 @@ type HeaderProps = {
     tel: string;
 }
 
-function Header(props: HeaderProps) {
+function PatientHeader(props: HeaderProps) {
     const [name, setName] = useState(props.name);
     const [dob, setDob] = useState(props.dob);
     const [tel, setTel] = useState(props.tel);
@@ -18,10 +19,8 @@ function Header(props: HeaderProps) {
         <div className="patient-header">
             <div className="patient-info">
 
-                <div className="icon">
-                    <IconContext.Provider value={{ className: "icon-cg-profile" , size: '120px'}}> 
-                        <CgProfile />
-                    </IconContext.Provider>
+                <div className="image-container">
+                    <img id="woman-image" src={woman}/>
                 </div>
 
                 <div>
@@ -35,11 +34,8 @@ function Header(props: HeaderProps) {
             </div>
 
             <hr/>
-            <br/>
-            <br/>
-            <br/>
         </div>
     );
 }
 
-export default Header;
+export default PatientHeader;
