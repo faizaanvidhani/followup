@@ -55,7 +55,9 @@ function PatientHome() {
                                 <FaClinicMedical />
                             </IconContext.Provider>
                         </div>
-                        Provider Info
+                        <NavLink className="navbar-brand" to="/providerInfo">
+                            Provider Info
+                        </NavLink>
                     </li>
                 </div>
             </nav>

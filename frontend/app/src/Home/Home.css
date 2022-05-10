@@ -9,12 +9,11 @@
 .homeDescription {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%);
-
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 150;
     font-size: 55px;
     text-align: center;
 }

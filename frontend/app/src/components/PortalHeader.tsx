@@ -1,6 +1,8 @@
 import React from 'react';
 import './PortalHeader.css';
 import logOut from '../icons/logout.svg';
+import { auth } from '../FirebaseAuth/Firebase'
+import { signOut } from 'firebase/auth';
 
 type headerProps = {
     wantLogOut: boolean
@@ -8,6 +10,14 @@ type headerProps = {
 }
 
 function showLogOut(wantLogOut: boolean) {
+    function logoutGoogle() {
+        signOut(auth).then(() => {
+            // Sign-out successful.
+        }).catch((error) => {
+            console.log("ERROR: Failed to sign out.")
+            // An error happened.
+        });
+    }
     if (wantLogOut) {
         return (
             <div className="log-out-div">

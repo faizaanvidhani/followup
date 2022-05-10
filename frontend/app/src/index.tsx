@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import PatientHome from "./Patient/PatientHome";
-import ProfileInfo from './Patient/ProfileInfo';
-import SymptomLog from './Patient/SymptomLog';
-import AddSymptom from './Patient/AddSymptom';
-import ProviderInfo from './Patient/ProviderInfo';
+import PatientHome from "./components/Patient/PatientHome";
+import ProfileInfo from './components/Patient/ProfileInfo';
+import SymptomLog from './components/Patient/SymptomLog';
+import AddSymptom from './components/Patient/AddSymptom';
+import ProviderInfo from './components/Patient/ProviderInfo';
 import Home from './Home/Home';
 import Mission from './Home/Mission';
 import About from './Home/About';
@@ -18,7 +18,7 @@ import Contact from './Home/Contact';
 import SignIn from "./Home/SignIn"
 import PrivateRoute from './FirebaseAuth/PrivateRoute'
 import { AuthProvider } from './FirebaseAuth/AuthContext'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ProviderPatientView from './components/provider/ProviderPatientView';
 import ProviderHomePage from './components/provider/ProviderHomePage';
 import ProviderIntakePage from './components/provider/ProviderIntakePage';
@@ -42,6 +42,7 @@ root.render(
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<SignIn />} />
+            <Route path="/accountt" element={<SignIn />} />
             {/*<Route path="/login" element={<LogIn />} />*/}
             {/*<Route path="/signup" element={<SignUp />} />*/}
 
