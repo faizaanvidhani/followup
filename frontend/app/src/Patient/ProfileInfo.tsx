@@ -17,7 +17,10 @@ function ProfileInfo() {
            <Header name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
             <div className="backgroundBox"></div>              
         </div>
-    )
+
+        
+       
+    );
 }
 
 export default ProfileInfo;
