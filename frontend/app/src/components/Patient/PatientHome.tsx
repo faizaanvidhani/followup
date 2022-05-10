@@ -13,108 +13,54 @@ import PortalHeader from '../PortalHeader';
 function PatientHome() {
 
     return (
-<<<<<<< Updated upstream
- 
         <div className="patient">
             <PortalHeader wantLogOut={true} centered={false}/>
             <PatientHeader name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
             <div>
-            <nav className='navbar'>
-                <div className='navbar-header'>
-                    <li className='linkOption'>
-                        <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                <CgProfile />
-                            </IconContext.Provider>
-                        </div>
-                        <NavLink className="navbar-brand" to="/profileInfo">
-                            Profile Info
-                        </NavLink>
-                    </li>
-                    <li className='linkOption'>
-                        <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                <BsFileMedical />
-                            </IconContext.Provider>
-                        </div>
-                        <NavLink className="navbar-brand" to="/symptomLog">
-                            Symptom Log
-                        </NavLink>
-                    </li>
-                    <li className='linkOption'>
-                        <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                <MdOutlinePostAdd />
-                            </IconContext.Provider>
-                        </div>
-                        <NavLink className="navbar-brand" to="/addSymptom">
-                            Add Symptom
-                        </NavLink>
-                    </li>
-                    
-                    <li className='linkOption'>
-                        <div className='icon'>
-                            <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                <FaClinicMedical />
-                            </IconContext.Provider>
-=======
-        <div>
-            <PortalHeader wantLogOut={true} centered={false} />
-            <div className="patient">
-                <Header name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
-                <div className="backgroundBox">
-                    <nav className='navbar'>
-                        <div className='navbar-header'>
-                            <li className='linkOption'>
-                                <div className='icon'>
-                                    <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                        <CgProfile />
-                                    </IconContext.Provider>
-                                </div>
-                                <NavLink className="navbar-brand" to="/profileInfo">
-                                    Profile Info
-                                </NavLink>
-                            </li>
-                            <li className='linkOption'>
-                                <div className='icon'>
-                                    <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                        <BsFileMedical />
-                                    </IconContext.Provider>
-                                </div>
-                                <NavLink className="navbar-brand" to="/symptomLog">
-                                    Symptom Log
-                                </NavLink>
-                            </li>
-                            <li className='linkOption'>
-                                <div className='icon'>
-                                    <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                        <MdOutlinePostAdd />
-                                    </IconContext.Provider>
-                                </div>
-                                <NavLink className="navbar-brand" to="/addSymptom">
-                                    Add Symptom
-                                </NavLink>
-                            </li>
+                <nav className='navbar'>
+                    <div className='navbar-header'>
+                        <li className='linkOption'>
+                            <div className='icon'>
+                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
+                                    <CgProfile />
+                                </IconContext.Provider>
+                            </div>
+                            <NavLink className="navbar-brand" to="/profileInfo">
+                                Profile Info
+                            </NavLink>
+                        </li>
+                        <li className='linkOption'>
+                            <div className='icon'>
+                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
+                                    <BsFileMedical />
+                                </IconContext.Provider>
+                            </div>
+                            <NavLink className="navbar-brand" to="/symptomLog">
+                                Symptom Log
+                            </NavLink>
+                        </li>
+                        <li className='linkOption'>
+                            <div className='icon'>
+                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
+                                    <MdOutlinePostAdd />
+                                </IconContext.Provider>
+                            </div>
+                            <NavLink className="navbar-brand" to="/addSymptom">
+                                Add Symptom
+                            </NavLink>
+                        </li>
 
-                            <li className='linkOption'>
-                                <div className='icon'>
-                                    <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                        <FaClinicMedical />
-                                    </IconContext.Provider>
-                                </div>
-                                <NavLink className="navbar-brand" to="/providerInfo">
-                                    Provider Info
-                                </NavLink>
-                            </li>
->>>>>>> Stashed changes
-                        </div>
-                    </nav>
-                </div>
-
+                        <li className='linkOption'>
+                            <div className='icon'>
+                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
+                                    <FaClinicMedical />
+                                </IconContext.Provider>
+                            </div>
+                        </li>
+                    </div>
+                </nav>
             </div>
         </div>
-
-
     );
 }
 
