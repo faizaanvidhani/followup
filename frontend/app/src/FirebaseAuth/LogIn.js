@@ -12,7 +12,7 @@ export default function LogIn() {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    async function handleSubmit(e: any) {
+    async function handleSubmit(e) {
         e.preventDefault();
 
         try {

@@ -42,6 +42,7 @@ root.render(
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<SignIn />} />
+            <Route path="/accountt" element={<SignIn />} />
             {/*<Route path="/login" element={<LogIn />} />*/}
             {/*<Route path="/signup" element={<SignUp />} />*/}
 

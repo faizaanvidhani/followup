@@ -3,20 +3,25 @@ import facebook from '../icons/facebook.svg';
 import apple from '../icons/apple.svg';
 import './SignIn.css';
 import MainHeader from './MainHeader';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { getAuth,
     GoogleAuthProvider,
     signInWithRedirect,
     getRedirectResult,
     signOut} from "firebase/auth";
 import { auth } from '../FirebaseAuth/Firebase'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import {Alert, Button, Card, Container, Form } from 'react-bootstrap';
 
 function SignIn() {
     const provider = new GoogleAuthProvider();
     const navigate = useNavigate();
     const [currentUser, setCurrentUser] = useState(null);
-    // const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+    const emailRef = useRef(null);
+    const passwordRef = useRef(null);
+    const passwordConfirmRef = useRef(null);
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((user: any) => {
