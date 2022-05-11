@@ -1,7 +1,5 @@
 import './PatientHome.css';
 import { useState } from "react";
-import { IconContext } from "react-icons";
-import { FaClinicMedical } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import PatientHeader from "./PatientHeader";
 import PortalHeader from '../PortalHeader';
@@ -44,14 +42,6 @@ function PatientHome() {
                             </NavLink>
                         </li>
 
-                        <li className='linkOption'>
-                            <div className='icon'>
-                            <img src={providerInfo} className="provider-home-icon" alt="provider info icon"/>
-                            </div>
-                            <NavLink className="navbar-brand" to="/providerInfo">
-                                Provider Info
-                            </NavLink>
-                        </li>
                     </div>
                 </nav>
             </div>

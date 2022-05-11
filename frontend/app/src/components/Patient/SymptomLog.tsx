@@ -1,4 +1,3 @@
-import './SymptomLog.css';
 import PatientHeader from "./PatientHeader";
 import PortalHeader from '../PortalHeader';
 function SymptomLog() {

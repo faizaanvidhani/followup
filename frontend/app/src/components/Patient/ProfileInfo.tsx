@@ -1,8 +1,5 @@
-import './ProfileInfo.css';
-
 import { useState } from "react";
 import PatientHeader from "./PatientHeader";
-import './ProfileInfo.css';
 import PortalHeader from '../PortalHeader';
 
 function ProfileInfo() {
