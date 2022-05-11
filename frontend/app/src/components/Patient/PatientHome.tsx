@@ -1,13 +1,14 @@
 import './PatientHome.css';
 import { useState } from "react";
 import { IconContext } from "react-icons";
-import { BsFileMedical } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
-import { MdOutlinePostAdd } from "react-icons/md";
 import { FaClinicMedical } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import PatientHeader from "./PatientHeader";
 import PortalHeader from '../PortalHeader';
+import profile from '../../icons/profile-icon.svg';
+import addSymptom from '../../icons/addSymptom.svg';
+import providerInfo from '../../icons/providerInfo.svg';
+import symptomLog from '../../icons/symptomLog.svg';
 
 function PatientHome() {
 
@@ -20,9 +21,7 @@ function PatientHome() {
                     <div className='navbar-header'>
                         <li className='linkOption'>
                             <div className='icon'>
-                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                    <CgProfile />
-                                </IconContext.Provider>
+                            <img src={profile} className="provider-home-icon" alt="profile icon"/>
                             </div>
                             <NavLink className="navbar-brand" to="/profileInfo">
                                 Profile Info
@@ -30,9 +29,7 @@ function PatientHome() {
                         </li>
                         <li className='linkOption'>
                             <div className='icon'>
-                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                    <BsFileMedical />
-                                </IconContext.Provider>
+                            <img src={symptomLog} className="provider-home-icon" alt="symptom log icon"/>
                             </div>
                             <NavLink className="navbar-brand" to="/symptomLog">
                                 Symptom Log
@@ -40,9 +37,7 @@ function PatientHome() {
                         </li>
                         <li className='linkOption'>
                             <div className='icon'>
-                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                    <MdOutlinePostAdd />
-                                </IconContext.Provider>
+                            <img src={addSymptom} className="provider-home-icon" alt="add symptom icon"/>
                             </div>
                             <NavLink className="navbar-brand" to="/addSymptom">
                                 Add Symptom
@@ -51,10 +46,11 @@ function PatientHome() {
 
                         <li className='linkOption'>
                             <div className='icon'>
-                                <IconContext.Provider value={{ color: 'light-blue', size: '120px' }}>
-                                    <FaClinicMedical />
-                                </IconContext.Provider>
+                            <img src={providerInfo} className="provider-home-icon" alt="provider info icon"/>
                             </div>
+                            <NavLink className="navbar-brand" to="/providerInfo">
+                                Provider Info
+                            </NavLink>
                         </li>
                     </div>
                 </nav>
