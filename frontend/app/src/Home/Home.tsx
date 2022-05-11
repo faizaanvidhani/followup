@@ -18,7 +18,7 @@ function Home() {
             <button className="portal" onClick={goToLogin}>Enter Portal</button>
 
             <button>
-                <NavLink className="nav-link" to="/providerIntakePage">
+                <NavLink className="nav-link" to="/providerHome">
                     Provider
                 </NavLink>
                 <NavLink className="nav-link" to="/patientHome">

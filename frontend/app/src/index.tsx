@@ -27,9 +27,10 @@ import ProviderPatientGrid from './components/provider/ProviderPatientGrid';
 import Tabs from './components/provider/Tabs';
 import PortalHeader from './components/PortalHeader';
 import NewAccountPage from './components/NewAccountPage';
-import BootstrapIntakePage from './components/provider/BootstrapIntakePage';
 import ContactSubmissionNotification from './Home/ContactSubmissionNotification';
-import Bootstrap2 from './components/provider/Bootstrap2';
+import BootstrapInfoPage from './components/provider/BootstrapInfoPage';
+import PatientIntake from './components/Patient/PatientIntake';
+import UpdateProviderProfile from './components/provider/UpdateProviderProfile';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -45,7 +46,7 @@ root.render(
             <Route path="/contactformupdate" element={<ContactSubmissionNotification />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<SignIn />} />
-            <Route path="/accountt" element={<SignIn />} />
+            <Route path="/account" element={<SignIn />} />
             {/*<Route path="/login" element={<LogIn />} />*/}
             {/*<Route path="/signup" element={<SignUp />} />*/}
 
@@ -65,13 +66,16 @@ root.render(
             <Route path="/symptomLog" element={<SymptomLog />} />
             <Route path="/addSymptom" element={<AddSymptom />} />
             <Route path="/providerInfo" element={<ProviderInfo />} />
+            <Route path="/patientIntake" element={<PatientIntake/>} />
         </Routes>
 
         <Routes>
             <Route path="/providerHome" element={<ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' />} />
             <Route path="/providerPatientGrid" element={<ProviderPatientGrid name="Jane Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
-            <Route path="/providerIntakePage" element={<ProviderIntakePage />} />
-            <Route path="/providerInfoPage" element={<ProviderInfoPage fname='Jane' lname='Doe' institution='RI Hospital' phoneNumber='012-345-6789' email='jane@gmail.com' />} />
+            <Route path="/providerIntake" element={<ProviderIntakePage />} />
+            <Route path="/providerInfo" element={<ProviderInfoPage fname='Jane' lname='Doe' institution='RI Hospital' phoneNumber='012-345-6789' email='jane@gmail.com' />} />
+            {/*<Route path="/providerInfoPage" element={<BootstrapInfoPage />} />*/}
+            <Route path="/update-provider-profile" element={<UpdateProviderProfile />} />
         </Routes>
 
       

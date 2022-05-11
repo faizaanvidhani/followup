@@ -1,98 +1,33 @@
-h3 {
-    margin-left: 10%;
-    font-size: 25px;
-    margin-bottom: 3%;
+#intake-form-divider {
+    margin-bottom: 10%;
 }
 
-#intake-page-line {
-    width: 80%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-.provider-intake-form {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    line-height: 90%;
-}
-.break {
-    flex-basis: 100%;
-    height: 0;
+.gradient-custom {
+    background: linear-gradient(to bottom left, rgba(173, 247, 242), rgba(21, 170, 255));
 }
 
-.profile-input {
-    margin-left: 200px;
+#provider-intake-section {
+    min-height: 100% !important;
 }
 
-.first-name-input {
-    margin-right: 18px;
+#page-outer-box {
+    border-radius: 15px;
+    top: 50%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
-.last-name-input {
-    margin-left: 18px;
+#provider-form-title {
+    font-weight: bold;
+    color: #484848;
+    font-size: calc(1.275rem + .5vw);
 }
 
-.name-inputs {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#clinic-name {
-    width: 85%;
-}
-
-#phone-number {
-    width: 85%;
-    margin-bottom: 2%;
-}
-
-#email {
-    width: 85%;
-}
-
-#title {
-    width: 25%;
-}
-
-.title-input {
-    margin-left: 36px;
-}
-
-.clinic-input {
-    margin-top: 30px;
-}
-
-.contact-info-section {
-    margin-left: 200px;
-}
-
-.provider-input-box {
-    height: 35px;
-    width: 449px;
-    background: rgba(234, 241, 249, 0.75);
-    border-radius: 7px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-.input-box-label {
-    font-size: 20px;
-}
-
-.submit {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.submit input {
-    background: #AAF09E;
-    border-radius: 5px;
+#provider-form-submit-btn {
+    margin-top: -7%;
+    box-shadow: 0px 2px 8px #888888;
+    font-size: 15px;
+    font-weight: bold;
     height: 50px;
-    width: 200px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100px;
 }
-

@@ -1,74 +1,92 @@
-import React from 'react';
-import PortalHeader from '../PortalHeader';
-import './ProviderIntakePage.css'
+import './ProviderIntakePage.css';
 
-function ProviderIntakePage() {
-    
+export default function ProviderIntakePage() {
     return (
-        <form className="provider-intake-form">
-            <PortalHeader wantLogOut={false} centered={false}/>
-            <h3>
-                Profile Information
-            </h3>
-            <div className="profile-input">
-                <div className="name-inputs">
-                    <div className="first-name-input">
-                        <label className="input-box-label" htmlFor="fname" id="fname-label">First name</label>
-                        <br/>
-                        <input className="provider-input-box" type="text" id="fname" name="fname" required={true}/>
-                        <br/>
-                    </div>
-                    <div className="last-name-input">
-                        <label className="input-box-label" htmlFor="lname">Last name</label>
-                        <br/>
-                        <input className="provider-input-box" type="text" id="lname" name="lname" required={true}/>
-                        <br/>
-                    </div>
+        <section className="vh-100 gradient-custom" id="provider-intake-section">
+            <div className="container py-5 h-100">
+                <div className="row justify-content-center align-items-center h-100">
+                    <div className="col-12 col-lg-9 col-xl-7">
+                        <div className="card shadow-2-strong card-registration" id="page-outer-box">
+                            <div className="card-body p-4 p-md-5">
+                                <h2 className="mb-4 pb-2 pb-md-0 mb-md-5" id="provider-form-title">Provider Sign Up</h2>
+                                <form>
+                                    {/*<h4 className="form-category-header">Profile Information</h4>*/}
+                                    <div className="row">
+                                        <div className="col-md-6 mb-4">
 
-                    <div className="title-input">
-                        <label className="input-box-label" htmlFor="title">Title</label>
-                        <br/>
-                        <input className="provider-input-box" type="text" id="title" name="title" required={true}/>
-                        <br/>
+                                            <div className="form-label-group outline">
+                                                <input type="text" id="firstName"
+                                                       className="form-control form-control-lg"
+                                                       placeholder="First name"
+                                                       required={true}/>
+                                                <span><label className="form-label" htmlFor="firstName" id="first-name-label">First Name</label></span>
+                                            </div>
+
+                                        </div>
+                                        <div className="col-md-6 mb-4">
+
+                                            <div className="form-label-group outline">
+                                                <input type="text" id="lastName"
+                                                       className="form-control form-control-lg"
+                                                       placeholder="Last name"
+                                                       required={true}/>
+                                                <span><label className="form-label" htmlFor="lastName" id="last-name-label">Last Name</label></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col-md-12 mb-4">
+                                            <div className="form-label-group outline">
+                                                <input type="text" className="form-control form-control-lg"
+                                                       id="institution" placeholder="Institution"
+                                                       required={true}/>
+                                                <span><label htmlFor="institution" className="form-label" id="institution-label">Institution</label></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    {/*<div className="row">*/}
+                                    {/*    <hr id="intake-form-divider"/>*/}
+                                    {/*</div>*/}
+
+                                    {/*<h4 className="form-category-header">Contact Information</h4>*/}
+
+                                    <div className="row">
+                                        <div className="col-md-6 mb-4 pb-2">
+
+                                            <div className="form-label-group outline">
+                                                <input type="tel" id="phoneNumber"
+                                                       className="form-control form-control-lg" placeholder="Phone number"
+                                                       required={true}/>
+                                                <span><label className="form-label" htmlFor="phoneNumber" id="number-label">Phone Number</label></span>
+                                            </div>
+
+                                        </div>
+                                        <div className="col-md-6 mb-4 pb-2">
+
+                                            <div className="form-label-group outline">
+                                                <input type="email" id="emailAddress"
+                                                       className="form-control form-control-lg" placeholder="Email"
+                                                       required={true}/>
+                                                <span><label className="form-label" htmlFor="emailAddress" id="email-label">Email</label></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div className="mt-4 pt-2">
+                                        <input className="btn btn-primary btn-lg" id="provider-form-submit-btn" type="submit" value="SUBMIT"/>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div className="break"></div>
-
-                <div className="clinic-input">
-                    <label className="input-box-label" htmlFor="clinic-name" id="clinic-name-label">Institution</label>
-                    <br/>
-                    <input className="provider-input-box" type="text" id="clinic-name" name="clinic-name" required={true}/>
-                    <br/>
-                </div>
-
             </div>
-
-            <br/>
-            <hr id="intake-page-line"/>
-
-            <h3>
-                Contact Information
-            </h3>
-
-            <div className="contact-info-section">
-                <label className="input-box-label" htmlFor="phone-number" id="phonenumber-label">Phone Number</label>
-                <br/>
-                <input className="provider-input-box" type="text" id="phone-number" name="phone-number" required={true}/>
-                <br/>
-
-                <label className="input-box-label" htmlFor="email" id="email-label">Email</label>
-                <br/>
-                <input className="provider-input-box" type="text" id="email" name="email" required={true}/>
-                <br/>
-            </div>
-
-            <div className="submit">
-                <input type="submit" value="Submit"/>
-            </div>
-
-        </form>
+        </section>
     )
 }
-
-export default ProviderIntakePage;
