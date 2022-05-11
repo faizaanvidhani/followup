@@ -8,7 +8,6 @@ import PatientHome from "./components/Patient/PatientHome";
 import ProfileInfo from './components/Patient/ProfileInfo';
 import SymptomLog from './components/Patient/SymptomLog';
 import AddSymptom from './components/Patient/AddSymptom';
-import ProviderInfo from './components/Patient/ProviderInfo';
 import Home from './Home/Home';
 import Mission from './Home/Mission';
 import About from './Home/About';
@@ -65,7 +64,6 @@ root.render(
             <Route path="/profileInfo" element={<ProfileInfo />} />
             <Route path="/symptomLog" element={<SymptomLog />} />
             <Route path="/addSymptom" element={<AddSymptom />} />
-            <Route path="/providerInfo" element={<ProviderInfo />} />
             <Route path="/patientIntake" element={<PatientIntake/>} />
         </Routes>
 
