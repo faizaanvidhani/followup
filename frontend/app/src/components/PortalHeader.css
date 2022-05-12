@@ -30,19 +30,23 @@
 }
 
 .log-out-button {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    white-space: nowrap;
-    border-radius: 8px;
-    background-color: transparent;
-    border: none;
-    height: 50px;
-    width: 150px;
+    display: flex !important;
+    align-items: center !important;
+    text: center !important;
+    white-space: nowrap !important;
+    border-radius: 8px !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    border: none !important;
+    height: 50px !important;
+    width: 150px !important;
+    font-size: 26px !important;
     margin-left: auto;
     margin-right: 20px;
+}
 
+.log-out-button:hover {
+    background-color: #024693 !important;
 }
 
 .log-out-icon {

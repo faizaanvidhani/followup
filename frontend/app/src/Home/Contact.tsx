@@ -1,6 +1,7 @@
 import MainHeader from './MainHeader';
 import './Contact.css';
 import { useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 function Contact() {
     const navigate = useNavigate();
@@ -25,7 +26,7 @@ function Contact() {
                         <input className="contactInputField" type="text" placeholder="Subject"/>
                         <textarea className="moreDetailsBody" placeholder="Message"></textarea>
                     </div>
-                    <input className="submit" type="submit" onClick={handleSubmit} value="Submit"/>
+                    <Button className="submit-button" type="submit" onClick={handleSubmit}>Submit</Button>
                 </div>
             </div>
         </div>

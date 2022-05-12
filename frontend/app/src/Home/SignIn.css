@@ -9,12 +9,12 @@
     border-radius: 8px;
 }
 
-.foregroundBox {
+.foregroundSignInBox {
     position: absolute;
     width: 500px;
-    height: 450px;
-    right: 100px;
-    top: 60px;
+    height: 550px;
+    right: 80px;
+    top: 50px;
     padding: 20px;
     background: #FFFFFF;
     border-radius: 8px;
@@ -26,7 +26,6 @@
     height: 82px;
     left: 167px;
     top: 220px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
@@ -41,6 +40,7 @@
     font-weight: 600;
     font-size: 16px;
     left: 20px;
+    top: 50px;
 }
 
 .loginSeparator {
@@ -48,7 +48,7 @@
     position: relative;
     height: 15px;
     text-align: center;
-    top: 80px;
+    top: 120px;
 }
 
 .textInSeparator {
@@ -59,10 +59,12 @@
     top: -0.7em;
 }
 
+
 .email {
     position: relative;
     left: 23px;
     margin-bottom: 20px;
+    top: 80px;
     width: 400px;
     height: 30px;
     border-radius: 5px;
@@ -78,6 +80,7 @@
     position: relative;
     left: 23px;
     margin-bottom: 20px;
+    top: 80px;
     width: 400px;
     height: 30px;
     border-radius: 5px;
@@ -89,29 +92,45 @@
     font-size: 16px;
 }
 
-.login {
+.bg-custom-login {
     position: relative;
     width: 140px;
     height: 50px;
     left: 50%;
     transform: translate(-50%);
-    top: 40px;
-
-    font-family: 'Lato';
+    top: 80px;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    text-align: center;
-    background: #FFE279;
-    border-radius: 8px;
-    border-color: #FFE279;
+    font-family: 'Lato' !important;
+    background-color: #FFE279 !important;
+    color: black !important;
+    border: none !important;
+}
+
+.bg-custom-login:hover {
+    background-color: #FCCD21 !important;
+
 }
 
 .icons {
     position: relative;
-    left: 100px;
-    top: 100px;
+    left: 80px;
+    top: 140px;
 }
+
+.google:hover {
+    transform: scale(1.4, 1.4);
+}
+
+.fb:hover {
+    transform: scale(1.4, 1.4);
+}
+
+.apple:hover {
+    transform: scale(1.4, 1.4);
+}
+
 
 .google {
     height: 60px;

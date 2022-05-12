@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './PortalHeader.css';
 import logOut from '../icons/logout.svg';
 import { auth } from '../FirebaseAuth/Firebase'
 import { signOut } from 'firebase/auth';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import logoutGoogle from "../Home/SignIn"
+import UserContext from '../UserContext';
 
 type headerProps = {
     wantLogOut: boolean
     centered: boolean
 }
 
-function showLogOut(wantLogOut: boolean) {
+function ShowLogOut(wantLogOut: boolean) {
+    const navigate = useNavigate();
+    const {currentUser, setCurrentUser} = useContext(UserContext);
+
+    function executeLogOut() {
+        signOut(auth).then(() => {
+            setCurrentUser(null);
+            navigate("/");
+            // Sign-out successful.
+        }).catch((error) => {
+            console.log("ERROR: Failed to sign out user.");
+        });
+
+    }
+
     if (wantLogOut) {
         return (
-            <Button className="log-out-button" >
+            <Button className="log-out-button" onClick={executeLogOut} >
                 <p className="log-out-text">Log Out</p>
                 <img src={logOut} className="log-out-icon"/>
             </Button>
@@ -39,7 +55,7 @@ function PortalHeader(props: headerProps) {
             <p className= {props.centered ? "centered-logo": "left-logo"}>
                 FollowUp
             </p>
-            {showLogOut(props.wantLogOut)}
+            {ShowLogOut(props.wantLogOut)}
         </div>
     )
 }
