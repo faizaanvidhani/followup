@@ -14,14 +14,19 @@
 
 .subpages {
     position: absolute;
-    right: 0px;
-    top: 20px;
+    right: 40px;
+    top: 30px;
 }
 .heading {
     display:inline-block;
     margin: 20px;
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 300;
     font-size: 34px;
+    color: #404346;
+}
+
+.heading:hover {
+    transform: scale(1.2, 1.2);
+    font-weight: bold;
 }

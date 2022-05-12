@@ -1,34 +1,21 @@
 import './MainHeader.css'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useState } from 'react';
+
 
 function MainHeader() {
-    return (
-        <div>
-            <h1 className="followup">FollowUp</h1>
-            <div className="subpages">
-                <h1 className="heading">
-                    <NavLink className="nav-link" to="/">
-                        HOME
-                    </NavLink>
-                </h1>
-                <h1 className="heading">
-                    <NavLink className="nav-link" to="/mission">
-                        MISSION
-                    </NavLink>
-                </h1>
-                <h1 className="heading">
-                    <NavLink className="nav-link" to="/contact">
-                        CONTACT
-                    </NavLink>
-                </h1>
-                <h1 className="heading">
-                    <NavLink className="nav-link" to="/about">
-                        ABOUT
-                    </NavLink>
-                </h1>
+    const navigate = useNavigate();
+        return (
+            <div>
+                <h1 className="followup">FollowUp</h1>
+                <div className="subpages">
+                    <h1 className="heading" onClick={() => {navigate("/")}}>HOME</h1>
+                    <h1 className="heading" onClick={() => {navigate("/mission");}}>MISSION</h1>
+                    <h1 className="heading" onClick={() => {navigate("/contact");}}>CONTACT</h1>
+                    <h1 className="heading" onClick={() => {navigate("/about");}}>ABOUT</h1>
+                </div>
             </div>
-        </div>
-    );
-}
+        );
+    }
 
 export default MainHeader;
