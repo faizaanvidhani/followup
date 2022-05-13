@@ -6,6 +6,7 @@ import edu.brown.cs.student.TableVisualization.InsertHandler;
 import edu.brown.cs.student.TableVisualization.TableDataHandler;
 import edu.brown.cs.student.TableVisualization.TableNamesHandler;
 import edu.brown.cs.student.TableVisualization.UpdateHandler;
+import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,6 +27,7 @@ public class LoadDatabaseCommand implements ICommand {
       DeleteHandler.setFilePath(inputTokens.get(1));
       UpdateHandler.setFilePath(inputTokens.get(1));
       KanbanDataHandler.setFilePath(inputTokens.get(1));
+      ProviderDataHandler.setFilePath(inputTokens.get(1));
     }
   }
 
