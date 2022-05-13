@@ -32,7 +32,7 @@ export function SignIn() {
                 setCurrentUser(user.displayName);
                 navigate("/patientHome");
             } else {
-                setCurrentUser(null);
+                setCurrentUser(false);
             }
         })
         return unsubscribe;
@@ -50,8 +50,9 @@ export function SignIn() {
             // This gives you a Google Access Token. You can use it to access Google APIs.
             const credential = GoogleAuthProvider.credentialFromResult(result!);
             const token = credential!.accessToken;
-            console.log(result!.user.displayName)
-            console.log(result!.user.email)
+            setCurrentUser(result!.user.displayName);
+            console.log(result!.user.displayName);
+            console.log(result!.user.email);
         }).catch((error) => {
             // Handle Errors here.
             const errorCode = error.code;
@@ -63,14 +64,14 @@ export function SignIn() {
             // ...
         });
 
-        if (currentUser !== null) {
+        if (currentUser) {
             navigate("/patientHome");
         }
     }
 
     function logoutGoogle() {
         signOut(auth).then(() => {
-            setCurrentUser("");
+            setCurrentUser(null);
             navigate("/");
             // Sign-out successful.
         }).catch((error) => {
