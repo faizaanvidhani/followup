@@ -76,8 +76,8 @@ public class ProviderLoader {
     }
     this.providerData.put("providerData", providerInfo);
 
-    query = "SELECT * FROM Patient WHERE provider_id = " + providerID + ";";
-    ResultSet rowData = this.executeSQL(query);
+    String patientQuery = "SELECT * FROM Patient WHERE provider_id = " + providerID + ";";
+    ResultSet rowData = this.executeSQL(patientQuery);
 
     // fill row data
     List<String> patientIDs = new ArrayList<>();

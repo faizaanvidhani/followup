@@ -8,6 +8,7 @@ import edu.brown.cs.student.TableVisualization.TableNamesHandler;
 import edu.brown.cs.student.TableVisualization.UpdateHandler;
 import edu.brown.cs.student.patientLoader.PatientDataHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
+import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,10 +31,10 @@ public class LoadDatabaseCommand implements ICommand {
       KanbanDataHandler.setFilePath(inputTokens.get(1));
       ProviderDataHandler.setFilePath(inputTokens.get(1));
       PatientDataHandler.setFilePath(inputTokens.get(1));
+      SymptomDataHandler.setFilePath(inputTokens.get(1));
     }
   }
 
-  // return list of cards
 
 }
 

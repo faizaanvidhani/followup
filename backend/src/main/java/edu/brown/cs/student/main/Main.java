@@ -5,6 +5,7 @@ import edu.brown.cs.student.KanbanVisualization.KanbanDataHandler;
 import edu.brown.cs.student.TableVisualization.*;
 import edu.brown.cs.student.patientLoader.PatientDataHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
+import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import spark.Spark;
@@ -89,6 +90,7 @@ public final class Main {
     Spark.post("/update", new UpdateHandler());
     Spark.post("/provider-data", new ProviderDataHandler());
     Spark.get("/patient-data", new PatientDataHandler());
+    Spark.get("/symptom-data", new SymptomDataHandler());
     Spark.init();
   }
 
