@@ -57,3 +57,4 @@ function AddSymptom() {
 
     );
 }
+export default AddSymptom;
