@@ -1,4 +1,4 @@
-package main.java.edu.brown.cs.student.clinic;
+package edu.brown.cs.student.clinic;
 
 public class Clinic {
 
