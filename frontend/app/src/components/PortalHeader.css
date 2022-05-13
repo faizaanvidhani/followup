@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #247EE3;
+}
+
+.left-logo {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.centered-logo {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 45%;
+}
+
+.log-out-button {
+    display: flex !important;
+    align-items: center !important;
+    text: center !important;
+    white-space: nowrap !important;
+    border-radius: 8px !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    border: none !important;
+    height: 50px !important;
+    width: 150px !important;
+    font-size: 26px !important;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.log-out-button:hover {
+    background-color: #024693 !important;
+}
+
+.log-out-icon {
+    width: 50%;
+    height: 50%;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.log-out-text {
+    margin-top: 10%;
+}

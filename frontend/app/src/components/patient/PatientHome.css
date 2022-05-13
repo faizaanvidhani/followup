@@ -1,0 +1,36 @@
+.patient-home-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pat-profile-icon-div {
+    margin-right: 40px;
+    margin-top: 5%;
+}
+
+#symptom-icon-div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5%;
+}
+
+#add-icon-div {
+    margin-left: 40px;
+    margin-top: 5%;
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-text {
+    margin-top: 7px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    margin-left: 20%;
+}
+

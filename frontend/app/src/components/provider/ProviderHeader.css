@@ -1,0 +1,50 @@
+#provider-header-line {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.provider-info {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+}
+
+.provider-name {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 38px;
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 5%;
+    white-space: nowrap;
+}
+
+.provider-clinic {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 5%;
+    white-space: nowrap;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 0.25px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}

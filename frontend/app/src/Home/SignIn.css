@@ -1,0 +1,148 @@
+.backgroundSignInBox {
+    position: absolute;
+    width: 1350px;
+    height: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -42%);
+    background: #C8E2FF;
+    border-radius: 8px;
+}
+
+.foregroundSignInBox {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    right: 80px;
+    top: 50px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.signInTitle {
+    position: absolute;
+    width: 321px;
+    height: 82px;
+    left: 167px;
+    top: 220px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 84px;
+    color: #000000;
+}
+
+.welcome {
+    position: relative;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    left: 20px;
+    top: 50px;
+}
+
+.loginSeparator {
+    border-top: 1px solid #cbd2d6;
+    position: relative;
+    height: 15px;
+    text-align: center;
+    top: 120px;
+}
+
+.textInSeparator {
+    background-color: #fff;
+    padding: 0 0.5em;
+    position: relative;
+    color: #6c7378;
+    top: -0.7em;
+}
+
+
+.email {
+    position: relative;
+    left: 23px;
+    margin-bottom: 20px;
+    top: 80px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #000000;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.password {
+    position: relative;
+    left: 23px;
+    margin-bottom: 20px;
+    top: 80px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #000000;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.bg-custom-login {
+    position: relative;
+    width: 140px;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Lato' !important;
+    background-color: #FFE279 !important;
+    color: black !important;
+    border: none !important;
+}
+
+.bg-custom-login:hover {
+    background-color: #FCCD21 !important;
+
+}
+
+.icons {
+    position: relative;
+    left: 80px;
+    top: 140px;
+}
+
+.google:hover {
+    transform: scale(1.4, 1.4);
+}
+
+.fb:hover {
+    transform: scale(1.4, 1.4);
+}
+
+.apple:hover {
+    transform: scale(1.4, 1.4);
+}
+
+
+.google {
+    height: 60px;
+    margin: 20px;
+}
+
+.fb {
+    height: 60px;
+    margin: 20px;
+}
+
+.apple {
+    height: 60px;
+    margin: 20px;
+}
