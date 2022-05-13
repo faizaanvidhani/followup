@@ -2,14 +2,14 @@ package edu.brown.cs.student.users;
 
 public class Provider {
 
-  private final int provider_id;
+  private final String provider_id;
   private final String first_name;
   private final String last_name;
   private final String email;
   private final String phone_number;
   private final int clinic_id;
 
-  public Provider(int provider_id, String first_name, String last_name,
+  public Provider(String provider_id, String first_name, String last_name,
                  String email, String phone_number, int clinic_id ) {
     this.provider_id = provider_id;
     this.first_name = first_name;
@@ -19,7 +19,7 @@ public class Provider {
     this.clinic_id = clinic_id;
   }
 
-  public int getProviderID() {
+  public String getProviderID() {
     return this.provider_id;
   }
 

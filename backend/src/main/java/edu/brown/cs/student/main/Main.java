@@ -3,6 +3,7 @@ package edu.brown.cs.student.main;
 import edu.brown.cs.student.ReplCSV.Repl;
 import edu.brown.cs.student.KanbanVisualization.KanbanDataHandler;
 import edu.brown.cs.student.TableVisualization.*;
+import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import spark.Spark;
@@ -85,6 +86,7 @@ public final class Main {
     Spark.post("/insert", new InsertHandler());
     Spark.post("/delete", new DeleteHandler());
     Spark.post("/update", new UpdateHandler());
+    Spark.post("/provider-data", new ProviderDataHandler());
     Spark.init();
   }
 
