@@ -76,7 +76,7 @@ public class ProviderLoader {
     }
     this.providerData.put("providerData", providerInfo);
 
-    query = "SELECT patient_id FROM Patient WHERE provider_id = " + providerID + ";";
+    query = "SELECT user_id FROM Patient WHERE provider_id = " + providerID + ";";
     ResultSet rowData = this.executeSQL(query);
 
     // fill row data
