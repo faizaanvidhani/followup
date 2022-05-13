@@ -1,0 +1,30 @@
+.patient-grid-icon-div {
+    display: flex;
+}
+
+.patient-grid-div {
+    display: flex;
+}
+
+#patients-header {
+    margin: 0 0 0 15%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight:550;
+    font-size: 35px;
+    line-height: 90%;
+    white-space: nowrap;
+}
+
+#patient-filter {
+    display: inline-block;
+    margin-right: 15%;
+    height: 25px;
+    width: 200px;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+
+
+

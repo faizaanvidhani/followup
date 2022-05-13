@@ -1,0 +1,44 @@
+.homeImage {
+    position: absolute;
+    width: 1450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -54%);
+}
+
+.homeDescription {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 150;
+    font-size: 55px;
+    text-align: center;
+}
+
+.portal {
+    position: relative;
+    width: 20%;
+    height: 77px;
+    left: 40%;
+    top: 680px;
+
+
+    background-color: #8DC8FC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border-color: #8DC8FC;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center;
+    color: #000000;
+}
+.portal:hover {
+    background-color: #1D93FB;
+    transform: scale(1.2, 1.2);
+}

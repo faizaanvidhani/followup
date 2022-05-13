@@ -1,0 +1,35 @@
+#address-extra-input {
+    margin-top: -5%;
+}
+
+#patient-intake-section {
+    height: 100% !important;
+}
+
+#patient-page-outer-box {
+    border-radius: 15px;
+    top: 50%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#patient-form-title {
+    font-weight: bold;
+    color: #484848;
+    font-size: calc(1.275rem + .5vw);
+}
+
+.patient-form-header {
+    margin-bottom: 5%;
+}
+
+.patient-intake-select {
+    min-height: calc(1.5em + 1rem + 8px);
+    border-color: #ced4d9;
+    border-radius: 0.25rem;
+    color: #6c757d;
+}
+
+.patient-intake-select option {
+    text-indent: 5%;
+}

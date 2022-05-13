@@ -1,0 +1,52 @@
+.backgroundMissionBox {
+    position: absolute;
+    width: 1350px;
+    height: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -42%);
+    background: #C8E2FF;
+    border-radius: 8px;
+}
+
+.foregroundMissionBox {
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    right: 100px;
+    top: 100px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.missionTitle {
+    position: absolute;
+    width: 500px;
+    height: 82px;
+    left: 100px;
+    top: 180px;
+    text-align: center;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 84px;
+    color: #000000;
+}
+
+.missionStatement {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+}
+
+.missionEnding {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+}
