@@ -1,0 +1,22 @@
+.form-check-input{
+    width: 250px;
+}
+
+#container {
+    background-color: #C8E2FF;
+}
+
+small {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#severityValue {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    font: bold 20px "Roboto", sans-serif;
+
+}
