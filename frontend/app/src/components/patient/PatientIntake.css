@@ -19,15 +19,66 @@
     font-size: calc(1.275rem + .5vw);
 }
 
+#patient-firstName {
+    font-size: 15px;
+}
+
+#patient-lastName {
+    font-size: 15px;
+}
+
+#patient-address {
+    font-size: 15px;
+}
+
+#patient-address-extra-input {
+    font-size: 15px;
+}
+
+#patient-city {
+    font-size: 15px;
+
+}
+
+#patient-zip-code {
+    font-size: 15px;
+
+}
+
+#patient-phoneNumber {
+    font-size: 15px;
+
+}
+
+#patient-emailAddress {
+    font-size: 15px;
+
+}
+
 .patient-form-header {
     margin-bottom: 5%;
 }
 
 .patient-intake-select {
-    min-height: calc(1.5em + 1rem + 8px);
+    min-height: calc(1.55em + 1rem);
     border-color: #ced4d9;
     border-radius: 0.25rem;
     color: #6c757d;
+}
+
+#patient-dob {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dateHelp {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#date {
+    min-height: calc(1.55em + 1rem);
 }
 
 .patient-intake-select option {

@@ -1,23 +1,25 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import PortalHeader from './PortalHeader';
 import './NewAccountPage.css';
 
 function NewAccountPage() {
+    let navigate = useNavigate();
     return (
-        <body>
+        <body id="new-account-page">
             <div className="background">
                 <PortalHeader wantLogOut={false} centered={true}/>
-                <div className="container">
-                    <h2>
+                <div className="account-page-container">
+                    <h2 id="account-page-h2">
                         Create a New Account
                     </h2>
-                    <hr/>
+                    <hr id="account-page-hr"/>
 
-                    <div className="button-container">
-                        <button className="button" id="patient-button">
+                    <div className="account-button-container">
+                        <button className="account-choice-button" id="patient-button" onClick={() => {navigate('/patientIntake')}}>
                             Patient
                         </button>
-                        <button className="button" id="provider-button">
+                        <button className="account-choice-button" id="provider-button" onClick={() => {navigate('/providerIntake')}}>
                             Provider
                         </button>
                     </div>

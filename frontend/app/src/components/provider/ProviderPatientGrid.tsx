@@ -6,7 +6,8 @@ import ProviderHeader from './ProviderHeader';
 import PortalHeader from '../PortalHeader';
 
 type PatientGridProps = {
-    name: string,
+    firstName: string,
+    lastName: string,
     title: string,
     clinicName: string,
     patients: any[]
@@ -35,7 +36,7 @@ function PatientGrid(props: PatientGridProps) {
     return (
         <div>
             <PortalHeader wantLogOut={true} centered={false}/>
-            <ProviderHeader name={props.name} title={props.title} clinicName={props.clinicName}></ProviderHeader>
+            <ProviderHeader firstName={props.firstName} lastName={props.lastName} title={props.title} clinicName={props.clinicName}></ProviderHeader>
             <span className="patient-grid-div">
                 <h2 id="patients-header">
                     Patients
