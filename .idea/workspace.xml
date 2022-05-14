@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e4fbfa5-0976-4944-b78e-8748221e9b93" name="Changes" comment="Changes" />
+    <list default="true" id="0e4fbfa5-0976-4944-b78e-8748221e9b93" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/profile_info.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/profile_info.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/profile_info.db-journal" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

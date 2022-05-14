@@ -3,6 +3,7 @@ package edu.brown.cs.student.main;
 import edu.brown.cs.student.ReplCSV.Repl;
 import edu.brown.cs.student.KanbanVisualization.KanbanDataHandler;
 import edu.brown.cs.student.TableVisualization.*;
+import edu.brown.cs.student.patientLoader.PatientDataHandler;
 import edu.brown.cs.student.tableDataLoader.TableDataHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
@@ -89,6 +90,7 @@ public final class Main {
     Spark.post("/delete", new DeleteHandler());
     Spark.post("/update", new UpdateHandler());
     Spark.post("/provider-data", new ProviderDataHandler());
+    Spark.post("/patient-data", new PatientDataHandler());
     Spark.get("/table-data", new TableDataHandler());
     Spark.init();
   }
