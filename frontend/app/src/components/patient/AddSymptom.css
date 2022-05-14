@@ -59,3 +59,9 @@
 
 }
 
+#severity {
+    width: 240px;
+    position:absolute;
+    left: 41.7%;
+}
+

@@ -2,10 +2,13 @@ import PortalHeader from "../PortalHeader";
 import PatientHeader from "./PatientHeader";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import UserContext from '../../UserContext';
 import "./AddSymptom.css";
 
 function AddSymptomContext() {
     const navigate = useNavigate();
+    const {currentUser} = useContext(UserContext);
 
     const redirectHome = () => {
         navigate('/patientHome');
@@ -18,7 +21,7 @@ function AddSymptomContext() {
     return (
         <div className="add-symptom">
             <PortalHeader wantLogOut={true} centered={false} />
-            <PatientHeader name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
+            <PatientHeader name={currentUser!} dob="01/01/2001" tel="012-345-6789" />
             <Container id='container' className="d-flex align-items-center justify-content-center" style={{ minHeight: "40vh" }}>
                 <form>
                     <div className="form-group" id='symptomHelp'>

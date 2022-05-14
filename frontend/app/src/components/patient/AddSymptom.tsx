@@ -1,10 +1,11 @@
 import { Card, Container } from 'react-bootstrap';
 import PatientHeader from './PatientHeader';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useNavigate } from "react-router-dom";
 import PortalHeader from '../PortalHeader';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AddSymptom.css';
+import UserContext from '../../UserContext';
 
 function AddSymptom() {
 
@@ -13,10 +14,12 @@ function AddSymptom() {
         navigate('/addSymptomContext');
     }
 
+    const {currentUser} = useContext(UserContext);
+
     return (
         <div className="add-symptom">
             <PortalHeader wantLogOut={true} centered={false} />
-            <PatientHeader name="Jane Doe" dob="01/01/2001" tel="012-345-6789" />
+            <PatientHeader name={currentUser!} dob="01/01/2001" tel="012-345-6789" />
 
             <Container id='container' className="d-flex align-items-center justify-content-center" style={{ minHeight: "40vh" }}>
                 <form>
