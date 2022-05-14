@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
-import { Route, Redirect, Navigate } from 'react-router-dom'
-import { useAuth } from '../FirebaseAuth/AuthContext'
+import { Navigate } from 'react-router-dom'
 import UserContext from '../UserContext';
 
 export default function PrivateRoute({ children }) {
-    const {currentUser} = useContext(UserContext);
+    const {currentUser, setCurrentUser} = useContext(UserContext);
     return (
         currentUser ? children : <Navigate to="/login" />
     )

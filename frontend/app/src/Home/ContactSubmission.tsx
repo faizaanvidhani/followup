@@ -1,10 +1,10 @@
 import MainHeader from './MainHeader';
 import './Contact.css';
 
-function ContactSubmissionNotification() {
+function ContactSubmission() {
     return (
         <div>
-            <MainHeader />
+            <MainHeader/>
             <div className="backgroundContactBox">
                 <p className="contactTitle">Thanks for letting us know.</p>
                 <div className="foregroundContactSubmissionNotificationBox">
@@ -16,5 +16,4 @@ function ContactSubmissionNotification() {
         </div>
     );
 }
-// export Contact
-export default ContactSubmissionNotification;
+export default ContactSubmission;

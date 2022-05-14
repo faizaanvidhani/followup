@@ -1,7 +1,9 @@
-// Create function called Mission that returns JSX
 import MainHeader from './MainHeader';
 import './Mission.css'
 
+/**
+ * Mission component. Displays the mission statement text.
+ */
 function Mission() {
     return (
         <div>

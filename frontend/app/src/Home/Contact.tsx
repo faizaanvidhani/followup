@@ -7,7 +7,7 @@ function Contact() {
     const navigate = useNavigate();
 
     function handleSubmit() {
-        navigate("/contactformupdate")
+        navigate("/contact-submission")
     }
     return (
         <div>

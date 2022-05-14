@@ -9,37 +9,31 @@ import Home from './Home/Home';
 import Mission from './Home/Mission';
 import About from './Home/About';
 import Contact from './Home/Contact';
-// import SignUp from "./FirebaseAuth/SignUp"
-// import LogIn from "./FirebaseAuth/LogIn"
 import SignIn from "./Home/SignIn"
 import PrivateRoute from './FirebaseAuth/PrivateRoute'
-import { AuthProvider } from './FirebaseAuth/AuthContext'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProviderPatientView from './components/provider/ProviderPatientView';
 import ProviderHomePage from './components/provider/ProviderHomePage';
 import ProviderIntakePage from './components/provider/ProviderIntakePage';
-import ProviderInfoPage from './components/provider/ProviderInfoPage';
 import ProviderPatientGrid from './components/provider/ProviderPatientGrid';
 import Tabs from './components/provider/Tabs';
-import PortalHeader from './components/PortalHeader';
-import NewAccountPage from './components/NewAccountPage';
-import ContactSubmissionNotification from './Home/ContactSubmissionNotification';
+import ContactSubmission from './Home/ContactSubmission';
 import UserContext from './UserContext';
-import { render } from 'react-dom';
 import AddSymptomContext from './components/patient/AddSymptomContext';
 import IntakePage from './components/patient/PatientIntake';
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
+    const userType = null;
+
     return (
-        <UserContext.Provider value={{currentUser, setCurrentUser}}>
+        <UserContext.Provider value={{userType, currentUser, setCurrentUser}}>
             <Router>
                 <Routes>
                     {/* outward facing routes*/}
                     <Route path="/" element={<Home />} />
                     <Route path="/mission" element={<Mission />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/contactformupdate" element={<ContactSubmissionNotification />} />
+                    <Route path="/contact-submission" element={<ContactSubmission />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/login" element={<SignIn />} />
                 </Routes>

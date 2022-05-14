@@ -1,8 +1,9 @@
 import './MainHeader.css'
-import { NavLink, useNavigate } from "react-router-dom";
-import { useState } from 'react';
+import {useNavigate } from "react-router-dom";
 
-
+/**
+ * MainHeader component. Displays the text for the outward-facing navigation bar.
+ */
 function MainHeader() {
     const navigate = useNavigate();
         return (
