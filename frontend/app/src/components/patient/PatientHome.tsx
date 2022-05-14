@@ -5,17 +5,7 @@ import PortalHeader from '../PortalHeader';
 import profile from '../../icons/profile-icon.svg';
 import addSymptom from '../../icons/addSymptom.svg';
 import symptomLog from '../../icons/symptomLog.svg';
-<<<<<<< Updated upstream
-import {useContext, useEffect, useState} from "react";
-import { IconContext } from "react-icons";
-import { BsFileMedical } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
-import { GiMedicines } from "react-icons/gi";
-import { MdOutlinePostAdd } from "react-icons/md";
-import { FaClinicMedical } from "react-icons/fa";
-=======
 import {useContext, useState } from "react";
->>>>>>> Stashed changes
 import UserContext from '../../UserContext';
 import {auth} from "../../FirebaseAuth/Firebase";
 
