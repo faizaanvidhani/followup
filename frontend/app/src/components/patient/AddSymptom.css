@@ -2,21 +2,60 @@
     width: 250px;
 }
 
+.form-group {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#submit-btn {
+    position: fixed;
+    bottom: 33%;
+    right: 30%;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#prev-btn {
+    position: fixed;
+    bottom: 33%;
+    left: 30%;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
 #container {
     background-color: #C8E2FF;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 50%;
 }
 
-small {
-    font-size: 12px;
-    font-weight: 400;
-    color: black;
-    margin-bottom: 10px;
+#next-button {
+    margin-left: 30%;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
 }
 
-#severityValue {
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
-    font: bold 20px "Roboto", sans-serif;
+#symptomHelp {
+    font-size: 24px;
+    font-weight: bold;
+    position:fixed;
+    top: 33%;
+    left: 26%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#symptomTextContext {
+    position:fixed;
+    top: 40%;
+    left: 27%;
+    width: 660px;
+    height: 50px;
 
 }
+

@@ -1,5 +1,4 @@
 import React, {MutableRefObject, useRef, useState } from 'react';
-import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PatientHome from "./components/patient/PatientHome";
@@ -27,6 +26,8 @@ import NewAccountPage from './components/NewAccountPage';
 import ContactSubmissionNotification from './Home/ContactSubmissionNotification';
 import UserContext from './UserContext';
 import { render } from 'react-dom';
+import AddSymptomContext from './components/patient/AddSymptomContext';
+import IntakePage from './components/patient/PatientIntake';
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
@@ -46,9 +47,10 @@ function App() {
                 <Routes>
                     {/*patient routes*/}
                     <Route path="/patientHome" element={<PrivateRoute><PatientHome /></PrivateRoute>} />
-                    <Route path="/profileInfo" element={<PrivateRoute><ProfileInfo /></PrivateRoute>} />
+                    <Route path="/profileInfo" element={<PrivateRoute><IntakePage /></PrivateRoute>} />
                     <Route path="/symptomLog" element={<PrivateRoute><SymptomLog /></PrivateRoute>} />
                     <Route path="/addSymptom" element={<PrivateRoute><AddSymptom /></PrivateRoute>} />
+                    <Route path="/addSymptomContext" element={<PrivateRoute><AddSymptomContext /></PrivateRoute>} />
                 </Routes>
 
                 <Routes>
