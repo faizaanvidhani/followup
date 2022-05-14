@@ -1,30 +1,29 @@
-package edu.brown.cs.student.patientLoader;
+package edu.brown.cs.student.tableDataLoader;
 
 import com.google.gson.Gson;
+import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
 import spark.Route;
 
-import java.util.List;
-import java.util.Map;
-
 /**
  * Handles requests for loading the contents for a database containing kanban data.
  */
-public class PatientDataHandler implements Route {
+public class TableDataHandler implements Route {
 
   private static String filePath;
 
   @Override
   public String handle(Request req, Response res) {
     try {
-      PatientLoader pd = new PatientLoader(filePath);
-      List<Map<String, String>> patientData = pd.getPatientData();
+      JSONObject reqJson = new JSONObject(req.body());
+      String tableName = reqJson.getString("table_name"); // the requested table to load in
 
-      System.out.println("Loaded database at " + filePath + "\n" + patientData);
+      TableDataLoader tdl = new TableDataLoader(filePath);
+      tdl.fillTableData(tableName);
 
       Gson gson = new Gson();
-      return gson.toJson(patientData);
+      return gson.toJson(tdl.getTableData());
 
     } catch (Exception e) {
       System.out.println("ERROR: " + e.getMessage());

@@ -3,7 +3,7 @@ package edu.brown.cs.student.main;
 import edu.brown.cs.student.ReplCSV.Repl;
 import edu.brown.cs.student.KanbanVisualization.KanbanDataHandler;
 import edu.brown.cs.student.TableVisualization.*;
-import edu.brown.cs.student.patientLoader.PatientDataHandler;
+import edu.brown.cs.student.tableDataLoader.TableDataHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
 import joptsimple.OptionParser;
@@ -84,13 +84,12 @@ public final class Main {
     // routes
     Spark.get("/kanban", new KanbanDataHandler());
     Spark.get("/table-names", new TableNamesHandler());
-    Spark.post("/table-data", new TableDataHandler());
+    Spark.post("/table-data", new edu.brown.cs.student.TableVisualization.TableDataHandler());
     Spark.post("/insert", new InsertHandler());
     Spark.post("/delete", new DeleteHandler());
     Spark.post("/update", new UpdateHandler());
     Spark.post("/provider-data", new ProviderDataHandler());
-    Spark.get("/patient-data", new PatientDataHandler());
-    Spark.get("/symptom-data", new SymptomDataHandler());
+    Spark.get("/table-data", new TableDataHandler());
     Spark.init();
   }
 

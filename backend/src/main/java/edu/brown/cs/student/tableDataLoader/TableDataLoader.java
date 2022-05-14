@@ -1,4 +1,4 @@
-package edu.brown.cs.student.patientLoader;
+package edu.brown.cs.student.tableDataLoader;
 
 import com.google.common.collect.ImmutableList;
 
@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Loads in a database and extracts information about the tables in the database.
  */
-public class PatientLoader {
+public class TableDataLoader {
 
   private static Connection conn = null;
 
@@ -19,7 +19,7 @@ public class PatientLoader {
    * Creates a list of HashMaps where each Hashmap contains a row of data with
    * the string column name mapped to its string value.
    */
-  private final List<Map<String, String>> patientData;
+  private final List<Map<String, String>> tableData;
 
   /**
    * Constructor for the TableLoader class.
@@ -28,7 +28,7 @@ public class PatientLoader {
    * @throws SQLException - for an invalid SQL query or database
    * @throws ClassNotFoundException - when the class with the name is not found
    */
-  public PatientLoader(String filePath) throws ClassNotFoundException, SQLException {
+  public TableDataLoader(String filePath) throws ClassNotFoundException, SQLException {
     // establish the connection
     Class.forName("org.sqlite.JDBC");
     String urlToDB = "jdbc:sqlite:" + filePath;
@@ -36,8 +36,7 @@ public class PatientLoader {
     // have the database enforce foreign keys during operations,
     Statement stat = conn.createStatement();
     stat.executeUpdate("PRAGMA foreign_keys=ON;");
-    this.patientData = new ArrayList<>();
-    this.fillPatientData();
+    this.tableData = new ArrayList<>();
   }
 
   /**
@@ -61,9 +60,10 @@ public class PatientLoader {
    *
    * @throws SQLException - for an invalid SQL query or database
    */
-  public void fillPatientData() throws SQLException {
+  public void fillTableData(String tableToLoad) throws SQLException {
     // Join block and column tables and get row data.
-    String query = "SELECT * FROM Patient;";
+    String query = "SELECT * FROM PRAGMA_TABLE_INFO('" + tableToLoad + "')";
+
     ResultSet rowData = this.executeSQL(query);
 
     // Get columns from dataset.
@@ -77,7 +77,7 @@ public class PatientLoader {
         String cellData = rowData.getString(col);
         rowMap.put(colName, cellData);
       }
-      this.patientData.add(rowMap);
+      this.tableData.add(rowMap);
     }
   }
 
@@ -86,7 +86,7 @@ public class PatientLoader {
    *
    * @return list of Hashmaps containing row data
    */
-  public List<Map<String, String>> getPatientData() {
-    return ImmutableList.copyOf(this.patientData);
+  public List<Map<String, String>> getTableData() {
+    return ImmutableList.copyOf(this.tableData);
   }
 }
