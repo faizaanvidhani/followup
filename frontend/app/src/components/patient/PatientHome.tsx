@@ -9,15 +9,31 @@ import {useContext, useState } from "react";
 import UserContext from '../../UserContext';
 import {auth} from "../../FirebaseAuth/Firebase";
 import {Card, Container} from "react-bootstrap";
+import axios from 'axios';
+
 
 function PatientHome() {
-    const {currentUser} = useContext(UserContext);
     const navigate = useNavigate();
+    const {currentUser} = useContext(UserContext);
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [data, setData] = useState(null);
+
+    // Fetch patient data from database
+    const loadData = async() => {
+        axios.post('http://localhost:4567/patient-data', {patient_id: 2})
+            .then((response: any) => {
+                setData(response.data)
+                setFirstName(data!['patientData'][1])
+                setLastName(data!['patientData'][2])
+                console.log(data)
+            })
+    }
 
     return (
         <div className="patient-home">
             <PortalHeader wantLogOut={true} centered={false} />
-            <PatientHeader name={currentUser!} dob="01/01/2001" tel="012-345-6789" />
+            <PatientHeader name={firstName + lastName} dob="01/01/2001" tel="012-345-6789" />
             <Container className="dashboard-background">
                 <Card id = "dashboard-card">
                     <h1 id="dashboard-heading">Dashboard</h1>
