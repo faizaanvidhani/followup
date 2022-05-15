@@ -41,6 +41,7 @@ export function SignIn() {
                         setCurrentUser(user.uid);
                         console.log(user.uid);
                         const knownUsers = response.data
+                        console.log(knownUsers);
                         if (userID in knownUsers) {
                             const userInfoMap = knownUsers[userID];
                             const userType = userInfoMap['type'];
