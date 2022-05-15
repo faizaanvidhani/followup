@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="431dfc07-6ac0-4d74-abb5-76f35cd21007" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/tableDataLoader/InsertDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/tableDataLoader/InsertDataHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/tableDataLoader/TableDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/tableDataLoader/TableDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientIntake.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientIntake.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="29BaCOTWiIs6JZiVssozcSV4f53" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,6 +92,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

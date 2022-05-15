@@ -50,7 +50,7 @@ function App() {
                 <Routes>
                     {/*patient routes*/}
                     <Route path="/patientHome" element={<PrivateRoute><PatientHome /></PrivateRoute>} />
-                    <Route path="/profileInfo" element={<PrivateRoute><IntakePage /></PrivateRoute>} />
+                    {/*<Route path="/profileInfo" element={<PrivateRoute><IntakePage /></PrivateRoute>} />*/}
                     <Route path="/symptomLog" element={<PrivateRoute><SymptomLog /></PrivateRoute>} />
                     <Route path="/addSymptom" element={<PrivateRoute><AddSymptom /></PrivateRoute>} />
                     <Route path="/addSymptomContext" element={<PrivateRoute><AddSymptomContext /></PrivateRoute>} />
@@ -60,6 +60,7 @@ function App() {
                 {/*<ProviderContext.Provider value={{currentUser, setCurrentUser}}>*/}
                     {/*provider routes*/}
                 <Routes>
+                    <Route path="/profileInfo" element={<IntakePage />} />
                     <Route path="/providerHome" element={<ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' />} />
                     <Route path="/providerPatientGrid" element={<ProviderPatientGrid firstName="Jane" lastName="Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
 

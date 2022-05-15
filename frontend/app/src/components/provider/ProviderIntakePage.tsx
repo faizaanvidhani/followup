@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, {useContext, useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import './ProviderIntakePage.css';
+import UserContext from '../../UserContext';
+import axios from "axios";
 
 type providerData = {
     fName: string,
@@ -10,53 +12,52 @@ type providerData = {
     phoneNumber: string
 }
 
-function fetchPost(endpoint: string, postParameters: any): void {
-    console.log(postParameters)
-    fetch('http://localhost:4567/' + endpoint, {
-        method: 'POST',
-        headers: {
-            "Content-Type": "applications/json",
-            "Access-Control-Allow-Origin": "*",
-        },
-        // Data in JSON format to send in the request
-        body: JSON.stringify(postParameters),
-    })
-        .then((response) => response.json())
-        .then((res: any) => console.log(res))
-        .catch((error: any) => console.error("Error: ", error))
-
-}
 export default function ProviderIntakePage() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [institution, setInstitution] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [email, setEmail] = useState("");
+    const {userType, currentUser, setCurrentUser} = useContext(UserContext);
     let navigate = useNavigate();
 
-    const handleSubmit = (event: { preventDefault: () => void; }) => {
+    const handleSubmit = (event: any) => {
+        // event.preventDefault();
+        // const data: providerData = {
+        //     fName: firstName,
+        //     lName: lastName,
+        //     institution: institution,
+        //     email: email,
+        //     phoneNumber: phoneNumber
+        // }
+
         event.preventDefault();
-        const data: providerData = {
-            fName: firstName,
-            lName: lastName,
-            institution: institution,
-            email: email,
-            phoneNumber: phoneNumber
-        }
-        fetchPost('insert', data)
+        let values: string[] = [];
+        values.push(currentUser!);
+        values.push('Patient');
+        console.log("HELLOOOO")
+        console.log(currentUser + ',Patient');
+        axios.post('http://localhost:4567/insert-data', {table_name: 'Users', row_values: values})
+            .then(response => {
+                console.log("HIIIIIIII");
+                console.log(currentUser)
+                console.log(response)
+            })
+            .catch (error => {console.log(error)})
+
     }
 
     return (
-        <section className="vh-100 gradient-custom" id="provider-intake-section">
+        <body className="vh-100 gradient-custom" id="provider-intake-section">
             <div className="container py-5 h-100">
                 <div className="row justify-content-center align-items-center h-100">
                     <div className="col-12 col-lg-9 col-xl-7">
                         <div className="card shadow-2-strong card-registration" id="page-outer-box">
                             <div className="card-body p-4 p-md-5">
                                 <h2 className="mb-4 pb-2 pb-md-0 mb-md-5" id="provider-form-title">Provider Sign Up</h2>
-                                <form onSubmit={() => {
-                                    navigate("/providerHome");
-                                }}>
+                                <form onSubmit={event => {handleSubmit(event)}
+                                    // navigate("/providerHome");
+                                }>
                                     {/*<h4 className="form-category-header">Profile Information</h4>*/}
                                     <div className="row">
                                         <div className="col-md-6 mb-4">
@@ -154,6 +155,6 @@ export default function ProviderIntakePage() {
                     </div>
                 </div>
             </div>
-        </section>
+        </body>
     )
 }

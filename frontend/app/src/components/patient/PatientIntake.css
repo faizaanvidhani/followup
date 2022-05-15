@@ -3,13 +3,14 @@
 }
 
 #patient-intake-section {
-    height: 100% !important;
+    background-size: cover;
 }
 
 #patient-page-outer-box {
     border-radius: 15px;
-    top: 50%;
     margin: auto;
+    top: 15%;
+    left: 25%;
     font-family: 'Roboto', sans-serif;
 }
 

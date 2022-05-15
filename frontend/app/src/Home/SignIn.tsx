@@ -31,6 +31,12 @@ export function SignIn() {
     const passwordRef = useRef(null);
     const passwordConfirmRef = useRef(null);
 
+    function loadProviderData(userID: string) {
+        axios.post('http://localhost:4567/provider-data', {provider_id: userID})
+            .then((response: any) => {
+                console.log(response.data)
+            })
+    }
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(function(user) {
             if (user) {
@@ -39,6 +45,7 @@ export function SignIn() {
                     .then((response: any) => {
                         const userID = user.uid;
                         setCurrentUser(user.uid);
+                        console.log(currentUser);
                         console.log(user.uid);
                         const knownUsers = response.data
                         console.log(knownUsers);
@@ -49,12 +56,13 @@ export function SignIn() {
                             if (userType === "Patient") {
                                 navigate("/patientHome");
                             } else if (userType === "Provider") {
+                                // loadProviderData(userID)
                                 navigate("/providerHome");
                             } else {
                                 console.log("ERROR: User is not of type patient nor provider.");
                             }
                         } else {
-
+                            navigate("/newAccount");
                         }
                     })
             } else {

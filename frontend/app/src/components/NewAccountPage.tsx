@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { useNavigate } from "react-router-dom";
 import PortalHeader from './PortalHeader';
 import './NewAccountPage.css';
 
+
 function NewAccountPage() {
     let navigate = useNavigate();
+
     return (
         <body id="new-account-page">
             <div className="background">

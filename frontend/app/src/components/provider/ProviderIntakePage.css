@@ -6,15 +6,12 @@
     background: linear-gradient(to bottom left, rgba(173, 247, 242), rgba(21, 170, 255));
 }
 
-#provider-intake-section {
-    min-height: 100% !important;
-}
-
 #page-outer-box {
+    display: flex;
     border-radius: 15px;
-    top: 50%;
-    margin: auto;
     font-family: 'Roboto', sans-serif;
+    left: 30%;
+    top: 25%;
 }
 
 #provider-form-title {
