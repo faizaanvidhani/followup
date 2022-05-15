@@ -121,14 +121,17 @@
 
 .google:hover {
     transform: scale(1.4, 1.4);
+    cursor: pointer;
 }
 
 .fb:hover {
     transform: scale(1.4, 1.4);
+    cursor: pointer;
 }
 
 .apple:hover {
     transform: scale(1.4, 1.4);
+    cursor: pointer;
 }
 
 

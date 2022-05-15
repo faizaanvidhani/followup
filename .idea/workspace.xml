@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e4fbfa5-0976-4944-b78e-8748221e9b93" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientDataHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientLoader.java" afterDir="false" />
+    <list default="true" id="3124523c-d9db-4a21-bab2-83cffe811798" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/profile_info.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/profile_info.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/profile_info.db-journal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientHome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientHome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientHome.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +27,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="298a171oFMbj7yBNwrUzmfgobyV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/app/node_modules/typescript/lib" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/table/table.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -39,6 +68,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
