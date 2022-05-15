@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="431dfc07-6ac0-4d74-abb5-76f35cd21007" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/PatientProtectedRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientDataHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/edu/brown/cs/student/patientLoader/PatientLoader.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/FirebaseAuth/ProviderProtectedRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/UserContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/UserContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

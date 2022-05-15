@@ -15,11 +15,12 @@ type headerProps = {
 
 function ShowLogOut(wantLogOut: boolean) {
     const navigate = useNavigate();
-    const {currentUser, setCurrentUser} = useContext(UserContext);
+    const {setUserType, setCurrentUser} = useContext(UserContext);
 
     function executeLogOut() {
         signOut(auth).then(() => {
             setCurrentUser(null);
+            setUserType(null);
             navigate("/");
             // Sign-out successful.
         }).catch((error) => {
