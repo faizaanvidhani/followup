@@ -1,6 +1,7 @@
 package edu.brown.cs.student.tableDataLoader;
 
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableMap;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class TableDataLoader {
    * Creates a list of HashMaps where each Hashmap contains a row of data with
    * the string column name mapped to its string value.
    */
-  private final List<Map<String, String>> tableData;
+  private final Map<String, Map<String, String>> tableData;
 
   /**
    * Constructor for the TableLoader class.
@@ -36,7 +37,7 @@ public class TableDataLoader {
     // have the database enforce foreign keys during operations,
     Statement stat = conn.createStatement();
     stat.executeUpdate("PRAGMA foreign_keys=ON;");
-    this.tableData = new ArrayList<>();
+    this.tableData = new HashMap<>();
   }
 
   /**
@@ -77,7 +78,7 @@ public class TableDataLoader {
         String cellData = rowData.getString(col);
         rowMap.put(colName, cellData);
       }
-      this.tableData.add(rowMap);
+      this.tableData.put(rowData.getString(1), rowMap);
     }
   }
 
@@ -86,8 +87,8 @@ public class TableDataLoader {
    *
    * @return list of Hashmaps containing row data
    */
-  public List<Map<String, String>> getTableData() {
-    return ImmutableList.copyOf(this.tableData);
+  public Map<String, Map<String, String>> getTableData() {
+    return ImmutableMap.copyOf(this.tableData);
   }
 
 }
