@@ -34,6 +34,7 @@ export function SignIn() {
     function loadProviderData(userID: string) {
         axios.post('http://localhost:4567/provider-data', {provider_id: userID})
             .then((response: any) => {
+                console.log("LOADING");
                 console.log(response.data)
             })
     }

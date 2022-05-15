@@ -64,23 +64,32 @@ public class ProviderLoader {
    */
   public void fillProviderData(String providerID) throws SQLException {
     // query to get the column name and column type
-    String query = "SELECT * FROM Provider WHERE provider_id = " + providerID + ";";
+    String query = "SELECT * FROM Provider WHERE provider_id = '" + providerID + "';";
+    System.out.println(query);
     ResultSet providerResult = this.executeSQL(query);
+    System.out.println("row data" + providerResult);
 
     int numCols = providerResult.getMetaData().getColumnCount();
+    System.out.println(numCols);
 
     List<String> providerInfo = new ArrayList<>();
     for (int col = 1; col <= numCols; col++) {
       String cellData = providerResult.getString(col);
+      System.out.println(cellData);
       providerInfo.add(cellData);
     }
+
+    System.out.println("provider info" + providerInfo);
     this.providerData.put("providerData", providerInfo);
     providerResult.close();
   }
 
   public void fillPatientIDs(String providerID) throws SQLException {
-    String patientQuery = "SELECT * FROM Patient WHERE provider_id = " + providerID + ";";
+
+    String patientQuery = "SELECT * FROM Patient WHERE provider_id = '" + providerID + "';";
+    System.out.println(patientQuery);
     ResultSet rowData = this.executeSQL(patientQuery);
+
 
     // fill row data
     List<String> patientIDs = new ArrayList<>();
