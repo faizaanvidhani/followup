@@ -2,6 +2,8 @@ package edu.brown.cs.student.tableDataLoader;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
+import org.json.JSONArray;
+import org.json.JSONException;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -97,9 +99,7 @@ public class TableDataLoader {
    * @param rowData row data
    * @throws SQLException sql exception
    */
-  public void insertRow(String tableName, String rowData) throws SQLException {
-    String[] row = rowData.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
-
+  public void insertRow(String tableName, JSONArray rowData) throws SQLException, JSONException {
     String dataQuery = "SELECT * FROM " + tableName + ";";
 
     ResultSet sqlData = this.executeSQL(dataQuery);
@@ -111,7 +111,7 @@ public class TableDataLoader {
     for (int col = 1; col <= numCols; col++) {
       String colName = sqlData.getMetaData().getColumnName(col);
       columns.append(colName).append(", ");
-      values.append("'").append(row[col - 1]).append("'").append(", ");
+      values.append("'").append(rowData.get(col-1)).append("'").append(", ");
 
     columns = new StringBuilder(columns.substring(0, columns.length() - 2));
     values = new StringBuilder(values.substring(0, values.length() - 2));

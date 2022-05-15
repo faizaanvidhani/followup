@@ -1,5 +1,6 @@
 package edu.brown.cs.student.tableDataLoader;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
@@ -27,7 +28,7 @@ public class InsertDataHandler implements Route {
     TableDataLoader loader = new TableDataLoader(filePath);
     JSONObject data = new JSONObject(request.body());
     String tableName = data.getString("table_name");
-    String rowValues = data.getString("row_values");
+    JSONArray rowValues = data.getJSONArray("row_values");
     loader.fillTableData(tableName);
     try {
       loader.insertRow(tableName, rowValues);
