@@ -62,7 +62,6 @@ function App() {
                     {/*provider routes*/}
                 <Routes>
                     <Route path="/profileInfo" element={<IntakePage />} />
-                    <Route path="/providerHome" element={<ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' />} />
                     <Route path="/providerHome" element={<ProviderProtectedRoute><ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' /> </ProviderProtectedRoute>} />
                     <Route path="/providerPatientGrid" element={<ProviderPatientGrid firstName="Jane" lastName="Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
                     <Route path="/providerIntake" element={<ProviderIntakePage />} />

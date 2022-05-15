@@ -5,6 +5,6 @@ import UserContext from '../../UserContext';
 export default function ProviderProtectedRoute({ children }) {
     const {userType, currentUser} = useContext(UserContext);
     return (
-        currentUser && userType == "Provider" ? children : <Navigate to="/" />
+        currentUser && userType == "Provider" ? children : <Navigate to="/login" />
     )
 }

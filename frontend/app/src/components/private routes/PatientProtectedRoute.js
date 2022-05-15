@@ -6,6 +6,6 @@ export default function PatientProtectedRoute({ children }) {
     const {userType, currentUser} = useContext(UserContext);
     console.log(userType);
     return (
-        currentUser && userType == "Patient" ? children : <Navigate to="/" />
+        currentUser && userType == "Patient" ? children : <Navigate to="/login" />
     )
 }
