@@ -80,7 +80,7 @@ public class Repl {
     Pattern regex = Pattern.compile("[^\\s\"']+|\"[^\"]*\"|'[^']*'");
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 //    String line = reader.readLine();
-    String line = "load_database ../data/profile_info.db";
+    String line = "load_database ../data/followup_data.db";
 
     while (line != null) {
       if (line.equals("")) {

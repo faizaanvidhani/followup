@@ -37,7 +37,6 @@ public class SymptomLoader {
     Statement stat = conn.createStatement();
     stat.executeUpdate("PRAGMA foreign_keys=ON;");
     this.symptomData = new ArrayList<>();
-    this.fillSymptomData();
   }
 
   /**
@@ -61,9 +60,9 @@ public class SymptomLoader {
    *
    * @throws SQLException - for an invalid SQL query or database
    */
-  public void fillSymptomData() throws SQLException {
+  public void fillSymptomData(String patientID) throws SQLException {
     // Join block and column tables and get row data.
-    String query = "SELECT * FROM SymptomLog;";
+    String query = "SELECT * FROM SymptomLog WHERE patient_id =" + patientID + ";";
     ResultSet rowData = this.executeSQL(query);
 
     // Get columns from dataset.

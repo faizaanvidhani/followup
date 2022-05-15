@@ -1,6 +1,7 @@
 package edu.brown.cs.student.symptomLoader;
 
 import com.google.gson.Gson;
+import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
 import spark.Route;
@@ -18,13 +19,14 @@ public class SymptomDataHandler implements Route {
   @Override
   public String handle(Request req, Response res) {
     try {
-      SymptomLoader pd = new SymptomLoader(filePath);
-      List<Map<String, String>> symptomData = pd.getSymptomData();
+      JSONObject reqJson = new JSONObject(req.body());
+      String patientID = reqJson.getString("patient_id"); // the requested table to load in
 
-      System.out.println("Loaded database at " + filePath + "\n" + symptomData);
+      SymptomLoader pd = new SymptomLoader(filePath);
+      pd.fillSymptomData(patientID);
 
       Gson gson = new Gson();
-      return gson.toJson(symptomData);
+      return gson.toJson(pd.getSymptomData());
 
     } catch (Exception e) {
       System.out.println("ERROR: " + e.getMessage());
