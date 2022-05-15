@@ -23,8 +23,9 @@ import ContactSubmission from './Home/ContactSubmission';
 import UserContext from './UserContext';
 import AddSymptomContext from './components/patient/AddSymptomContext';
 import IntakePage from './components/patient/PatientIntake';
-
 import ProviderContext from './components/provider/ProviderContext';
+import ProviderInfoPage from './components/provider/ProviderInfoPage';
+import NewAccountPage from './components/NewAccountPage';
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
@@ -53,13 +54,8 @@ function App() {
                     <Route path="/profileInfo" element={<PrivateRoute><IntakePage /></PrivateRoute>} />
                     <Route path="/symptomLog" element={<PrivateRoute><SymptomLog /></PrivateRoute>} />
                     <Route path="/addSymptom" element={<PrivateRoute><AddSymptom /></PrivateRoute>} />
-<<<<<<< Updated upstream
                     <Route path="/addSymptomContext" element={<PrivateRoute><AddSymptomContext /></PrivateRoute>} />
-=======
-
                     <Route path="/patientIntake" element={<PatientIntake/>} />
-
->>>>>>> Stashed changes
                 </Routes>
 
                 {/*<ProviderContext.Provider value={{currentUser, setCurrentUser}}>*/}
