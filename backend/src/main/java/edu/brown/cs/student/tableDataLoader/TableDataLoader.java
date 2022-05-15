@@ -62,7 +62,7 @@ public class TableDataLoader {
    */
   public void fillTableData(String tableToLoad) throws SQLException {
     // Join block and column tables and get row data.
-    String query = "SELECT * FROM PRAGMA_TABLE_INFO('" + tableToLoad + "')";
+    String query = "SELECT * FROM " + tableToLoad + ";";
 
     ResultSet rowData = this.executeSQL(query);
 
