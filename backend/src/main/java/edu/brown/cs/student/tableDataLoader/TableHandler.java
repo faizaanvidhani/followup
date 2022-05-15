@@ -9,7 +9,7 @@ import spark.Route;
 /**
  * Handles requests for loading the contents for a database containing kanban data.
  */
-public class TableDataHandler implements Route {
+public class TableHandler implements Route {
 
   private static String filePath;
 
