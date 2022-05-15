@@ -73,11 +73,9 @@ public class UserDataLoader {
 
     // fill row data
     while (rowData.next()) {
-      for (int col = 1; col <= numCols; col++) {
-        String colName = rowData.getMetaData().getColumnName(col);
-        String cellData = rowData.getString(col);
-        this.userData.put(colName, cellData);
-      }
+        String userID = rowData.getString(1);
+        String type = rowData.getString(2);
+        this.userData.put(userID, type);
     }
   }
 
