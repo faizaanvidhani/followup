@@ -75,7 +75,9 @@ public class PatientLoader {
       patientInfo.add(cellData);
     }
     this.patientData.put("patientData", patientInfo);
+  }
 
+  public void fillSymptomIDs(String patientID) throws SQLException {
     String patientQuery = "SELECT * FROM SymptomLog WHERE patient_id = " + patientID + ";";
     ResultSet rowData = this.executeSQL(patientQuery);
 
@@ -89,6 +91,7 @@ public class PatientLoader {
     }
     this.patientData.put("logIDs", logIDs);
   }
+
 
   /**
    * Getter for the tableDataMap.

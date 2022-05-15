@@ -20,8 +20,9 @@ public class PatientDataHandler implements Route {
       JSONObject reqJson = new JSONObject(req.body());
       String patientID = reqJson.getString("patient_id"); // the requested table to load in
 
-      PatientLoader pl = new PatientLoader(filePath);
-      pl.fillPatientData(patientID);
+      PatientLoader loader = new PatientLoader(filePath);
+      loader.fillPatientData(patientID);
+      loader.fillSymptomIDs(patientID);
 
       // only print if there was a valid table from the database to load
       if (!patientID.equals("")) {
@@ -29,7 +30,7 @@ public class PatientDataHandler implements Route {
       }
 
       Gson gson = new Gson();
-      return gson.toJson(pl.getProviderData());
+      return gson.toJson(loader.getProviderData());
 
     } catch (Exception e) {
       System.out.println("ERROR: " + e.getMessage());

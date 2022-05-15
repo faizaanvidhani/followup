@@ -75,7 +75,9 @@ public class ProviderLoader {
       providerInfo.add(cellData);
     }
     this.providerData.put("providerData", providerInfo);
+  }
 
+  public void fillPatientIDs(String providerID) throws SQLException {
     String patientQuery = "SELECT * FROM Patient WHERE provider_id = " + providerID + ";";
     ResultSet rowData = this.executeSQL(patientQuery);
 
