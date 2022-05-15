@@ -24,7 +24,6 @@ public class LoadDatabaseCommand implements ICommand {
       System.out.println("ERROR: Incorrect number of arguments for load_database");
     } else {
       TableNamesHandler.setFilePath(inputTokens.get(1));
-      edu.brown.cs.student.TableVisualization.TableDataHandler.setFilePath(inputTokens.get(1));
       InsertHandler.setFilePath(inputTokens.get(1));
       DeleteHandler.setFilePath(inputTokens.get(1));
       UpdateHandler.setFilePath(inputTokens.get(1));
