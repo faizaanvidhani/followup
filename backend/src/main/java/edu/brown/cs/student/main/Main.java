@@ -8,6 +8,7 @@ import edu.brown.cs.student.symptomLoader.SymptomInsertHandler;
 import edu.brown.cs.student.tableDataLoader.TableHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
+import edu.brown.cs.student.userLoader.UserHandler;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import spark.Spark;
@@ -93,6 +94,7 @@ public final class Main {
     Spark.post("/provider-data", new ProviderDataHandler());
     Spark.post("/patient-data", new PatientDataHandler());
     Spark.post("/symptom-data", new SymptomDataHandler());
+    Spark.get("/user-data", new UserHandler());
     Spark.post("/generic-table-data", new TableHandler());
     Spark.post("/insert-symptom", new SymptomInsertHandler());
     Spark.init();

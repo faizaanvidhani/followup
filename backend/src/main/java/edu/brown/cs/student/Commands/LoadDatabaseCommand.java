@@ -7,6 +7,7 @@ import edu.brown.cs.student.symptomLoader.SymptomInsertHandler;
 import edu.brown.cs.student.tableDataLoader.TableHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
+import edu.brown.cs.student.userLoader.UserHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +33,7 @@ public class LoadDatabaseCommand implements ICommand {
       TableHandler.setFilePath(inputTokens.get(1));
       SymptomDataHandler.setFilePath(inputTokens.get(1));
       SymptomInsertHandler.setFilePath(inputTokens.get(1));
+      UserHandler.setFilePath(inputTokens.get(1));
     }
   }
 
