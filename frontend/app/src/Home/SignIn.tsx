@@ -41,7 +41,7 @@ export function SignIn() {
                         const knownUsers = response.data
                         if (userID in knownUsers) {
                             const userInfoMap = knownUsers[userID];
-                            const userType = userInfoMap['type']
+                            const userType = userInfoMap['type'];
                             console.log(userType);
                             if (userType === "Patient") {
                                 navigate("/patientHome");
@@ -51,7 +51,7 @@ export function SignIn() {
                                 console.log("ERROR: User is not of type patient nor provider.");
                             }
                         } else {
-
+                            navigate("/newAccount");
                         }
                     })
             } else {
