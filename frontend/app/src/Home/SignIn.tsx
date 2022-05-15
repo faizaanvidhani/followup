@@ -38,6 +38,8 @@ export function SignIn() {
                 axios.post('http://localhost:4567/generic-table-data', {table_name: "Users"})
                     .then((response: any) => {
                         const userID = user.uid;
+                        setCurrentUser(user.uid);
+                        console.log(user.uid);
                         const knownUsers = response.data
                         if (userID in knownUsers) {
                             const userInfoMap = knownUsers[userID];
@@ -51,7 +53,7 @@ export function SignIn() {
                                 console.log("ERROR: User is not of type patient nor provider.");
                             }
                         } else {
-                            navigate("/newAccount");
+
                         }
                     })
             } else {
@@ -62,7 +64,6 @@ export function SignIn() {
     }, [])
 
     function loginGoogle() {
-        console.log(currentUser);
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 // setCurrentUser(result.user.uid);
