@@ -3,7 +3,8 @@ import woman from '../../icons/janedoe.jpeg';
 import './ProviderHeader.css';
 
 type ProviderHeaderProps = {
-    name: string,
+    firstName: string,
+    lastName: string,
     title: string,
     clinicName: string
 }
@@ -19,7 +20,7 @@ function ProviderHeader(props: ProviderHeaderProps) {
 
                 <div>
                     <h1 className="provider-name">
-                        {props.name}, {props.title}
+                        {props.firstName}&nbsp;{props.lastName},&nbsp;{props.title}
                     </h1>
                     <h3 className="provider-clinic">
                         {props.clinicName}

@@ -43,7 +43,7 @@ export default function ProviderIntakePage() {
             email: email,
             phoneNumber: phoneNumber
         }
-        fetchPost('/insert', data)
+        fetchPost('insert', data)
     }
 
     return (

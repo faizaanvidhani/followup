@@ -1,9 +1,9 @@
-hr {
-    width: 40%;
+#account-page-hr {
     margin-top: -40px;
+    width: 80%;
 }
 
-h2 {
+#account-page-h2 {
     text-align: center;
     font-family: 'Lato';
     font-style: normal;
@@ -13,11 +13,8 @@ h2 {
     margin-bottom: 0;
 }
 
-body {
+.account-page-container {
     background-color: #C8E2FF;
-}
-
-.container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -26,21 +23,21 @@ body {
     height: 50%;
     border-radius: 10px;
     text-align: center;
-    background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 15%;
     margin: auto;
 }
 
-.button-container {
+.account-button-container {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
 }
 
-.button {
-    width: 50%;
+.account-choice-button {
+    width: 250px;
     height: 50px;
     margin: auto;
     font-family: 'Lato', sans-serif;

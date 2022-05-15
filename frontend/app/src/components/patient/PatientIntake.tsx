@@ -13,10 +13,10 @@ export default function IntakePage() {
                                 <form>
                                     <h4 className="patient-form-header">Profile Information</h4>
                                     <div className="row">
-                                        <div className="col-md-6 mb-4">
+                                        <div className="col-md-5 mb-4">
 
                                             <div className="form-label-group outline">
-                                                <input type="text" id="firstName"
+                                                <input type="text" id="patient-firstName"
                                                        className="form-control form-control-lg"
                                                        placeholder="First name"
                                                        required={true}/>
@@ -24,42 +24,37 @@ export default function IntakePage() {
                                             </div>
 
                                         </div>
-                                        <div className="col-md-6 mb-4">
+                                        <div className="col-md-5 mb-4">
 
                                             <div className="form-label-group outline">
-                                                <input type="text" id="lastName"
+                                                <input type="text" id="patient-lastName"
                                                        className="form-control form-control-lg"
                                                        placeholder="Last name"
                                                        required={true}/>
                                                 <span><label className="form-label" htmlFor="lastName" id="last-name-label">Last Name</label></span>
                                             </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div className="row">
-                                        <div className="col-md-6 mb-4">
-
-                                            <div className="form-label-group outline">
-                                                <input type="text" id="date"
-                                                       className="form-control form-control-lg"
-                                                       placeholder="Last name"
-                                                       required={true}/>
-                                                <span><label className="form-label" htmlFor="date" id="date-label">DOB (MM/DD/YY)</label></span>
-                                            </div>
                                         </div>
 
-                                    </div>
-                                    <div className="row">
                                         <div className="col-md-2 mb-4">
-
                                             <select className="patient-intake-select" id="gender-select">
                                                 <option value="1" selected disabled>Gender</option>
                                                 <option value="2">Female</option>
                                                 <option value="3">Male</option>
                                                 <option value="4">Other</option>
                                             </select>
+                                        </div>
 
+                                    </div>
+
+                                    <div className="row">
+
+                                        <div className="col-md-5 mb-4">
+                                            <div className="date-time" id="patient-dob">
+                                                <div>
+                                                    <small id="dateHelp" className="form-text text-muted">DOB: </small>
+                                                </div>
+                                                <input type="date" className="form-control" id="date" placeholder="Date"></input>
+                                            </div>
                                         </div>
 
                                         <div className="col-md-6 mb-4">
@@ -75,8 +70,9 @@ export default function IntakePage() {
                                             </select>
 
                                         </div>
-
-                                        <div className="col-md-3 mb-4">
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-md-4 mb-4">
 
                                             <select className="patient-intake-select" id="provider-select">
                                                 <option value="1" selected disabled>Select Provider</option>
@@ -91,7 +87,7 @@ export default function IntakePage() {
                                         <div className="row">
                                             <div className="col-md-12 mb-4">
                                                 <div className="form-label-group outline">
-                                                    <input type="text" id="address"
+                                                    <input type="text" id="patient-address"
                                                            className="form-control form-control-lg"
                                                            placeholder="Street Address or P.O. Box"
                                                            required={true}/>
@@ -103,7 +99,7 @@ export default function IntakePage() {
 
                                         <div className="row">
                                             <div className="col-md-12 mb-4">
-                                                <div className="form-label-group outline" id="address-extra-input">
+                                                <div className="form-label-group outline" id="patient-address-extra-input">
                                                     <input type="text" id="address-extra-info"
                                                            className="form-control form-control-lg"
                                                            placeholder="Apt, suite, building, etc."
@@ -118,7 +114,7 @@ export default function IntakePage() {
                                     <div className="row">
                                         <div className="col-md-4 mb-4">
                                             <div className="form-label-group outline">
-                                                <input type="text" id="city"
+                                                <input type="text" id="patient-city"
                                                        className="form-control form-control-lg"
                                                        placeholder="City"
                                                        required={true}/>
@@ -127,7 +123,7 @@ export default function IntakePage() {
                                         </div>
                                         <div className="col-md-4 mb-4">
                                             <div className="form-label-group outline">
-                                                <input type="text" id="zip-code"
+                                                <input type="text" id="patient-zip-code"
                                                        className="form-control form-control-lg"
                                                        placeholder="Zip Code"
                                                        required={true}/>
@@ -197,7 +193,7 @@ export default function IntakePage() {
                                         <div className="col-md-6 mb-4 pb-2">
 
                                             <div className="form-label-group outline">
-                                                <input type="tel" id="phoneNumber"
+                                                <input type="tel" id="patient-phoneNumber"
                                                        className="form-control form-control-lg" placeholder="Phone number"
                                                        required={true}/>
                                                 <span><label className="form-label" htmlFor="phoneNumber" id="number-label">Phone Number</label></span>
@@ -207,7 +203,7 @@ export default function IntakePage() {
                                         <div className="col-md-6 mb-4 pb-2">
 
                                             <div className="form-label-group outline">
-                                                <input type="email" id="emailAddress"
+                                                <input type="email" id="patient-emailAddress"
                                                        className="form-control form-control-lg" placeholder="Email"
                                                        required={true}/>
                                                 <span><label className="form-label" htmlFor="emailAddress" id="email-label">Email</label></span>

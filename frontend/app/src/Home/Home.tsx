@@ -14,7 +14,7 @@ function Home() {
         console.log(currentUser);
         if (currentUser !== null) {
             // user is currently signed in
-            navigate('profileInfo');
+            navigate("/profileInfo");
         } else {
             // user is currently signed out
             navigate("/login");

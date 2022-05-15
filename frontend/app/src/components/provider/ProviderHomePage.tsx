@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import './ProviderHomePage.css';
 import clinic from '../../icons/clinic-icon.svg';
@@ -7,10 +8,6 @@ import ProviderHeader from './ProviderHeader';
 import PortalHeader from '../PortalHeader';
 import { NavLink } from "react-router-dom";
 
-// const [name, setName] = useState("");
-// const [title, setTitle] = useState("");
-// const [clinicName, setClinicName] = useState("");
-
 type ProviderHomeProps = {
     name: string,
     title: string,
@@ -18,6 +15,26 @@ type ProviderHomeProps = {
 }
 
 function ProviderHome(props: ProviderHomeProps) {
+
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    // const [title, setTitle] = useState("");
+    // const [clinicName, setClinicName] = useState("");
+    const [data, setData] = useState(null);
+
+    const loadData = async() => {
+        axios.post('http://localhost:4567/provider-data', {provider_id: 2})
+            .then((response: any) => {
+                setData(response.data)
+                setFirstName(data!['providerData'][1])
+                setLastName(data!['providerData'][2])
+            })
+
+    }
+
+    // const loadData = () => {
+    //     fetch('http://localhost:4567/')
+    // }
 
     // let navigate = useNavigate();
     // const routeToPatientView = () =>{
@@ -28,7 +45,8 @@ function ProviderHome(props: ProviderHomeProps) {
 
         <div className="provider-home">
             <PortalHeader wantLogOut={true} centered={false}/>
-            <ProviderHeader name={props.name} title={props.title} clinicName={props.clinicName}/>
+            <ProviderHeader firstName={firstName} lastName={lastName} title={props.title} clinicName={props.clinicName}/>
+            <button id="fake-button" onClick={loadData}> Load data </button>
             <div className="provider-home-icons">
                 <div className="icon-div" id="clinic-icon-div">
                     <img src={clinic} className="provider-home-icon" alt="clinic icon"/>

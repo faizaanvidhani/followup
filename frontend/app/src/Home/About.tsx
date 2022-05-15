@@ -108,11 +108,9 @@ function About() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-
                 </Container>
             </div>
         </div>
     );
 }
-
 export default About;

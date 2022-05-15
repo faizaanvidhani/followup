@@ -20,6 +20,7 @@
 
 .container {
     margin-top: -2%;
+    min-width: 100%;
 }
 
 .tabs {
@@ -32,7 +33,7 @@
 
 .content-tabs {
     background-color: #98CCFD;
-    height: 400px;
+    height: 600px;
     padding-top: 20px;
 }
 
@@ -45,6 +46,4 @@
 .bloc-tabs {
     display: flex;
     align-content: center;
-    /*column-gap: 10%;*/
-    margin-left: 5%;
 }
