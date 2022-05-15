@@ -111,7 +111,10 @@ public class TableDataLoader {
     for (int col = 1; col <= numCols; col++) {
       String colName = sqlData.getMetaData().getColumnName(col);
       columns.append(colName).append(", ");
-      values.append("'").append(rowData.get(col-1)).append("'").append(", ");
+
+    for (int i = 0; i <= rowData.length(); i++) {
+      values.append("'").append(rowData.getString(i)).append("'").append(", ");
+    }
 
     columns = new StringBuilder(columns.substring(0, columns.length() - 2));
     values = new StringBuilder(values.substring(0, values.length() - 2));
@@ -121,6 +124,7 @@ public class TableDataLoader {
     insertQuery.append(values);
 
     String query = insertQuery + ");";
+    System.out.println(query);
     PreparedStatement statement = conn.prepareStatement(query);
     statement.executeUpdate();
     }
