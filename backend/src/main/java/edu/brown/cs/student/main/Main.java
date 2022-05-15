@@ -4,6 +4,7 @@ import edu.brown.cs.student.ReplCSV.Repl;
 import edu.brown.cs.student.KanbanVisualization.KanbanDataHandler;
 import edu.brown.cs.student.TableVisualization.*;
 import edu.brown.cs.student.patientLoader.PatientDataHandler;
+import edu.brown.cs.student.symptomLoader.SymptomInsertHandler;
 import edu.brown.cs.student.tableDataLoader.TableHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
@@ -93,6 +94,7 @@ public final class Main {
     Spark.post("/patient-data", new PatientDataHandler());
     Spark.post("/symptom-data", new SymptomDataHandler());
     Spark.get("/table-data", new TableHandler());
+    Spark.post("/insert-symptom", new SymptomInsertHandler());
     Spark.init();
   }
 

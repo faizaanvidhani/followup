@@ -160,7 +160,6 @@ public class TableLoader {
     int numberOfColumns = tableDataMap.get("columnNames").size();
     String query = "INSERT INTO " + tableName + " (";
     System.out.println(row.length);
-    System.out.println("jjjiowdnhkvj");
     System.out.println(numberOfColumns);
     System.out.println(row.toString());
     if (numberOfColumns == row.length) {

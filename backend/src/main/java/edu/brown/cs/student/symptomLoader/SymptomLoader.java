@@ -63,6 +63,9 @@ public class SymptomLoader {
   public void fillSymptomData(String patientID) throws SQLException {
     // Join block and column tables and get row data.
     String query = "SELECT * FROM SymptomLog WHERE patient_id =" + patientID + ";";
+    if (patientID.equals("ALL_PATIENTS")) {
+      query = "SELECT * FROM SymptomLog";
+    }
     ResultSet rowData = this.executeSQL(query);
 
     // Get columns from dataset.
@@ -87,5 +90,23 @@ public class SymptomLoader {
    */
   public List<Map<String, String>> getSymptomData() {
     return ImmutableList.copyOf(this.symptomData);
+  }
+
+  /**
+   * insert functionality to database.
+   * @param rowData row data
+   * @throws SQLException sql exception
+   */
+  public void insertSymptom(String[] rowData) throws SQLException {
+    StringBuilder query = new StringBuilder("INSERT INTO SymptomLog (id, patient_id, symptom_name, date_time, "
+        + "severity, duration) VALUES (");
+    for (String rowDatum : rowData) {
+      query.append("'").append(rowDatum).append("'").append(", ");
+    }
+    query = new StringBuilder(query.substring(0, query.length() - 2));
+    query.append(");");
+    System.out.println(query);
+    PreparedStatement statement = conn.prepareStatement(query.toString());
+    statement.executeUpdate();
   }
 }

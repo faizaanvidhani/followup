@@ -3,6 +3,7 @@ package edu.brown.cs.student.Commands;
 import edu.brown.cs.student.KanbanVisualization.KanbanDataHandler;
 import edu.brown.cs.student.TableVisualization.*;
 import edu.brown.cs.student.patientLoader.PatientDataHandler;
+import edu.brown.cs.student.symptomLoader.SymptomInsertHandler;
 import edu.brown.cs.student.tableDataLoader.TableHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
 import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
@@ -30,6 +31,7 @@ public class LoadDatabaseCommand implements ICommand {
       PatientDataHandler.setFilePath(inputTokens.get(1));
       TableHandler.setFilePath(inputTokens.get(1));
       SymptomDataHandler.setFilePath(inputTokens.get(1));
+      SymptomInsertHandler.setFilePath(inputTokens.get(1));
     }
   }
 
