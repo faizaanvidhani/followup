@@ -17,15 +17,19 @@ function PatientHome() {
     const {currentUser} = useContext(UserContext);
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
+    const [dob, setDob] = useState("");
+    const [tel, setTel] = useState("");
     const [data, setData] = useState(null);
 
     // Fetch patient data from database
     const loadData = async() => {
-        axios.post('http://localhost:4567/patient-data', {patient_id: 2})
+        axios.post('http://localhost:4567/patient-data', {patient_id: '0eSEx9X1wlZeLQpaL3JqoSfJyKU2'})
             .then((response: any) => {
                 setData(response.data)
                 setFirstName(data!['patientData'][1])
                 setLastName(data!['patientData'][2])
+                setDob(data!['patientData'][3])
+                setTel(data!['patientData'][4])
                 console.log(data)
             })
     }
@@ -33,7 +37,9 @@ function PatientHome() {
     return (
         <div className="patient-home">
             <PortalHeader wantLogOut={true} centered={false} />
-            <PatientHeader name={firstName + lastName} dob="01/01/2001" tel="012-345-6789" />
+            <PatientHeader firstName={firstName} lastName={lastName} dob={dob} tel={tel} />
+
+            <button id="fake-button" onClick={loadData}> Load data </button>
             <Container className="dashboard-background">
                 <Card id = "dashboard-card">
                     <h1 id="dashboard-heading">Dashboard</h1>
