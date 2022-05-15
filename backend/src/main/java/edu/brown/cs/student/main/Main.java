@@ -93,7 +93,7 @@ public final class Main {
     Spark.post("/provider-data", new ProviderDataHandler());
     Spark.post("/patient-data", new PatientDataHandler());
     Spark.post("/symptom-data", new SymptomDataHandler());
-    Spark.get("/table-data", new TableHandler());
+    Spark.post("/generic-table-data", new TableHandler());
     Spark.post("/insert-symptom", new SymptomInsertHandler());
     Spark.init();
   }
