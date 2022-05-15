@@ -17,6 +17,7 @@ import { useState, useEffect, useRef, useContext } from "react";
 import {Alert, Button, Card, Container, Form } from 'react-bootstrap';
 import UserContext from '../UserContext';
 import firebase from "firebase/compat";
+import axios from "axios";
 
 export function SignIn() {
     const googleProvider = new GoogleAuthProvider();
@@ -34,8 +35,25 @@ export function SignIn() {
         const unsubscribe = auth.onAuthStateChanged(function(user) {
             if (user) {
                 // User is signed in.
-                setCurrentUser(user.uid);
-                navigate("/patientHome");
+                axios.post('http://localhost:4567/generic-table-data', {table_name: "Users"})
+                    .then((response: any) => {
+                        const userID = user.uid;
+                        const knownUsers = response.data
+                        if (userID in knownUsers) {
+                            const userInfoMap = knownUsers[userID];
+                            const userType = userInfoMap['type']
+                            console.log(userType);
+                            if (userType === "Patient") {
+                                navigate("/patientHome");
+                            } else if (userType === "Provider") {
+                                navigate("/providerHome");
+                            } else {
+                                console.log("ERROR: User is not of type patient nor provider.");
+                            }
+                        } else {
+
+                        }
+                    })
             } else {
                 setCurrentUser(false);
             }
@@ -47,8 +65,8 @@ export function SignIn() {
         console.log(currentUser);
         signInWithPopup(auth, googleProvider)
             .then((result) => {
-                setCurrentUser(result.user.uid);
-                navigate("/patientHome")
+                // setCurrentUser(result.user.uid);
+                // navigate("/patientHome")
             }).catch((error) => {
                 console.log("ERROR: " + error.message)
         });

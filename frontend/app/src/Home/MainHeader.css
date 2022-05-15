@@ -29,4 +29,5 @@
 .heading:hover {
     transform: scale(1.2, 1.2);
     font-weight: bold;
+    cursor: pointer;
 }

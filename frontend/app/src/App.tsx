@@ -30,7 +30,6 @@ import NewAccountPage from './components/NewAccountPage';
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
     const userType = null;
-
     return (
         <UserContext.Provider value={{userType, currentUser, setCurrentUser}}>
             <Router>
