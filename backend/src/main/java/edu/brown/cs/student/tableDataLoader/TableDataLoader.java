@@ -91,4 +91,39 @@ public class TableDataLoader {
     return ImmutableMap.copyOf(this.tableData);
   }
 
+  /**
+   * insert functionality to database.
+   * @param tableName table name
+   * @param rowData row data
+   * @throws SQLException sql exception
+   */
+  public void insertRow(String tableName, String rowData) throws SQLException {
+    String[] row = rowData.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+
+    String dataQuery = "SELECT * FROM " + tableName + ";";
+
+    ResultSet sqlData = this.executeSQL(dataQuery);
+    int numCols = sqlData.getMetaData().getColumnCount();
+
+    StringBuilder columns = new StringBuilder();
+    StringBuilder values = new StringBuilder();
+    StringBuilder insertQuery = new StringBuilder("INSERT INTO " + tableName + " (");
+    for (int col = 1; col <= numCols; col++) {
+      String colName = sqlData.getMetaData().getColumnName(col);
+      columns.append(colName).append(", ");
+      values.append("'").append(row[col - 1]).append("'").append(", ");
+
+    columns = new StringBuilder(columns.substring(0, columns.length() - 2));
+    values = new StringBuilder(values.substring(0, values.length() - 2));
+
+    insertQuery.append(columns);
+    insertQuery.append(") VALUES (");
+    insertQuery.append(values);
+
+    String query = insertQuery + ");";
+    PreparedStatement statement = conn.prepareStatement(query);
+    statement.executeUpdate();
+    }
+  }
+
 }
