@@ -82,6 +82,7 @@ public class TableDataLoader {
       }
       this.tableData.put(rowData.getString(1), rowMap);
     }
+    rowData.close();
   }
 
   /**

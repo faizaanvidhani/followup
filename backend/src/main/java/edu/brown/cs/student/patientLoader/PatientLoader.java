@@ -75,6 +75,7 @@ public class PatientLoader {
       patientInfo.add(cellData);
     }
     this.patientData.put("patientData", patientInfo);
+    providerResult.close();
   }
 
   public void fillSymptomIDs(String patientID) throws SQLException {
@@ -88,8 +89,9 @@ public class PatientLoader {
         String id = rowData.getString(1);
         logIDs.add(id); // adding each table name to a list of all the table names
       }
+      this.patientData.put("logIDs", logIDs);
+      rowData.close();
     }
-    this.patientData.put("logIDs", logIDs);
   }
 
 

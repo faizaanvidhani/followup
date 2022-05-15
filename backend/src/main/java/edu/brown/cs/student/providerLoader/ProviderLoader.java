@@ -75,6 +75,7 @@ public class ProviderLoader {
       providerInfo.add(cellData);
     }
     this.providerData.put("providerData", providerInfo);
+    providerResult.close();
   }
 
   public void fillPatientIDs(String providerID) throws SQLException {
@@ -88,8 +89,9 @@ public class ProviderLoader {
         String id = rowData.getString(1);
         patientIDs.add(id); // adding each table name to a list of all the table names
       }
+      this.providerData.put("patientIDs", patientIDs);
+      rowData.close();
     }
-    this.providerData.put("patientIDs", patientIDs);
   }
 
   /**
