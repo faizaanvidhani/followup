@@ -23,11 +23,12 @@ function ProviderHome(props: ProviderHomeProps) {
     const [data, setData] = useState(null);
 
     const loadData = async() => {
-        axios.post('http://localhost:4567/provider-data', {provider_id: 2})
+        axios.post('http://localhost:4567/provider-data', {provider_id: '5M0V60JHRLA'})
             .then((response: any) => {
-                setData(response.data)
-                setFirstName(data!['providerData'][1])
-                setLastName(data!['providerData'][2])
+                console.log(response.data)
+                // setData(response.data)
+                // setFirstName(data!['providerData'][1])
+                // setLastName(data!['providerData'][2])
             })
 
     }

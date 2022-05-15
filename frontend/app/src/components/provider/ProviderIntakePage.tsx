@@ -22,29 +22,29 @@ export default function ProviderIntakePage() {
     let navigate = useNavigate();
 
     const handleSubmit = (event: any) => {
-        // event.preventDefault();
-        // const data: providerData = {
-        //     fName: firstName,
-        //     lName: lastName,
-        //     institution: institution,
-        //     email: email,
-        //     phoneNumber: phoneNumber
-        // }
-
         event.preventDefault();
-        let values: string[] = [];
-        values.push(currentUser!);
-        values.push('Patient');
-        console.log("HELLOOOO")
-        console.log(currentUser + ',Patient');
-        axios.post('http://localhost:4567/insert-data', {table_name: 'Users', row_values: values})
+        let userValues: string[] = [];
+        let profileValues: string[] = [];
+        userValues.push(currentUser!);
+        userValues.push('Provider');
+        profileValues.push(currentUser!);
+        profileValues.push(firstName);
+        profileValues.push(lastName);
+        profileValues.push(email);
+        profileValues.push(phoneNumber);
+        profileValues.push(institution);
+
+        axios.post('http://localhost:4567/insert-data', {table_name: 'Users', row_values: userValues})
             .then(response => {
-                console.log("HIIIIIIII");
-                console.log(currentUser)
                 console.log(response)
             })
             .catch (error => {console.log(error)})
 
+        axios.post('http://localhost:4567/insert-data', {table_name: 'Provider', row_values: profileValues})
+            .then(response => {
+                console.log(response)
+            })
+            .catch (error => {console.log(error)})
     }
 
     return (

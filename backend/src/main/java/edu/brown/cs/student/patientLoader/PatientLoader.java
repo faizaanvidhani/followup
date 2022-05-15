@@ -64,7 +64,7 @@ public class PatientLoader {
    */
   public void fillPatientData(String patientID) throws SQLException {
     // query to get the column name and column type
-    String query = "SELECT * FROM Patient WHERE user_id = " + patientID + ";";
+    String query = "SELECT * FROM Patient WHERE user_id = '" + patientID + "';";
     ResultSet providerResult = this.executeSQL(query);
 
     int numCols = providerResult.getMetaData().getColumnCount();
@@ -79,7 +79,7 @@ public class PatientLoader {
   }
 
   public void fillSymptomIDs(String patientID) throws SQLException {
-    String patientQuery = "SELECT * FROM SymptomLog WHERE patient_id = " + patientID + ";";
+    String patientQuery = "SELECT * FROM SymptomLog WHERE patient_id = '" + patientID + "';";
     ResultSet rowData = this.executeSQL(patientQuery);
 
     // fill row data

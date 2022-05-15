@@ -34,6 +34,7 @@ export function SignIn() {
     function loadProviderData(userID: string) {
         axios.post('http://localhost:4567/provider-data', {provider_id: userID})
             .then((response: any) => {
+                console.log("LOADING");
                 console.log(response.data)
             })
     }
@@ -56,7 +57,7 @@ export function SignIn() {
                             if (userType === "Patient") {
                                 navigate("/patientHome");
                             } else if (userType === "Provider") {
-                                // loadProviderData(userID)
+                                loadProviderData(userID)
                                 navigate("/providerHome");
                             } else {
                                 console.log("ERROR: User is not of type patient nor provider.");
