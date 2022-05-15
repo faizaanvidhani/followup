@@ -3,12 +3,9 @@ package edu.brown.cs.student.Commands;
 import edu.brown.cs.student.KanbanVisualization.KanbanDataHandler;
 import edu.brown.cs.student.TableVisualization.*;
 import edu.brown.cs.student.patientLoader.PatientDataHandler;
-import edu.brown.cs.student.symptomLoader.SymptomInsertHandler;
 import edu.brown.cs.student.tableDataLoader.InsertDataHandler;
 import edu.brown.cs.student.tableDataLoader.TableHandler;
 import edu.brown.cs.student.providerLoader.ProviderDataHandler;
-import edu.brown.cs.student.symptomLoader.SymptomDataHandler;
-import edu.brown.cs.student.userLoader.UserHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,9 +29,7 @@ public class LoadDatabaseCommand implements ICommand {
       ProviderDataHandler.setFilePath(inputTokens.get(1));
       PatientDataHandler.setFilePath(inputTokens.get(1));
       TableHandler.setFilePath(inputTokens.get(1));
-      SymptomDataHandler.setFilePath(inputTokens.get(1));
       InsertDataHandler.setFilePath(inputTokens.get(1));
-      UserHandler.setFilePath(inputTokens.get(1));
     }
   }
 

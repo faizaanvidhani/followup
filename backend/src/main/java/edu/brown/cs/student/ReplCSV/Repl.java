@@ -1,13 +1,8 @@
 package edu.brown.cs.student.ReplCSV;
 
-import edu.brown.cs.student.Commands.APIActive;
-import edu.brown.cs.student.Commands.APICommand;
-import edu.brown.cs.student.Commands.Aggregate;
-import edu.brown.cs.student.Commands.HeadersLoad;
 import edu.brown.cs.student.Commands.CreateConnectionCommand;
 import edu.brown.cs.student.Commands.ICommand;
 import edu.brown.cs.student.Commands.LoadDatabaseCommand;
-import edu.brown.cs.student.Commands.NaiveNeighbors;
 import edu.brown.cs.student.Commands.RunSQLCommand;
 
 
@@ -59,16 +54,6 @@ public class Repl {
    */
   public void main() throws IOException {
     // adding stars and naive_neighbors here for reference and so we can use them
-    ICommand aggregate = new Aggregate();
-    addCommand("api_aggregate", aggregate);
-    ICommand api = new APICommand();
-    addCommand("api", api);
-    ICommand naiveNeighbors = new NaiveNeighbors();
-    addCommand("naive_neighbors", new NaiveNeighbors());
-    ICommand active = new APIActive();
-    addCommand("active", active);
-    addCommand("headers_load", new HeadersLoad());
-    addCommand("load_table", new CreateConnectionCommand());
     addCommand("run_sql", new RunSQLCommand());
     addCommand("load_database", new LoadDatabaseCommand());
     /*
