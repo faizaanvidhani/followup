@@ -1,0 +1,72 @@
+h3 {
+    margin-left: 10%;
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+
+#info-page-line {
+    width: 80%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+}
+.provider-info-page {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    line-height: 90%;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.profile-info {
+    margin-left: 200px;
+}
+
+.profile-section {
+    margin-top: 5%;
+}
+
+.first-name-input {
+    margin-right: 18px;
+    font-size: 16px;
+}
+
+.last-name-input {
+    margin-left: 18px;
+    font-size: 16px;
+}
+
+.clinic-input {
+    font-size: 16px;
+}
+
+.name-inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clinic-input {
+    margin-top: 30px;
+}
+
+.contact-info-section {
+    margin-left: 200px;
+}
+
+label {
+    font-size: 20px;
+    font-weight:500;
+}
+
+.email-div {
+    margin-top: 30px;
+}
+
+.field {
+    color: rgba(82, 82, 82, 0.75);
+}
+
+.info-label {
+    margin-bottom: 10px;
+}

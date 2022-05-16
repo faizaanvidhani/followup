@@ -1,0 +1,76 @@
+.patient-home-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-background {
+    background-color: #1D93FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#dashboard-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 20rem;
+    top: 35%;
+}
+
+#dashboard-heading {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    color: #2A2D30;
+}
+
+#pat-profile-icon-div {
+    margin-right: 40px;
+    margin-top: 5%;
+}
+
+#pat-profile-icon-div:hover {
+    transform: scale(1.15, 1.15);
+    cursor: pointer;
+}
+
+#symptom-icon-div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5%;
+}
+
+#symptom-icon-div:hover {
+    transform: scale(1.15, 1.15);
+    cursor: pointer;
+}
+
+#add-icon-div {
+    margin-left: 40px;
+    margin-top: 5%;
+}
+
+#add-icon-div:hover {
+    transform: scale(1.15, 1.15);
+    cursor: pointer;
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patient-icon-text {
+    margin-top: 7px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    width: 100%;
+}
+

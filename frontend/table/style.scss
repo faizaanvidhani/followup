@@ -1,0 +1,159 @@
+html {
+  font-family: "Yuanti SC", Helvetica, sans-serif;;
+}
+
+table, th, td {
+  border: 2px solid lightslategrey;
+  border-collapse: collapse;
+  width: 70%;
+  height: 100%;
+  text-align: left;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: lightslategrey;
+  color: #a4ec92;
+}
+
+tr:hover {
+  background-color: #dbb5e7;
+  opacity: 70%;
+}
+
+tr {
+  background-color: white;
+  opacity: 70%;
+}
+
+  //credit https://codepen.io/P1N2O/pen/pyBNzX
+  body {
+    background: linear-gradient(-45deg, #f6c712, #f5abf8, #87bbf6, #2944ce);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: auto;
+    padding-bottom: 100px;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: auto;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  // credit https://codepen.io/ANAMAFLA/pen/eYJbGpd
+  p {
+    color: #fff;
+    font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  p span {
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p span::before,
+  p span::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transform-origin: left top;
+    transition: all ease-out 0.3s;
+    content: attr(data-text);
+  }
+
+  p span::before {
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1, 1) skew(0deg, 20deg);
+  }
+
+  p span::after {
+    z-index: 2;
+    color: #684da3;
+    text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0, 0, 0, 0.8);
+    transform: rotateY(-40deg);
+  }
+
+  p span:hover::before {
+    transform: scale(1.1, 1) skew(0deg, 5deg);
+  }
+
+  p span:hover::after {
+    transform: rotateY(-10deg);
+  }
+
+  p span + span {
+    margin-left: 0.3em;
+  }
+
+  @media (min-width: 20em) {
+    p {
+      font-size: 2em;
+    }
+    p span::before,
+    p span::after {
+      display: block;
+    }
+  }
+
+  @media (min-width: 30em) {
+    p {
+      font-size: 3em;
+    }
+  }
+
+  @media (min-width: 40em) {
+    p {
+      font-size: 5em;
+    }
+  }
+
+  @media (min-width: 60em) {
+    p {
+      font-size: 8em;
+    }
+  }
+
+  svg text {
+    font-family: Impact, Helvetica, sans-serif;;
+    letter-spacing: 7px;
+    stroke: #b2eca5;
+    font-size: 50px;
+    font-weight: 800;
+    stroke-width: 2.5px;
+    animation: textAnimate 5s infinite alternate;
+  }
+
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 20%;
+      fill: hsl(218, 21%, 20%, 30%)
+    }
+
+    100% {
+      stroke-dasharray: 50% 0;
+      fill: hsla(189, 68%, 75%, 0%)
+    }
+  }
+
+
