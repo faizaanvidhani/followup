@@ -12,7 +12,7 @@ import Mission from './Home/Mission';
 import About from './Home/About';
 import Contact from './Home/Contact';
 import SignIn from "./Home/SignIn"
-import PrivateRoute from './FirebaseAuth/PrivateRoute'
+import ProviderProtectedRoute from './components/private routes/ProviderProtectedRoute'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProviderHomePage from './components/provider/ProviderHomePage';
 import ProviderIntakePage from './components/provider/ProviderIntakePage';
@@ -26,12 +26,13 @@ import IntakePage from './components/patient/PatientIntake';
 import ProviderContext from './components/provider/ProviderContext';
 import ProviderInfoPage from './components/provider/ProviderInfoPage';
 import NewAccountPage from './components/NewAccountPage';
+import PatientProtectedRoute from "./components/private routes/PatientProtectedRoute";
 
 function App() {
+    const [userType, setUserType] = useState(null);
     const [currentUser, setCurrentUser] = useState(null);
-    const userType = null;
     return (
-        <UserContext.Provider value={{userType, currentUser, setCurrentUser}}>
+        <UserContext.Provider value={{userType, setUserType, currentUser, setCurrentUser}}>
             <Router>
                 <Routes>
                     {/* outward facing routes*/}
@@ -49,11 +50,11 @@ function App() {
 
                 <Routes>
                     {/*patient routes*/}
-                    <Route path="/patientHome" element={<PrivateRoute><PatientHome /></PrivateRoute>} />
-                    {/*<Route path="/profileInfo" element={<PrivateRoute><IntakePage /></PrivateRoute>} />*/}
-                    <Route path="/symptomLog" element={<PrivateRoute><SymptomLog /></PrivateRoute>} />
-                    <Route path="/addSymptom" element={<PrivateRoute><AddSymptom /></PrivateRoute>} />
-                    <Route path="/addSymptomContext" element={<PrivateRoute><AddSymptomContext /></PrivateRoute>} />
+                    <Route path="/patientHome" element={<PatientProtectedRoute><PatientHome /></PatientProtectedRoute>} />
+                    <Route path="/profileInfo" element={<PatientProtectedRoute><IntakePage /></PatientProtectedRoute>} />
+                    <Route path="/symptomLog" element={<PatientProtectedRoute><SymptomLog /></PatientProtectedRoute>} />
+                    <Route path="/addSymptom" element={<PatientProtectedRoute><AddSymptom /></PatientProtectedRoute>} />
+                    <Route path="/addSymptomContext" element={<PatientProtectedRoute><AddSymptomContext /></PatientProtectedRoute>} />
                     <Route path="/patientIntake" element={<PatientIntake/>} />
                 </Routes>
 
@@ -61,9 +62,8 @@ function App() {
                     {/*provider routes*/}
                 <Routes>
                     <Route path="/profileInfo" element={<IntakePage />} />
-                    <Route path="/providerHome" element={<ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' />} />
+                    <Route path="/providerHome" element={<ProviderProtectedRoute><ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' /> </ProviderProtectedRoute>} />
                     <Route path="/providerPatientGrid" element={<ProviderPatientGrid firstName="Jane" lastName="Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
-
                     <Route path="/providerIntake" element={<ProviderIntakePage />} />
                     <Route path="/providerTabs" element={<Tabs />} />
                     <Route path="/providerInfoPage" element={<ProviderInfoPage fname='Jane' lname='Doe' institution='RI Hospital' phoneNumber='012-345-6789' email='jane@gmail.com' />} />

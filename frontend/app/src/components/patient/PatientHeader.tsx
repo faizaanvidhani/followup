@@ -5,13 +5,15 @@ import './PatientHeader.css';
 import woman from '../../icons/janedoe.jpeg';
 
 type HeaderProps = {
-    name: string;
+    firstName: string;
+    lastName: string;
     dob: string;
     tel: string;
 }
 
 function PatientHeader(props: HeaderProps) {
-    const [name, setName] = useState(props.name);
+    const [firstName, setName] = useState(props.firstName);
+    const [lastName, setLastName] = useState(props.lastName);
     const [dob, setDob] = useState(props.dob);
     const [tel, setTel] = useState(props.tel);
 
@@ -25,7 +27,7 @@ function PatientHeader(props: HeaderProps) {
 
                 <div>
                     <h1 className="name">
-                        {name}
+                        {firstName} {lastName}
                     </h1>
                     <h3 className="info">
                         DOB: {dob} | Tel: {tel}

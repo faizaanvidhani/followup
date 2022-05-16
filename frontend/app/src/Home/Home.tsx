@@ -7,16 +7,17 @@ import { useContext } from 'react';
 import UserContext from '../UserContext'
 
 function Home() {
-    const {currentUser} = useContext(UserContext);
+    const {userType, currentUser} = useContext(UserContext);
     const navigate = useNavigate();
 
     function redirectUser() {
-        console.log(currentUser);
-        if (currentUser !== null) {
-            // user is currently signed in
-            navigate("/profileInfo");
+        if (currentUser) {
+            if (userType === "Patient") {
+                navigate("/patientHome");
+            } else if (userType === "Provider") {
+                navigate("/providerHome");
+            }
         } else {
-            // user is currently signed out
             navigate("/login");
         }
     }

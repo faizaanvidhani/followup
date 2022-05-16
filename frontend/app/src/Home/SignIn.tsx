@@ -24,7 +24,7 @@ export function SignIn() {
     const facebookProvider = new FacebookAuthProvider();
     const appleProvider = new OAuthProvider('apple.com');
     const navigate = useNavigate();
-    const {userType, currentUser, setCurrentUser} = useContext(UserContext);
+    const {userType, setUserType, currentUser, setCurrentUser} = useContext(UserContext);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     const emailRef = useRef(null);
@@ -34,6 +34,7 @@ export function SignIn() {
     function loadProviderData(userID: string) {
         axios.post('http://localhost:4567/provider-data', {provider_id: userID})
             .then((response: any) => {
+                console.log("LOADING");
                 console.log(response.data)
             })
     }
@@ -43,40 +44,41 @@ export function SignIn() {
                 // User is signed in.
                 axios.post('http://localhost:4567/generic-table-data', {table_name: "Users"})
                     .then((response: any) => {
-                        const userID = user.uid;
-                        setCurrentUser(user.uid);
-                        console.log(currentUser);
-                        console.log(user.uid);
-                        const knownUsers = response.data
-                        console.log(knownUsers);
-                        if (userID in knownUsers) {
-                            const userInfoMap = knownUsers[userID];
-                            const userType = userInfoMap['type'];
-                            console.log(userType);
-                            if (userType === "Patient") {
-                                navigate("/patientHome");
-                            } else if (userType === "Provider") {
-                                // loadProviderData(userID)
-                                navigate("/providerHome");
-                            } else {
-                                console.log("ERROR: User is not of type patient nor provider.");
-                            }
-                        } else {
-                            navigate("/newAccount");
-                        }
+                        redirectUser(response, user);
                     })
             } else {
-                setCurrentUser(false);
+                setCurrentUser(null);
             }
         })
         return unsubscribe;
     }, [])
 
+    function redirectUser(response: any, user: any) {
+        const userID = user.uid;
+        setCurrentUser(user.uid);
+        const knownUsers = response.data
+        if (userID in knownUsers) {
+            const userInfoMap = knownUsers[userID];
+            setUserType(userInfoMap['type']);
+            if (userInfoMap['type'] === "Patient") {
+                navigate("/patientHome");
+            } else if (userInfoMap['type'] === "Provider") {
+                navigate("/providerHome");
+            } else {
+                console.log("ERROR: User is not of type patient nor provider.");
+            }
+        } else {
+            navigate("/newAccount");
+        }
+    }
+
     function loginGoogle() {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
-                // setCurrentUser(result.user.uid);
-                // navigate("/patientHome")
+                axios.post('http://localhost:4567/generic-table-data', {table_name: "Users"})
+                    .then((response: any) => {
+                        redirectUser(response, response.user);
+                    })
             }).catch((error) => {
                 console.log("ERROR: " + error.message)
         });
