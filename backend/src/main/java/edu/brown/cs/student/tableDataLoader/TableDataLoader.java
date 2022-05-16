@@ -25,7 +25,7 @@ public class TableDataLoader {
   private final Map<String, Map<String, String>> tableData;
 
   /**
-   * Constructor for the TableLoader class.
+   * Constructor for the TableDataLoader class.
    *
    * @param filePath - a string, the path to the database file
    * @throws SQLException - for an invalid SQL query or database
@@ -59,7 +59,7 @@ public class TableDataLoader {
   }
 
   /**
-   * Fills the kanbanDataMap mapping table information to their respective values.
+   * Fills the tableData mapping table information to their respective values.
    *
    * @throws SQLException - for an invalid SQL query or database
    */
@@ -86,7 +86,7 @@ public class TableDataLoader {
   }
 
   /**
-   * Getter for the kanbanData list.
+   * Getter for the tabledata map.
    *
    * @return list of Hashmaps containing row data
    */

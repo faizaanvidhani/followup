@@ -30,7 +30,7 @@ public class PatientDataHandler implements Route {
       }
 
       Gson gson = new Gson();
-      return gson.toJson(loader.getProviderData());
+      return gson.toJson(loader.getPatientData());
 
     } catch (Exception e) {
       System.out.println("ERROR: " + e.getMessage());

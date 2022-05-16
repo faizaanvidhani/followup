@@ -57,9 +57,9 @@ public class PatientLoader {
   }
 
   /**
-   * Fills the tableDataMap mapping table information to their respective values.
+   * Fills the patientDataMap with patient data
    *
-   * @param patientID - a string provider ID
+   * @param patientID - a string patient ID
    * @throws SQLException - for an invalid SQL query or database
    */
   public void fillPatientData(String patientID) throws SQLException {
@@ -78,6 +78,12 @@ public class PatientLoader {
     providerResult.close();
   }
 
+  /**
+   * Fills the patientDataMap with symptom ids
+   *
+   * @param patientID - a string patient ID
+   * @throws SQLException - for an invalid SQL query or database
+   */
   public void fillSymptomIDs(String patientID) throws SQLException {
     String patientQuery = "SELECT * FROM SymptomLog WHERE patient_id = " + patientID + ";";
     ResultSet rowData = this.executeSQL(patientQuery);
@@ -96,11 +102,11 @@ public class PatientLoader {
 
 
   /**
-   * Getter for the tableDataMap.
+   * Getter for the patientData map.
    *
-   * @return = the tableNamesMap
+   * @return = patientData
    */
-  public Map<String, List<String>> getProviderData() {
+  public Map<String, List<String>> getPatientData() {
     return ImmutableMap.copyOf(this.patientData);
   }
 
