@@ -31,8 +31,19 @@ import PatientProtectedRoute from "./components/private routes/PatientProtectedR
 function App() {
     const [userType, setUserType] = useState(null);
     const [currentUser, setCurrentUser] = useState(null);
+    const [providerDemographics, setProviderDemographics] = useState(null);
+    const [providerPatients, setPatients] = useState(null);
+
+    const providerSettings = {
+        demographics: providerDemographics,
+        patients: providerPatients,
+        setProviderDemographics,
+        setPatients
+    }
+
     return (
         <UserContext.Provider value={{userType, setUserType, currentUser, setCurrentUser}}>
+            <ProviderContext.Provider value={providerSettings}>
             <Router>
                 <Routes>
                     {/* outward facing routes*/}
@@ -58,18 +69,17 @@ function App() {
                     <Route path="/patientIntake" element={<PatientIntake/>} />
                 </Routes>
 
-                {/*<ProviderContext.Provider value={{currentUser, setCurrentUser}}>*/}
                     {/*provider routes*/}
-                <Routes>
-                    <Route path="/profileInfo" element={<IntakePage />} />
-                    <Route path="/providerHome" element={<ProviderProtectedRoute><ProviderHomePage name="Jane Doe" clinicName='RI Hospital' title='MD' /> </ProviderProtectedRoute>} />
-                    <Route path="/providerPatientGrid" element={<ProviderPatientGrid firstName="Jane" lastName="Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
-                    <Route path="/providerIntake" element={<ProviderIntakePage />} />
-                    <Route path="/providerTabs" element={<Tabs />} />
-                    <Route path="/providerInfoPage" element={<ProviderInfoPage fname='Jane' lname='Doe' institution='RI Hospital' phoneNumber='012-345-6789' email='jane@gmail.com' />} />
-                {/*</ProviderContext.Provider>*/}
-                </Routes>
-            </Router>
+                    <Routes>
+                        <Route path="/profileInfo" element={<IntakePage />} />
+                        <Route path="/providerHome" element={<ProviderProtectedRoute><ProviderHomePage /> </ProviderProtectedRoute>} />
+                        <Route path="/providerPatientGrid" element={<ProviderPatientGrid firstName="Jane" lastName="Doe" clinicName='RI Hospital' title='MD' patients={[]} />} />
+                        <Route path="/providerIntake" element={<ProviderIntakePage />} />
+                        <Route path="/providerTabs" element={<Tabs />} />
+                        <Route path="/providerInfoPage" element={<ProviderInfoPage fname='Jane' lname='Doe' institution='RI Hospital' phoneNumber='012-345-6789' email='jane@gmail.com' />} />
+                    </Routes>
+                </Router>
+        </ProviderContext.Provider>
         </UserContext.Provider>
     );
 }

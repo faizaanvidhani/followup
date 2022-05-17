@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d01cd665-0ae2-4f4c-bd88-08ec4728060e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/app/node_modules/typescript/lib" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

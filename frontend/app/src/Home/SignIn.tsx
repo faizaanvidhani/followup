@@ -16,8 +16,9 @@ import { auth } from '../FirebaseAuth/Firebase'
 import { useState, useEffect, useRef, useContext } from "react";
 import {Alert, Button, Card, Container, Form } from 'react-bootstrap';
 import UserContext from '../UserContext';
-import firebase from "firebase/compat";
+import ProviderContext from "../components/provider/ProviderContext";
 import axios from "axios";
+
 
 export function SignIn() {
     const googleProvider = new GoogleAuthProvider();
@@ -25,19 +26,22 @@ export function SignIn() {
     const appleProvider = new OAuthProvider('apple.com');
     const navigate = useNavigate();
     const {userType, setUserType, currentUser, setCurrentUser} = useContext(UserContext);
+    // const {providerDemographics, setProviderDemos, providerPatients, setProviderPatients} = useContext(ProviderContext);
+    const providerContext = useContext(ProviderContext);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
     const passwordConfirmRef = useRef(null);
 
-    function loadProviderData(userID: string) {
+    const loadProviderData = (userID: string) => {
         axios.post('http://localhost:4567/provider-data', {provider_id: userID})
-            .then((response: any) => {
-                console.log("LOADING");
-                console.log(response.data)
+            .then(response => {
+                providerContext.setProviderDemographics(response.data['providerData']);
+                providerContext.setPatients(response.data['patientIDs']);
             })
     }
+
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(function(user) {
             if (user) {
@@ -58,12 +62,17 @@ export function SignIn() {
         setCurrentUser(user.uid);
         const knownUsers = response.data
         if (userID in knownUsers) {
+
             const userInfoMap = knownUsers[userID];
             setUserType(userInfoMap['type']);
             if (userInfoMap['type'] === "Patient") {
                 navigate("/patientHome");
             } else if (userInfoMap['type'] === "Provider") {
+                console.log(currentUser);
+                loadProviderData(userID)
                 navigate("/providerHome");
+                // load data and set context
+
             } else {
                 console.log("ERROR: User is not of type patient nor provider.");
             }
