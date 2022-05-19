@@ -1,0 +1,82 @@
+.active-tabs {
+    background: #98CCFD;
+    border-bottom: 1px solid transparent;
+    font-weight: 550;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*text-align: center;*/
+    /*vertical-align: center;*/
+}
+
+.symptom-log-table {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    background: white;
+    margin-left: -3%;
+    border-radius: 7px;
+    border-color: #98CCFD;
+    margin-top: 2%;
+}
+
+#provider-patient-view-patient-info {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    background: white;
+    margin-left: -2.5%;
+    margin-top: -3%;
+    border-radius: 7px;
+    width: 100%;
+    height: 500px;
+}
+.field {
+    font-size: 18px;
+}
+
+#provider-patient-view-profile-section {
+    margin-left: 5%;
+}
+
+#provider-patient-view-name-inputs {
+    padding-top: 3%;
+}
+
+.dob-input {
+    margin-left: 5%;
+}
+
+.container {
+    margin-top: -2%;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.tabs {
+    padding: 15px;
+}
+
+.content {
+    display: none;
+}
+
+.content-tabs {
+    background-color: #98CCFD;
+    height: 600px;
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.active-content {
+    display: block;
+    margin-left: 5%;
+}
+
+.bloc-tabs {
+    display: flex;
+    align-content: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}

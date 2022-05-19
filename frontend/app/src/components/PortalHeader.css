@@ -9,8 +9,8 @@
 
 .left-logo {
     color: white;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    font-family: 'Lato', sans-serif !important;
+    font-style: normal !important;
     font-weight: 500;
     font-size: 35px;
     margin-top: 2%;
@@ -20,7 +20,7 @@
 
 .centered-logo {
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
     font-style: normal;
     font-weight: 500;
     font-size: 35px;

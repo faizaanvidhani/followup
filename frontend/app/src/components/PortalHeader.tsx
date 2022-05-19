@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import logoutGoogle from "../Home/SignIn"
 import UserContext from '../UserContext';
+import userContext from "../UserContext";
 
 type headerProps = {
     wantLogOut: boolean
@@ -15,12 +16,15 @@ type headerProps = {
 
 function ShowLogOut(wantLogOut: boolean) {
     const navigate = useNavigate();
-    const {setUserType, setCurrentUser} = useContext(UserContext);
+    // const {setUserType, setCurrentUser} = useContext(UserContext);
+    const userContext = useContext(UserContext);
 
     function executeLogOut() {
         signOut(auth).then(() => {
-            setCurrentUser(null);
-            setUserType(null);
+            userContext.setCurrentUser(null);
+            userContext.setUserType(null);
+            // setCurrentUser(null);
+            // setUserType(null);
             navigate("/");
             // Sign-out successful.
         }).catch((error) => {

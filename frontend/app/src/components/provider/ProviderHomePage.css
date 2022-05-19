@@ -8,25 +8,38 @@
     margin-right: 40px;
 }
 
+#clinic-icon-div:hover {
+    transform: scale(1.15, 1.15);
+    cursor: pointer;
+}
+
 #profile-icon-div {
     margin-left: 40px;
+    cursor: pointer;
+}
+
+#profile-icon-div:hover {
+    transform: scale(1.15, 1.15);
+    cursor: pointer;
 }
 
 .icon-div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .icon-text {
     margin-top: 7px;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    white-space: nowrap;
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    margin-left: 20%;
 }
 
 .provider-home-icon {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }

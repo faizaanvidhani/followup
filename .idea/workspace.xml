@@ -5,11 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d01cd665-0ae2-4f4c-bd88-08ec4728060e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/contexts/CurrentPatientContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/followup_data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/followup_data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/Home/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/NewAccountPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/PortalHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientIntake.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/patient/PatientIntake.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/contexts/ProviderContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderHomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderInfoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderIntakePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/ProviderPatientView.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/PatientView.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/src/components/provider/PatientView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/src/components/provider/UpdateProviderProfile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,14 +38,57 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29JBiIpNSDXK1eOcYaDMHTOovoz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/app/node_modules/typescript/lib" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/app/src/components/provider/contexts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d01cd665-0ae2-4f4c-bd88-08ec4728060e" name="Changes" comment="" />
+      <created>1652821436971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652821436971</updated>
+      <workItem from="1652821439447" duration="20862000" />
+      <workItem from="1652925310986" duration="639000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/table/table.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

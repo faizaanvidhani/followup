@@ -49,3 +49,8 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.account-choice-button:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}

@@ -10,9 +10,14 @@ h3 {
     margin-left: 10%;
 }
 .provider-info-page {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
     font-style: normal;
     line-height: 90%;
+}
+
+.provider-info-page PortalHeader {
+    font-family: 'Lato', sans-serif !important;
+    font-style: normal;
 }
 .break {
     flex-basis: 100%;

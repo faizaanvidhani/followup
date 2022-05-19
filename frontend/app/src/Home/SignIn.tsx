@@ -16,8 +16,9 @@ import { auth } from '../FirebaseAuth/Firebase'
 import { useState, useEffect, useRef, useContext } from "react";
 import {Alert, Button, Card, Container, Form } from 'react-bootstrap';
 import UserContext from '../UserContext';
-import ProviderContext from "../components/provider/ProviderContext";
+import ProviderContext from "../components/provider/contexts/ProviderContext";
 import axios from "axios";
+import {userInfo} from "os";
 
 
 export function SignIn() {
@@ -25,7 +26,8 @@ export function SignIn() {
     const facebookProvider = new FacebookAuthProvider();
     const appleProvider = new OAuthProvider('apple.com');
     const navigate = useNavigate();
-    const {userType, setUserType, currentUser, setCurrentUser} = useContext(UserContext);
+    const userContext = useContext(UserContext);
+    // const {userType, setUserType, currentUser, setCurrentUser} = useContext(UserContext);
     // const {providerDemographics, setProviderDemos, providerPatients, setProviderPatients} = useContext(ProviderContext);
     const providerContext = useContext(ProviderContext);
     const [loading, setLoading] = useState(false);
@@ -34,12 +36,31 @@ export function SignIn() {
     const passwordRef = useRef(null);
     const passwordConfirmRef = useRef(null);
 
-    const loadProviderData = (userID: string) => {
-        axios.post('http://localhost:4567/provider-data', {provider_id: userID})
-            .then(response => {
-                providerContext.setProviderDemographics(response.data['providerData']);
-                providerContext.setPatients(response.data['patientIDs']);
-            })
+    async function getAllPatientData(patientIDs: []) {
+        const patientData = [];
+        console.log("number of patients" + patientIDs.length )
+        for (let i=0; i < patientIDs.length; i++) {
+            let patientID = patientIDs[i];
+            const response = await axios.post('http://localhost:4567/patient-data', {patient_id: patientID})
+            // let symptomArr = response.data['logIDs']
+            patientData.push(response.data['patientData'])
+            // patientSymptoms.push(symptomArr.unshift(patientID))
+        }
+        providerContext.setPatientsData(patientData);
+    }
+
+    const loadProviderData = async (userID: string) => {
+        const response = await axios.post('http://localhost:4567/provider-data', {provider_id: userID})
+        providerContext.setProviderDemographics(response.data['providerData']);
+        providerContext.setPatients(response.data['patientIDs']);
+        console.log(response.data['patientIDs']);
+        console.log("number of patients" + response.data['patientIDs'].length)
+
+        if (response.data['patientIDs'].length > 0) {
+            await getAllPatientData(response.data['patientIDs'])
+        } else {
+            providerContext.setPatientsData([]);
+        }
     }
 
     useEffect(() => {
@@ -51,28 +72,28 @@ export function SignIn() {
                         redirectUser(response, user);
                     })
             } else {
-                setCurrentUser(null);
+                userContext.setCurrentUser(null);
             }
         })
         return unsubscribe;
     }, [])
 
-    function redirectUser(response: any, user: any) {
+    async function redirectUser(response: any, user: any) {
         const userID = user.uid;
-        setCurrentUser(user.uid);
+        console.log(user.uid);
+        userContext.setCurrentUser(user.uid);
+        // setCurrentUser(user.uid);
         const knownUsers = response.data
         if (userID in knownUsers) {
 
             const userInfoMap = knownUsers[userID];
-            setUserType(userInfoMap['type']);
+            userContext.setUserType(userInfoMap['type'])
+            // setUserType(userInfoMap['type']);
             if (userInfoMap['type'] === "Patient") {
                 navigate("/patientHome");
             } else if (userInfoMap['type'] === "Provider") {
-                console.log(currentUser);
-                loadProviderData(userID)
+                await loadProviderData(userID)
                 navigate("/providerHome");
-                // load data and set context
-
             } else {
                 console.log("ERROR: User is not of type patient nor provider.");
             }
@@ -86,7 +107,7 @@ export function SignIn() {
             .then((result) => {
                 axios.post('http://localhost:4567/generic-table-data', {table_name: "Users"})
                     .then((response: any) => {
-                        redirectUser(response, response.user);
+                        // redirectUser(response, response.user);
                     })
             }).catch((error) => {
                 console.log("ERROR: " + error.message)
@@ -95,7 +116,8 @@ export function SignIn() {
     function loginFacebook() {
         signInWithPopup(auth, facebookProvider)
             .then((result) => {
-                setCurrentUser(result.user.uid);
+                userContext.setCurrentUser(result.user.uid);
+                // setCurrentUser(result.user.uid);
                 navigate("/patientHome")
             }).catch((error) => {
             console.log("ERROR: " + error.message)
@@ -104,7 +126,8 @@ export function SignIn() {
     function loginApple() {
         signInWithPopup(auth, appleProvider)
             .then((result) => {
-                setCurrentUser(result.user.uid);
+                userContext.setCurrentUser(result.user.uid);
+                // setCurrentUser(result.user.uid);
                 navigate("/patientHome")
             }).catch((error) => {
             console.log("ERROR: " + error.message)

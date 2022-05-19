@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import './ProviderIntakePage.css';
 import UserContext from '../../UserContext';
 import axios from "axios";
+import ProviderContext from "./contexts/ProviderContext";
+import { auth } from '../../FirebaseAuth/Firebase'
+import {signOut} from "firebase/auth";
 
 type providerData = {
     fName: string,
@@ -18,16 +21,32 @@ export default function ProviderIntakePage() {
     const [institution, setInstitution] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [email, setEmail] = useState("");
-    const {userType, currentUser, setCurrentUser} = useContext(UserContext);
+    const userContext = useContext(UserContext);
+    const providerContext = useContext(ProviderContext);
     let navigate = useNavigate();
 
-    const handleSubmit = (event: any) => {
+    function executeLogOut() {
+        signOut(auth).then(() => {
+            userContext.setCurrentUser(null);
+            userContext.setUserType(null);
+            // setCurrentUser(null);
+            // setUserType(null);
+            navigate("/");
+            // Sign-out successful.
+        }).catch((error) => {
+            console.log("ERROR: Failed to sign out user.");
+        });
+
+    }
+
+    const handleSubmit = async (event: any) => {
         event.preventDefault();
+
         let userValues: string[] = [];
         let profileValues: string[] = [];
-        userValues.push(currentUser!);
+        userValues.push(userContext.currentUser!);
         userValues.push('Provider');
-        profileValues.push(currentUser!);
+        profileValues.push(userContext.currentUser!);
         profileValues.push(firstName);
         profileValues.push(lastName);
         profileValues.push(email);
@@ -35,16 +54,23 @@ export default function ProviderIntakePage() {
         profileValues.push(institution);
 
         axios.post('http://localhost:4567/insert-data', {table_name: 'Users', row_values: userValues})
-            .then(response => {
-                console.log(response)
-            })
-            .catch (error => {console.log(error)})
-
+            .then(response => {console.log(response)})
         axios.post('http://localhost:4567/insert-data', {table_name: 'Provider', row_values: profileValues})
-            .then(response => {
-                console.log(response)
-            })
-            .catch (error => {console.log(error)})
+            .then(response => {console.log(response)})
+        executeLogOut();
+        // axios.post('http://localhost:4567/provider-data', {provider_id: userContext.currentUser})
+        //     .then(async response => {
+        //         providerContext.setProviderDemographics(response.data['providerData']);
+        //         providerContext.setPatients(response.data['patientIDs']);
+        //         // if (response.data['patientIDs'].length > 0) {
+        //         //     console.log("the provider has patients")
+        //         //     await getAllPatientData()
+        //         // } else {
+        //         //     console.log("the provider does not have patients")
+        //         // }
+        //         navigate('/providerHome');
+        //     })
+
     }
 
     return (

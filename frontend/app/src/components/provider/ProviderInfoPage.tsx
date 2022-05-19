@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import PortalHeader from '../PortalHeader';
 import './ProviderInfoPage.css'
+import ProviderContext from "./contexts/ProviderContext";
 
-type ProviderInfoProps = {
-    fname: string,
-    lname: string,
-    institution: string,
-    phoneNumber: string,
-    email: string
-}
-function ProviderInfoPage(props: ProviderInfoProps) {
+function ProviderInfoPage() {
+
+    const provider = useContext(ProviderContext);
+    const firstName = provider.demographics['1'];
+    const lastName = provider.demographics['2'];
+    const email = provider.demographics['3'];
+    const phone = provider.demographics['4'];
+    const clinicName = provider.demographics['5'];
 
     return (
         <div className="provider-info-page">
@@ -25,7 +26,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                             <label className="info-label" htmlFor="fname" id="fname-label">First name</label>
                             <br/>
                             <p className="field">
-                                {props.fname}
+                                {firstName}
                             </p>
                             <br/>
                         </div>
@@ -33,7 +34,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                             <label className="info-label" htmlFor="lname">Last name</label>
                             <br/>
                             <p className="field">
-                                {props.lname}
+                                {lastName}
                             </p>
 
                             <br/>
@@ -46,7 +47,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                         <label className="info-label" htmlFor="clinic-name" id="clinic-name-label">Institution</label>
                         <br/>
                         <p className="field">
-                            {props.institution}
+                            {clinicName}
                         </p>
                         <br/>
                     </div>
@@ -66,7 +67,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                     <label className="info-label" htmlFor="phone-number" id="phonenumber-label">Phone Number</label>
                     <br/>
                     <p className="field">
-                        {props.phoneNumber}
+                        {phone}
                     </p>
 
                     <br/>
@@ -76,7 +77,7 @@ function ProviderInfoPage(props: ProviderInfoProps) {
                     <label className="info-label" htmlFor="email" id="email-label">Email</label>
                     <br/>
                     <p className="field">
-                        {props.email}
+                        {email}
                     </p>
                     <br/>
                 </div>
