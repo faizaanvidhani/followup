@@ -1,9 +1,8 @@
 .about {
-    background: #C8E2FF;
     border-radius: 8px;
 }
 
 .card {
-    position: absolute;
+    position: relative;
     top: 200px;
 }
